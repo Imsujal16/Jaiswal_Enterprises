@@ -60,14 +60,20 @@ const mobileNav = document.getElementById('mobileNav');
 function openMobileNav() {
   if (!mobileNav) return;
   mobileNav.classList.add('open');
-  if (hamburger) hamburger.setAttribute('aria-expanded', 'true');
+  if (hamburger) {
+    hamburger.setAttribute('aria-expanded', 'true');
+    hamburger.classList.add('open');
+  }
   document.body.style.overflow = 'hidden';
 }
 
 function closeMobileNav() {
   if (!mobileNav) return;
   mobileNav.classList.remove('open');
-  if (hamburger) hamburger.setAttribute('aria-expanded', 'false');
+  if (hamburger) {
+    hamburger.setAttribute('aria-expanded', 'false');
+    hamburger.classList.remove('open');
+  }
   document.body.style.overflow = '';
 }
 
