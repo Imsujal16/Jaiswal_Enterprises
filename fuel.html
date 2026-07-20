@@ -40,9 +40,8 @@
     <ul class="nav-links">
       <li><a href="#services" data-i18n="nav.fuel-services">Fuel &amp; Services</a></li>
       <li><a href="#gallery" data-i18n="nav.photos">Photos</a></li>
-      <li><a href="#enquiry" data-i18n="nav.get-in-touch">Get in Touch</a></li>
     </ul>
-    <a href="#enquiry" class="nav-cta" data-i18n="nav.setup-account">Set Up an Account</a>
+    <a href="#enquiry" class="nav-cta" data-i18n="nav.get-in-touch">Get in Touch</a>
     <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -249,77 +248,83 @@
               <input type="text" id="fuel-inp-name" name="name" autocomplete="name" required />
               <div class="form-field-line" aria-hidden="true"></div>
             </div>
-            <div class="form-field" id="fuel-field-company">
-              <label for="fuel-inp-company" data-i18n="form.inp.company">Company / Firm (if any)</label>
-              <input type="text" id="fuel-inp-company" name="company" autocomplete="organization" />
-              <div class="form-field-line" aria-hidden="true"></div>
-            </div>
-          </div>
-
-          <div class="form-row">
             <div class="form-field" id="fuel-field-phone">
               <label for="fuel-inp-phone" data-i18n="form.inp.phone">Phone Number</label>
               <input type="tel" id="fuel-inp-phone" name="phone" autocomplete="tel" required />
               <div class="form-field-line" aria-hidden="true"></div>
             </div>
+          </div>
+
+          <div class="form-row">
             <div class="form-field" id="fuel-field-email">
               <label for="fuel-inp-email" data-i18n="form.inp.email">Email Address (optional)</label>
               <input type="email" id="fuel-inp-email" name="email" autocomplete="email" />
               <div class="form-field-line" aria-hidden="true"></div>
             </div>
-          </div>
-
-          <div class="form-row">
             <div class="form-field" id="fuel-field-enquiry">
               <label for="fuel-inp-enquiry" data-i18n="form.inp.enquiry-type">What's Your Enquiry About?</label>
               <select id="fuel-inp-enquiry" name="enquiry_type" required>
                 <option value="" disabled selected></option>
-                <option value="fleet-account" data-i18n="form.select.fuel.account">Setting up a business account</option>
+                <option value="general" data-i18n="form.select.fuel.general">General question</option>
+                <option value="prices" data-i18n="form.select.fuel.prices">Today's fuel prices</option>
+                <option value="timings" data-i18n="form.select.fuel.timings">Station timings</option>
+                <option value="fleet-account" data-i18n="form.select.fuel.account">Set up a business account</option>
                 <option value="bulk-diesel" data-i18n="form.select.fuel.bulk">Bulk diesel for multiple vehicles</option>
-                <option value="general" data-i18n="form.select.fuel.gen">General fuel or service query</option>
                 <option value="other" data-i18n="form.select.fuel.other">Something else</option>
               </select>
               <div class="form-field-line" aria-hidden="true"></div>
             </div>
-            <div class="form-field" id="fuel-field-fleet-size">
-              <label for="fuel-inp-fleet" data-i18n="form.inp.vehicle-count">How Many Vehicles? (if applicable)</label>
-              <select id="fuel-inp-fleet" name="fleet_size">
-                <option value="" disabled selected></option>
-                <option value="1-5" data-i18n="form.select.veh.1-5">1–5 vehicles</option>
-                <option value="6-20" data-i18n="form.select.veh.6-20">6–20 vehicles</option>
-                <option value="21-50" data-i18n="form.select.veh.21-50">21–50 vehicles</option>
-                <option value="50+" data-i18n="form.select.veh.50plus">More than 50 vehicles</option>
-                <option value="na" data-i18n="form.select.veh.na">Not applicable</option>
-              </select>
-              <div class="form-field-line" aria-hidden="true"></div>
+          </div>
+
+          <!-- Business Fields (Hidden by default) -->
+          <div id="fuel-business-fields" class="business-fields-hidden">
+            <div class="form-row">
+              <div class="form-field full" id="fuel-field-company">
+                <label for="fuel-inp-company" data-i18n="form.inp.company">Company / Firm Name</label>
+                <input type="text" id="fuel-inp-company" name="company" autocomplete="organization" />
+                <div class="form-field-line" aria-hidden="true"></div>
+              </div>
             </div>
-          </div>
 
-          <div class="form-field" id="fuel-field-vehicle">
-            <label for="fuel-inp-vehicle" data-i18n="form.inp.vehicle-type">What Type of Vehicles Do You Operate?</label>
-            <input type="text" id="fuel-inp-vehicle" name="vehicle_types" />
-            <div class="form-field-line" aria-hidden="true"></div>
-          </div>
+            <div class="form-row">
+              <div class="form-field" id="fuel-field-fleet-size">
+                <label for="fuel-inp-fleet" data-i18n="form.inp.vehicle-count">How Many Vehicles?</label>
+                <select id="fuel-inp-fleet" name="fleet_size">
+                  <option value="" disabled selected></option>
+                  <option value="1-5" data-i18n="form.select.veh.1-5">1–5 vehicles</option>
+                  <option value="6-20" data-i18n="form.select.veh.6-20">6–20 vehicles</option>
+                  <option value="21-50" data-i18n="form.select.veh.21-50">21–50 vehicles</option>
+                  <option value="50+" data-i18n="form.select.veh.50plus">More than 50 vehicles</option>
+                </select>
+                <div class="form-field-line" aria-hidden="true"></div>
+              </div>
+              <div class="form-field" id="fuel-field-vehicle">
+                <label for="fuel-inp-vehicle" data-i18n="form.inp.vehicle-type">Type of Vehicles?</label>
+                <input type="text" id="fuel-inp-vehicle" name="vehicle_types" />
+                <div class="form-field-line" aria-hidden="true"></div>
+              </div>
+            </div>
 
-          <div class="check-group" role="group" aria-labelledby="check-label-fuel">
-            <span class="check-group-label" id="check-label-fuel" data-i18n="form.check.label.fuel">I'd also like to know about:</span>
-            <div class="check-items">
-              <label class="check-item">
-                <input type="checkbox" name="needs" value="fleet-rates" id="fuel-chk-rates" />
-                <label for="fuel-chk-rates" data-i18n="form.check.fuel-rates">Lower prices for business owners</label>
-              </label>
-              <label class="check-item">
-                <input type="checkbox" name="needs" value="hp-sure" id="fuel-chk-sure" />
-                <label for="fuel-chk-sure" data-i18n="form.check.rewards">Rewards for regular customers</label>
-              </label>
-              <label class="check-item">
-                <input type="checkbox" name="needs" value="billing" id="fuel-chk-billing" />
-                <label for="fuel-chk-billing" data-i18n="form.check.billing">Digital billing setup</label>
-              </label>
-              <label class="check-item">
-                <input type="checkbox" name="needs" value="24hr" id="fuel-chk-24hr" />
-                <label for="fuel-chk-24hr" data-i18n="form.check.24hr">Confirming 24-hour access</label>
-              </label>
+            <div class="check-group" role="group" aria-labelledby="check-label-fuel">
+              <span class="check-group-label" id="check-label-fuel" data-i18n="form.check.label.fuel">Business Features:</span>
+              <div class="check-items">
+                <label class="check-item">
+                  <input type="checkbox" name="needs" value="fleet-rates" id="fuel-chk-rates" />
+                  <label for="fuel-chk-rates" data-i18n="form.check.fuel-rates">Lower prices for business owners</label>
+                </label>
+                <label class="check-item">
+                  <input type="checkbox" name="needs" value="hp-sure" id="fuel-chk-sure" />
+                  <label for="fuel-chk-sure" data-i18n="form.check.rewards">Rewards for regular customers</label>
+                </label>
+                <label class="check-item">
+                  <input type="checkbox" name="needs" value="billing" id="fuel-chk-billing" />
+                  <label for="fuel-chk-billing" data-i18n="form.check.billing">Digital billing setup</label>
+                </label>
+                <label class="check-item">
+                  <input type="checkbox" name="needs" value="24hr" id="fuel-chk-24hr" />
+                  <label for="fuel-chk-24hr" data-i18n="form.check.24hr">Confirming 24-hour access</label>
+                </label>
+              </div>
             </div>
           </div>
 

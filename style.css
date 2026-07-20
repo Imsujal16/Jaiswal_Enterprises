@@ -51,6 +51,11 @@
   --space-3xl: 9rem;
 }
 
+/* Dynamic Field Toggling */
+.business-fields-hidden {
+  display: none;
+}
+
 /* ─── RESET & BASE ───────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
