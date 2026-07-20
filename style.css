@@ -164,7 +164,7 @@ nav#mainNav {
   
   padding: 0 0.8rem 0 2rem;
   height: 72px;
-  transition: height 0.4s var(--ease-smooth), background 0.4s var(--ease-smooth), top 0.4s var(--ease-smooth), border-color 0.4s;
+  transition: height 0.4s var(--ease-smooth), background 0.4s var(--ease-smooth), top 0.4s var(--ease-smooth), border-color 0.4s, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 nav#mainNav.scrolled {
   top: 1rem;
@@ -174,6 +174,11 @@ nav#mainNav.scrolled {
   box-shadow: 
     0 8px 24px rgba(0, 0, 0, 0.6),
     inset 0 1px 0 rgba(255, 248, 238, 0.08);
+}
+nav#mainNav.nav-hidden {
+  transform: translateY(calc(-100% - 2rem));
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* Brand-colour top accent applied via border and inner shadow on sub-pages */

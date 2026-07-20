@@ -46,8 +46,31 @@ const PAGE = document.body.dataset.page || 'index';
   const nav = document.getElementById('mainNav');
   if (!nav) return;
 
+  let lastScrollY = window.scrollY;
+  const threshold = 15;
+
   const onScroll = () => {
-    nav.classList.toggle('scrolled', window.scrollY > 60);
+    const currentScrollY = window.scrollY;
+    
+    // Toggle frosted background when scrolling down
+    nav.classList.toggle('scrolled', currentScrollY > 60);
+
+    // Auto-hide logic
+    if (currentScrollY <= 60) {
+      nav.classList.remove('nav-hidden');
+    } else {
+      const diff = currentScrollY - lastScrollY;
+      if (Math.abs(diff) > threshold) {
+        if (diff > 0) {
+          // Scrolling down
+          nav.classList.add('nav-hidden');
+        } else {
+          // Scrolling up
+          nav.classList.remove('nav-hidden');
+        }
+        lastScrollY = currentScrollY; // Reset threshold tracker
+      }
+    }
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
