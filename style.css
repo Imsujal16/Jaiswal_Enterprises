@@ -1912,6 +1912,10 @@ body.page-fuel .form-field:focus-within label { color: var(--hp-blue-lt); }
   appearance: none;
   -webkit-appearance: none;
 }
+.form-field input,
+.form-field select {
+  height: 58px;
+}
 .form-field select {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7'%3E%3Cpath d='M0 0l6 7 6-7z' fill='%235c5448'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
