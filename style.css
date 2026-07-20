@@ -413,7 +413,8 @@ body.page-fuel .section-tag::before { background: var(--hp-blue-lt); }
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 5vw 7vh;
+  /* 1.5rem top offset + 72px nav + 44px breathing room */
+  padding: 140px 5vw 7vh;
   overflow: hidden;
 }
 
@@ -1147,10 +1148,9 @@ body.page-fuel .hero-scroll-line {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 5vw 8vh;
+  /* 1.5rem top offset + 72px nav + 44px breathing room */
+  padding: 140px 5vw 8vh;
   overflow: hidden;
-  /* 72px nav + generous breathing room */
-  padding-top: 120px;
 }
 
 .page-hero-bg {
@@ -2346,7 +2346,7 @@ body.page-fuel .lang-toggle-active { color: var(--hp-blue-lt); }
   }
 
   /* Hero — clear the floating mobile nav */
-  #hero { padding-bottom: 6vh; padding-top: 100px; }
+  #hero, .page-hero { padding-top: 100px; padding-bottom: 6vh; }
   .hero-year-strip { display: none; }
   .hub-card { padding: 1.75rem; min-height: auto; }
   .hub-card-num { font-size: 3.5rem; }
