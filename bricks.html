@@ -20,30 +20,30 @@
 
   <!-- MOBILE MENU -->
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-    <a href="index.html" onclick="closeMobileNav()">← Back to Jaiswal Enterprises</a>
-    <a href="#products" onclick="closeMobileNav()">Our Bricks</a>
-    <a href="#process" onclick="closeMobileNav()">How We Work</a>
-    <a href="#gallery" onclick="closeMobileNav()">Photos</a>
-    <a href="#enquiry" onclick="closeMobileNav()">Get a Price</a>
+    <a href="index.html" onclick="closeMobileNav()" data-i18n="nav.back-home">← Back to Jaiswal Enterprises</a>
+    <a href="#products" onclick="closeMobileNav()" data-i18n="nav.our-bricks">Our Bricks</a>
+    <a href="#process" onclick="closeMobileNav()" data-i18n="nav.how-we-work">How We Work</a>
+    <a href="#gallery" onclick="closeMobileNav()" data-i18n="nav.photos">Photos</a>
+    <a href="#enquiry" onclick="closeMobileNav()" data-i18n="nav.get-price">Get a Price</a>
     <button class="mobile-nav-close" onclick="closeMobileNav()" aria-label="Close menu">✕</button>
   </nav>
 
   <!-- NAV -->
   <nav id="mainNav" aria-label="Main navigation">
     <div class="nav-logo" aria-label="Gramin Brick Field">
-      <a href="index.html" class="nav-breadcrumb" aria-label="Back to Jaiswal Enterprises">Jaiswal Enterprises</a>
+      <a href="index.html" class="nav-breadcrumb" data-i18n="nav.back-home">Jaiswal Enterprises</a>
       <a href="bricks.html" style="text-decoration:none;">
         <span class="nav-logo-main">Gramin</span>
         <span class="nav-logo-sub">Brick Field</span>
       </a>
     </div>
     <ul class="nav-links">
-      <li><a href="#products">Our Bricks</a></li>
-      <li><a href="#process">How We Work</a></li>
-      <li><a href="#gallery">Photos</a></li>
-      <li><a href="#enquiry">Enquire</a></li>
+      <li><a href="#products" data-i18n="nav.our-bricks">Our Bricks</a></li>
+      <li><a href="#process" data-i18n="nav.how-we-work">How We Work</a></li>
+      <li><a href="#gallery" data-i18n="nav.photos">Photos</a></li>
+      <li><a href="#enquiry" data-i18n="nav.enquire">Enquire</a></li>
     </ul>
-    <a href="#enquiry" class="nav-cta">Get a Price</a>
+    <a href="#enquiry" class="nav-cta" data-i18n="nav.get-price">Get a Price</a>
     <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -54,38 +54,38 @@
     <div class="page-hero-bg page-hero-bg--bricks" id="pageHeroBg" role="presentation"></div>
 
     <div class="page-hero-content">
-      <p class="page-hero-parent">Jaiswal Enterprises — Business 01</p>
+      <p class="page-hero-parent" data-i18n="bricks.hero.parent">Jaiswal Enterprises — Business 01</p>
       <p class="page-hero-eyebrow">
-        <span>Gramin Brick Field · Chhapra, Bihar</span>
+        <span data-i18n="bricks.hero.eyebrow">Gramin Brick Field · Chhapra, Bihar</span>
       </p>
 
       <h1 class="page-hero-h1">
-        <span>Fired</span>
-        <span class="accent-terra">Hard.</span>
-        <span class="outline-text">Delivered</span>
-        <span>Fast.</span>
+        <span data-i18n="bricks.hero.h1.1">Fired</span>
+        <span class="accent-terra" data-i18n="bricks.hero.h1.2">Hard.</span>
+        <span class="outline-text" data-i18n="bricks.hero.h1.3">Delivered</span>
+        <span data-i18n="bricks.hero.h1.4">Fast.</span>
       </h1>
 
-      <p class="page-hero-desc">
+      <p class="page-hero-desc" data-i18n="bricks.hero.desc">
         Our kiln runs continuously. Three brick grades. 50,000+ bricks per round. Every batch is checked before it leaves — no rejects reach your site.
       </p>
 
       <div class="page-hero-stats">
         <div class="page-hero-stat">
           <span class="page-hero-stat-num"><span data-target="50000">0</span><span>+</span></span>
-          <span class="page-hero-stat-label">Bricks per Round</span>
+          <span class="page-hero-stat-label" data-i18n="bricks.stat.1">Bricks per Round</span>
         </div>
         <div class="page-hero-stat">
           <span class="page-hero-stat-num">3<span>+</span></span>
-          <span class="page-hero-stat-label">Brick Grades</span>
+          <span class="page-hero-stat-label" data-i18n="bricks.stat.2">Brick Grades</span>
         </div>
         <div class="page-hero-stat">
           <span class="page-hero-stat-num">60<span style="font-size:0.55em">km</span></span>
-          <span class="page-hero-stat-label">Delivery Range</span>
+          <span class="page-hero-stat-label" data-i18n="bricks.stat.3">Delivery Range</span>
         </div>
         <div class="page-hero-stat">
           <span class="page-hero-stat-num">100<span>%</span></span>
-          <span class="page-hero-stat-label">Quality Checked</span>
+          <span class="page-hero-stat-label" data-i18n="bricks.stat.4">Quality Checked</span>
         </div>
       </div>
     </div>
@@ -94,16 +94,16 @@
   <!-- TICKER -->
   <div class="divider-strip" aria-hidden="true">
     <div class="divider-marquee">
-      <span>Standard Brick</span><span class="dot">◆</span>
-      <span>First Class Brick</span><span class="dot">◆</span>
-      <span>Heavy &amp; Hollow Brick</span><span class="dot">◆</span>
-      <span>Large Orders Welcome</span><span class="dot">◆</span>
-      <span>Delivered Within 60km</span><span class="dot">◆</span>
-      <span>Standard Brick</span><span class="dot">◆</span>
-      <span>First Class Brick</span><span class="dot">◆</span>
-      <span>Heavy &amp; Hollow Brick</span><span class="dot">◆</span>
-      <span>Large Orders Welcome</span><span class="dot">◆</span>
-      <span>Delivered Within 60km</span><span class="dot">◆</span>
+      <span data-i18n="ticker.bricks.1">Standard Brick</span><span class="dot">◆</span>
+      <span data-i18n="ticker.bricks.2">First Class Brick</span><span class="dot">◆</span>
+      <span data-i18n="ticker.bricks.3">Heavy &amp; Hollow Brick</span><span class="dot">◆</span>
+      <span data-i18n="ticker.bricks.4">Large Orders Welcome</span><span class="dot">◆</span>
+      <span data-i18n="ticker.bricks.5">Delivered Within 60km</span><span class="dot">◆</span>
+      <span data-i18n="ticker.bricks.1">Standard Brick</span><span class="dot">◆</span>
+      <span data-i18n="ticker.bricks.2">First Class Brick</span><span class="dot">◆</span>
+      <span data-i18n="ticker.bricks.3">Heavy &amp; Hollow Brick</span><span class="dot">◆</span>
+      <span data-i18n="ticker.bricks.4">Large Orders Welcome</span><span class="dot">◆</span>
+      <span data-i18n="ticker.bricks.5">Delivered Within 60km</span><span class="dot">◆</span>
     </div>
   </div>
 
@@ -113,38 +113,38 @@
 
     <div class="bricks-layout">
       <div class="bricks-left">
-        <div class="section-tag reveal">Our Bricks</div>
+        <div class="section-tag reveal" data-i18n="bricks.prod.tag">Our Bricks</div>
 
         <h2 class="bricks-heading reveal reveal-delay-1" id="products-heading">
-          <span>Grade.</span>
-          <span class="line-terra">Strength.</span>
-          <span class="line-outline">Reliability.</span>
+          <span data-i18n="bricks.prod.h2.1">Grade.</span>
+          <span class="line-terra" data-i18n="bricks.prod.h2.2">Strength.</span>
+          <span class="line-outline" data-i18n="bricks.prod.h2.3">Reliability.</span>
         </h2>
 
-        <p class="bricks-body reveal reveal-delay-2">
+        <p class="bricks-body reveal reveal-delay-2" data-i18n="bricks.prod.body">
           Every brick here is made from good clay, fired properly, and checked before it leaves the yard. We don't sell rejects. Whether you're building a home or a multi-storey block, we have a grade to match.
         </p>
 
         <div class="bricks-specs-grid reveal reveal-delay-3">
           <div class="spec-cell">
             <span class="spec-cell-num">50K+</span>
-            <span class="spec-cell-label">Bricks per Round</span>
-            <p class="spec-cell-desc">High output so we can meet large project orders without delay.</p>
+            <span class="spec-cell-label" data-i18n="bricks.spec.1.label">Bricks per Round</span>
+            <p class="spec-cell-desc" data-i18n="bricks.spec.1.desc">High output so we can meet large project orders without delay.</p>
           </div>
           <div class="spec-cell">
             <span class="spec-cell-num">3+</span>
-            <span class="spec-cell-label">Brick Grades</span>
-            <p class="spec-cell-desc">Standard, First Class, and Heavy Duty — pick what your job needs.</p>
+            <span class="spec-cell-label" data-i18n="bricks.spec.2.label">Brick Grades</span>
+            <p class="spec-cell-desc" data-i18n="bricks.spec.2.desc">Standard, First Class, and Heavy Duty — pick what your job needs.</p>
           </div>
           <div class="spec-cell">
             <span class="spec-cell-num">60km</span>
-            <span class="spec-cell-label">Delivery Range</span>
-            <p class="spec-cell-desc">We deliver to Chhapra, Saran, Siwan and nearby areas.</p>
+            <span class="spec-cell-label" data-i18n="bricks.spec.3.label">Delivery Range</span>
+            <p class="spec-cell-desc" data-i18n="bricks.spec.3.desc">We deliver to Chhapra, Saran, Siwan and nearby areas.</p>
           </div>
           <div class="spec-cell">
             <span class="spec-cell-num">100%</span>
-            <span class="spec-cell-label">Quality Checked</span>
-            <p class="spec-cell-desc">Every batch is inspected before loading. No substandard bricks leave the yard.</p>
+            <span class="spec-cell-label" data-i18n="bricks.spec.4.label">Quality Checked</span>
+            <p class="spec-cell-desc" data-i18n="bricks.spec.4.desc">Every batch is inspected before loading. No substandard bricks leave the yard.</p>
           </div>
         </div>
       </div>
@@ -155,8 +155,8 @@
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="8" width="20" height="8" rx="1"/><rect x="2" y="4" width="9" height="3" rx="1"/><rect x="13" y="4" width="9" height="3" rx="1"/></svg>
           </div>
           <div>
-            <p class="brick-card-title">Standard Brick</p>
-            <p class="brick-card-desc">9×4.5×2.75 inches. Every brick is the same size — so your walls go up straight and your mortar stays consistent. Our most-used grade.</p>
+            <p class="brick-card-title" data-i18n="bricks.type.1.title">Standard Brick</p>
+            <p class="brick-card-desc" data-i18n="bricks.type.1.desc">9×4.5×2.75 inches. Every brick is the same size — so your walls go up straight and your mortar stays consistent. Our most-used grade.</p>
           </div>
         </div>
 
@@ -165,8 +165,8 @@
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="7" width="20" height="10" rx="1"/><rect x="5" y="4" width="5" height="2" rx="0.5"/><rect x="14" y="4" width="5" height="2" rx="0.5"/><rect x="9.5" y="3" width="5" height="3" rx="0.5"/></svg>
           </div>
           <div>
-            <p class="brick-card-title">First Class Brick</p>
-            <p class="brick-card-desc">Fired longer for a harder, denser brick. Very low water absorption and clean, sharp edges. Right for multi-storey buildings, columns, and exposed walls.</p>
+            <p class="brick-card-title" data-i18n="bricks.type.2.title">First Class Brick</p>
+            <p class="brick-card-desc" data-i18n="bricks.type.2.desc">Fired longer for a harder, denser brick. Very low water absorption and clean, sharp edges. Right for multi-storey buildings, columns, and exposed walls.</p>
           </div>
         </div>
 
@@ -175,8 +175,8 @@
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h18v10H3z"/><path d="M3 9l3-5h12l3 5"/><line x1="9" y1="9" x2="9" y2="19" stroke="currentColor" stroke-width="1"/><line x1="15" y1="9" x2="15" y2="19" stroke="currentColor" stroke-width="1"/></svg>
           </div>
           <div>
-            <p class="brick-card-title">Heavy &amp; Hollow Brick</p>
-            <p class="brick-card-desc">For walls that need extra strength or better insulation. Available on larger orders. Ask us about minimum quantities and lead time.</p>
+            <p class="brick-card-title" data-i18n="bricks.type.3.title">Heavy &amp; Hollow Brick</p>
+            <p class="brick-card-desc" data-i18n="bricks.type.3.desc">For walls that need extra strength or better insulation. Available on larger orders. Ask us about minimum quantities and lead time.</p>
           </div>
         </div>
 
@@ -185,49 +185,49 @@
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="10" width="20" height="7" rx="1"/><path d="M6 10V7h12v3"/><circle cx="9" cy="7" r="1.5"/><circle cx="15" cy="7" r="1.5"/></svg>
           </div>
           <div>
-            <p class="brick-card-title">Large Orders for Builders</p>
-            <p class="brick-card-desc">If you need 50,000+ bricks, we can arrange phased delivery to fit your project schedule. Call us to talk through the details.</p>
+            <p class="brick-card-title" data-i18n="bricks.type.4.title">Large Orders for Builders</p>
+            <p class="brick-card-desc" data-i18n="bricks.type.4.desc">If you need 50,000+ bricks, we can arrange phased delivery to fit your project schedule. Call us to talk through the details.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROCESS / HOW WE WORK -->
+  <!-- PROCESS -->
   <section id="process" aria-labelledby="process-heading">
     <div class="process-header">
       <div>
-        <div class="section-tag reveal" style="margin-bottom:1rem;">How We Work</div>
-        <h2 class="process-heading reveal reveal-delay-1" id="process-heading">
-          Clay to<br>Building Site.
+        <div class="section-tag reveal" style="margin-bottom:1rem;" data-i18n="process.tag">How We Work</div>
+        <h2 class="process-heading reveal reveal-delay-1" id="process-heading" data-i18n="process.h2">
+          Clay to Building Site.
         </h2>
       </div>
-      <p class="process-sub reveal reveal-delay-2">From digging the clay to dropping bricks at your gate — the whole process, explained simply.</p>
+      <p class="process-sub reveal reveal-delay-2" data-i18n="process.sub">From digging the clay to dropping bricks at your gate — the whole process, explained simply.</p>
     </div>
 
     <div class="process-steps">
       <div class="process-step reveal">
         <span class="step-num">01</span>
-        <p class="step-title">We Start With Good Clay</p>
-        <p class="step-desc">We source high-quality clay from controlled sites nearby. It's mixed and prepared until it has the right consistency for shaping.</p>
+        <p class="step-title" data-i18n="process.1.title">We Start With Good Clay</p>
+        <p class="step-desc" data-i18n="process.1.desc">We source high-quality clay from controlled sites nearby. It's mixed and prepared until it has the right consistency for shaping.</p>
         <div class="step-divider" aria-hidden="true"></div>
       </div>
       <div class="process-step reveal reveal-delay-1">
         <span class="step-num">02</span>
-        <p class="step-title">We Shape Every Brick the Same</p>
-        <p class="step-desc">Clay goes through a machine press that cuts each brick to exactly the same size. Consistency here means easier building for you later.</p>
+        <p class="step-title" data-i18n="process.2.title">We Shape Every Brick the Same</p>
+        <p class="step-desc" data-i18n="process.2.desc">Clay goes through a machine press that cuts each brick to exactly the same size. Consistency here means easier building for you later.</p>
         <div class="step-divider" aria-hidden="true"></div>
       </div>
       <div class="process-step reveal reveal-delay-2">
         <span class="step-num">03</span>
-        <p class="step-title">We Fire Them Properly</p>
-        <p class="step-desc">Bricks go into our continuous kiln and are fired at 900–1100°C for 48 to 72 hours. Temperature is watched closely throughout for even strength.</p>
+        <p class="step-title" data-i18n="process.3.title">We Fire Them Properly</p>
+        <p class="step-desc" data-i18n="process.3.desc">Bricks go into our continuous kiln and are fired at 900–1100°C for 48 to 72 hours. Temperature is watched closely throughout for even strength.</p>
         <div class="step-divider" aria-hidden="true"></div>
       </div>
       <div class="process-step reveal reveal-delay-3">
         <span class="step-num">04</span>
-        <p class="step-title">We Check, Then Deliver</p>
-        <p class="step-desc">Once cooled, bricks are inspected, sorted by grade, and loaded onto trucks. Delivered directly to your site within the time we agreed.</p>
+        <p class="step-title" data-i18n="process.4.title">We Check, Then Deliver</p>
+        <p class="step-desc" data-i18n="process.4.desc">Once cooled, bricks are inspected, sorted by grade, and loaded onto trucks. Delivered directly to your site within the time we agreed.</p>
         <div class="step-divider" aria-hidden="true"></div>
       </div>
     </div>
@@ -237,41 +237,41 @@
   <section id="gallery" aria-labelledby="gallery-heading">
     <div class="gallery-header">
       <div>
-        <div class="section-tag reveal">Field Photos</div>
+        <div class="section-tag reveal" data-i18n="bricks.gallery.tag">Field Photos</div>
         <h2 class="gallery-heading reveal reveal-delay-1" id="gallery-heading">
-          The Yard.<br>The Kiln.<br>The Work.
+          <span data-i18n="bricks.gallery.h2.1">The Yard.</span><br><span data-i18n="bricks.gallery.h2.2">The Kiln.</span><br><span data-i18n="bricks.gallery.h2.3">The Work.</span>
         </h2>
       </div>
-      <p class="gallery-sub reveal reveal-delay-2">Real photos from the field. No stock images. This is where your bricks come from.</p>
+      <p class="gallery-sub reveal reveal-delay-2" data-i18n="bricks.gallery.sub">Real photos from the field. No stock images. This is where your bricks come from.</p>
     </div>
 
     <div class="gallery-grid" role="list">
       <div class="gallery-item reveal" role="listitem">
         <div class="gallery-item-bg" style="background-image: url('brick_bg.png');"></div>
         <div class="gallery-item-overlay">
-          <span class="gallery-item-label">Kiln in Operation</span>
-          <span class="gallery-item-sublabel">900–1100°C · Continuous Fire</span>
+          <span class="gallery-item-label" data-i18n="bricks.gallery.1.label">Kiln in Operation</span>
+          <span class="gallery-item-sublabel" data-i18n="bricks.gallery.1.sub">900–1100°C · Continuous Fire</span>
         </div>
       </div>
       <div class="gallery-item reveal reveal-delay-1" role="listitem">
         <div class="gallery-item-bg" style="background-image: url('brick_bg.png'); background-position: right center;"></div>
         <div class="gallery-item-overlay">
-          <span class="gallery-item-label">Storage Yard</span>
-          <span class="gallery-item-sublabel">Sorted by Grade · Ready to Ship</span>
+          <span class="gallery-item-label" data-i18n="bricks.gallery.2.label">Storage Yard</span>
+          <span class="gallery-item-sublabel" data-i18n="bricks.gallery.2.sub">Sorted by Grade · Ready to Ship</span>
         </div>
       </div>
       <div class="gallery-item reveal reveal-delay-2" role="listitem">
         <div class="gallery-item-bg" style="background-image: url('brick_bg.png'); background-position: top center;"></div>
         <div class="gallery-item-overlay">
-          <span class="gallery-item-label">Shaping Equipment</span>
-          <span class="gallery-item-sublabel">Every Brick Cut the Same Size</span>
+          <span class="gallery-item-label" data-i18n="bricks.gallery.3.label">Shaping Equipment</span>
+          <span class="gallery-item-sublabel" data-i18n="bricks.gallery.3.sub">Every Brick Cut the Same Size</span>
         </div>
       </div>
       <div class="gallery-item reveal reveal-delay-3" role="listitem">
         <div class="gallery-item-bg" style="background-image: url('brick_bg.png'); background-position: bottom left;"></div>
         <div class="gallery-item-overlay">
-          <span class="gallery-item-label">Ready for Delivery</span>
-          <span class="gallery-item-sublabel">Direct to Your Site · Up to 60km</span>
+          <span class="gallery-item-label" data-i18n="bricks.gallery.4.label">Ready for Delivery</span>
+          <span class="gallery-item-sublabel" data-i18n="bricks.gallery.4.sub">Direct to Your Site · Up to 60km</span>
         </div>
       </div>
     </div>
@@ -281,30 +281,30 @@
   <section id="enquiry" aria-labelledby="enquiry-heading">
     <div class="enquiry-layout">
       <div class="enquiry-left">
-        <div class="section-tag reveal">Get in Touch</div>
+        <div class="section-tag reveal" data-i18n="form.section-tag">Get in Touch</div>
         <h2 class="enquiry-heading reveal reveal-delay-1" id="enquiry-heading">
-          Talk<br><em>Bricks.</em>
+          Talk<br><em data-i18n="form.bricks.heading.em">Bricks.</em>
         </h2>
-        <p class="enquiry-note reveal reveal-delay-2">
+        <p class="enquiry-note reveal reveal-delay-2" data-i18n="form.bricks.note">
           Builder, contractor, or developer — tell us what you need and we'll get back to you within one working day.
         </p>
 
         <div class="reveal reveal-delay-3">
           <div class="contact-detail">
-            <span class="contact-detail-label">Phone</span>
+            <span class="contact-detail-label" data-i18n="form.label.phone">Phone</span>
             <span class="contact-detail-val">+91 XXXXX XXXXX<br><span style="font-size:0.78rem; color: var(--mist);">Mon–Sat, 8am–7pm</span></span>
           </div>
           <div class="contact-detail">
-            <span class="contact-detail-label">Location</span>
+            <span class="contact-detail-label" data-i18n="form.label.location">Location</span>
             <span class="contact-detail-val">Chhapra, Saran District<br>Bihar — 841301</span>
           </div>
           <div class="contact-detail">
-            <span class="contact-detail-label">Email</span>
+            <span class="contact-detail-label" data-i18n="form.label.email-addr">Email</span>
             <span class="contact-detail-val">bricks@jaiswalenterprises.in</span>
           </div>
           <div class="contact-detail" style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--glass-bdr);">
-            <span class="contact-detail-label">Home</span>
-            <span class="contact-detail-val"><a href="index.html" style="color: var(--terra); text-decoration: none;">← Back to Jaiswal Enterprises</a></span>
+            <span class="contact-detail-label" data-i18n="form.label.home">Home</span>
+            <span class="contact-detail-val"><a href="index.html" style="color: var(--terra); text-decoration: none;" data-i18n="nav.back-home">← Back to Jaiswal Enterprises</a></span>
           </div>
         </div>
       </div>
@@ -314,12 +314,12 @@
 
           <div class="form-row">
             <div class="form-field" id="field-name">
-              <label for="inp-name">Your Name</label>
+              <label for="inp-name" data-i18n="form.inp.name">Your Name</label>
               <input type="text" id="inp-name" name="name" autocomplete="name" required />
               <div class="form-field-line" aria-hidden="true"></div>
             </div>
             <div class="form-field" id="field-company">
-              <label for="inp-company">Company / Firm (if any)</label>
+              <label for="inp-company" data-i18n="form.inp.company">Company / Firm (if any)</label>
               <input type="text" id="inp-company" name="company" autocomplete="organization" />
               <div class="form-field-line" aria-hidden="true"></div>
             </div>
@@ -327,12 +327,12 @@
 
           <div class="form-row">
             <div class="form-field" id="field-phone">
-              <label for="inp-phone">Phone Number</label>
+              <label for="inp-phone" data-i18n="form.inp.phone">Phone Number</label>
               <input type="tel" id="inp-phone" name="phone" autocomplete="tel" required />
               <div class="form-field-line" aria-hidden="true"></div>
             </div>
             <div class="form-field" id="field-email">
-              <label for="inp-email">Email Address (optional)</label>
+              <label for="inp-email" data-i18n="form.inp.email">Email Address (optional)</label>
               <input type="email" id="inp-email" name="email" autocomplete="email" />
               <div class="form-field-line" aria-hidden="true"></div>
             </div>
@@ -340,24 +340,24 @@
 
           <div class="form-row">
             <div class="form-field" id="field-grade">
-              <label for="inp-grade">Which Type of Brick?</label>
+              <label for="inp-grade" data-i18n="form.inp.brick-type">Which Type of Brick?</label>
               <select id="inp-grade" name="grade" required>
                 <option value="" disabled selected></option>
-                <option value="standard">Standard Brick</option>
-                <option value="first-class">First Class Brick</option>
-                <option value="heavy-duty">Heavy / Hollow Brick</option>
-                <option value="mixed">More Than One Type</option>
+                <option value="standard" data-i18n="form.select.brick.std">Standard Brick</option>
+                <option value="first-class" data-i18n="form.select.brick.first">First Class Brick</option>
+                <option value="heavy-duty" data-i18n="form.select.brick.heavy">Heavy / Hollow Brick</option>
+                <option value="mixed" data-i18n="form.select.brick.mixed">More Than One Type</option>
               </select>
               <div class="form-field-line" aria-hidden="true"></div>
             </div>
             <div class="form-field" id="field-volume">
-              <label for="inp-volume">How Many Bricks?</label>
+              <label for="inp-volume" data-i18n="form.inp.how-many">How Many Bricks?</label>
               <select id="inp-volume" name="volume" required>
                 <option value="" disabled selected></option>
-                <option value="under-10k">Under 10,000</option>
-                <option value="10k-50k">10,000 – 50,000</option>
-                <option value="50k-1L">50,000 – 1,00,000</option>
-                <option value="over-1L">More Than 1,00,000</option>
+                <option value="under-10k" data-i18n="form.select.vol.u10k">Under 10,000</option>
+                <option value="10k-50k" data-i18n="form.select.vol.10k50k">10,000 – 50,000</option>
+                <option value="50k-1L" data-i18n="form.select.vol.50k1L">50,000 – 1,00,000</option>
+                <option value="over-1L" data-i18n="form.select.vol.1L">More Than 1,00,000</option>
               </select>
               <div class="form-field-line" aria-hidden="true"></div>
             </div>
@@ -365,56 +365,56 @@
 
           <div class="form-row">
             <div class="form-field" id="field-delivery">
-              <label for="inp-delivery">Delivery Location</label>
+              <label for="inp-delivery" data-i18n="form.inp.delivery-loc">Delivery Location</label>
               <input type="text" id="inp-delivery" name="delivery" />
               <div class="form-field-line" aria-hidden="true"></div>
             </div>
             <div class="form-field" id="field-timeline">
-              <label for="inp-timeline">When Do You Need Them?</label>
+              <label for="inp-timeline" data-i18n="form.inp.when">When Do You Need Them?</label>
               <select id="inp-timeline" name="timeline">
                 <option value="" disabled selected></option>
-                <option value="urgent">Very soon (within 1 week)</option>
-                <option value="2-weeks">Within 2 weeks</option>
-                <option value="1-month">Within 1 month</option>
-                <option value="flexible">I'm flexible</option>
+                <option value="urgent" data-i18n="form.select.when.urgent">Very soon (within 1 week)</option>
+                <option value="2-weeks" data-i18n="form.select.when.2w">Within 2 weeks</option>
+                <option value="1-month" data-i18n="form.select.when.1m">Within 1 month</option>
+                <option value="flexible" data-i18n="form.select.when.flex">I'm flexible</option>
               </select>
               <div class="form-field-line" aria-hidden="true"></div>
             </div>
           </div>
 
           <div class="check-group" role="group" aria-labelledby="check-label-bricks">
-            <span class="check-group-label" id="check-label-bricks">I'd also like to know about:</span>
+            <span class="check-group-label" id="check-label-bricks" data-i18n="form.check.label.bricks">I'd also like to know about:</span>
             <div class="check-items">
               <label class="check-item">
                 <input type="checkbox" name="needs" value="pricing" id="chk-pricing" />
-                <label for="chk-pricing">Current prices</label>
+                <label for="chk-pricing" data-i18n="form.check.pricing">Current prices</label>
               </label>
               <label class="check-item">
                 <input type="checkbox" name="needs" value="delivery" id="chk-delivery" />
-                <label for="chk-delivery">Delivery schedule</label>
+                <label for="chk-delivery" data-i18n="form.check.delivery">Delivery schedule</label>
               </label>
               <label class="check-item">
                 <input type="checkbox" name="needs" value="grades" id="chk-grades" />
-                <label for="chk-grades">Brick types and sizes</label>
+                <label for="chk-grades" data-i18n="form.check.grades">Brick types and sizes</label>
               </label>
               <label class="check-item">
                 <input type="checkbox" name="needs" value="bulk-contract" id="chk-bulk" />
-                <label for="chk-bulk">Pricing for large orders</label>
+                <label for="chk-bulk" data-i18n="form.check.bulk">Pricing for large orders</label>
               </label>
             </div>
           </div>
 
           <div class="form-field full" id="field-message">
-            <label for="inp-message">Tell Us About Your Project</label>
+            <label for="inp-message" data-i18n="form.inp.message.bricks">Tell Us About Your Project</label>
             <textarea id="inp-message" name="message" rows="4" required></textarea>
             <div class="form-field-line" aria-hidden="true"></div>
           </div>
 
           <div class="form-submit-row">
             <button type="submit" class="form-submit-btn" id="submitBtn">
-              <span>Send Enquiry</span>
+              <span data-i18n="form.btn.send-enquiry">Send Enquiry</span>
             </button>
-            <p class="form-submit-note">We reply within<br>one working day.</p>
+            <p class="form-submit-note" data-i18n="form.reply-note">We reply within one working day.</p>
           </div>
         </form>
 
@@ -424,8 +424,8 @@
               <polyline points="20 6 9 17 4 12"/>
             </svg>
           </div>
-          <h3>Message Received.</h3>
-          <p>We'll get back to you within one working day.<br>Thank you for reaching out to Gramin Brick Field.</p>
+          <h3 data-i18n="form.success.h3">Message Received.</h3>
+          <p data-i18n="form.success.bricks.p">We'll get back to you within one working day.<br>Thank you for reaching out to Gramin Brick Field.</p>
         </div>
       </div>
     </div>
@@ -436,24 +436,24 @@
     <div class="footer-top">
       <div>
         <p class="footer-brand-name">Gramin Brick Field</p>
-        <span class="footer-brand-tag">A Jaiswal Enterprises Business · Chhapra, Bihar</span>
-        <p class="footer-brand-desc">Reliable kiln-fired bricks in three grades. Delivered to your site within 60km.</p>
+        <span class="footer-brand-tag" data-i18n="bricks.footer.brand-tag">A Jaiswal Enterprises Business · Chhapra, Bihar</span>
+        <p class="footer-brand-desc" data-i18n="bricks.footer.brand-desc">Reliable kiln-fired bricks in three grades. Delivered to your site within 60km.</p>
       </div>
       <div>
-        <span class="footer-col-title">Quick Links</span>
+        <span class="footer-col-title" data-i18n="footer.col.quick-links">Quick Links</span>
         <ul class="footer-links">
-          <li><a href="#products">Our Bricks</a></li>
-          <li><a href="#process">How We Work</a></li>
-          <li><a href="#gallery">Field Photos</a></li>
-          <li><a href="#enquiry">Get a Price</a></li>
+          <li><a href="#products" data-i18n="nav.our-bricks">Our Bricks</a></li>
+          <li><a href="#process" data-i18n="nav.how-we-work">How We Work</a></li>
+          <li><a href="#gallery" data-i18n="bricks.gallery.tag">Field Photos</a></li>
+          <li><a href="#enquiry" data-i18n="nav.get-price">Get a Price</a></li>
         </ul>
       </div>
       <div>
-        <span class="footer-col-title">Jaiswal Enterprises</span>
+        <span class="footer-col-title" data-i18n="footer.col.je">Jaiswal Enterprises</span>
         <ul class="footer-links">
-          <li><a href="index.html">← Back to Home</a></li>
-          <li><a href="fuel.html">Pawan Filling Station</a></li>
-          <li><a href="index.html#founder">About the Founder</a></li>
+          <li><a href="index.html" data-i18n="footer.link.back-home">← Back to Home</a></li>
+          <li><a href="fuel.html" data-i18n="card.fuel.title">Pawan Filling Station</a></li>
+          <li><a href="index.html#founder" data-i18n="footer.link.about-founder2">About the Founder</a></li>
         </ul>
       </div>
     </div>
@@ -464,5 +464,6 @@
   </footer>
 
   <script src="main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

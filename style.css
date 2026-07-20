@@ -2079,6 +2079,95 @@ body.page-fuel .footer-copy span { color: var(--hp-blue-lt); }
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 
+/* ─── LANGUAGE TOGGLE ───────────────────────────────────── */
+.lang-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9997;
+
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+
+  background: rgba(20, 18, 16, 0.55);
+  backdrop-filter: blur(20px) saturate(1.6);
+  -webkit-backdrop-filter: blur(20px) saturate(1.6);
+  border: 1px solid rgba(255, 248, 238, 0.14);
+  border-radius: 100px;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 248, 238, 0.07);
+
+  padding: 0.55rem 1.15rem;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    border-color 0.3s,
+    transform 0.25s var(--ease-back),
+    box-shadow 0.3s;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.lang-toggle:hover {
+  background: rgba(30, 26, 22, 0.72);
+  border-color: rgba(194, 82, 43, 0.45);
+  transform: translateY(-3px);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(194, 82, 43, 0.18),
+    inset 0 1px 0 rgba(255, 248, 238, 0.09);
+}
+body.page-fuel .lang-toggle:hover {
+  border-color: rgba(37, 137, 216, 0.45);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(37, 137, 216, 0.18),
+    inset 0 1px 0 rgba(255, 248, 238, 0.09);
+}
+
+.lang-toggle:active { transform: translateY(0) scale(0.97); }
+
+.lang-toggle-active {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: var(--terra);
+  transition: color 0.3s;
+}
+body.page-fuel .lang-toggle-active { color: var(--hp-blue-lt); }
+
+.lang-toggle-sep {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: rgba(255, 248, 238, 0.2);
+  line-height: 1;
+}
+
+.lang-toggle-inactive {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: var(--mist);
+  transition: color 0.3s;
+}
+.lang-toggle:hover .lang-toggle-inactive { color: var(--bone); }
+
+@media (max-width: 768px) {
+  .lang-toggle {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    padding: 0.5rem 1rem;
+  }
+  .lang-toggle-active,
+  .lang-toggle-inactive {
+    font-size: 0.68rem;
+  }
+}
+
 /* ─── RESPONSIVE: TABLET (≤1100px) ──────────────────────── */
 @media (max-width: 1100px) {
   .founder-layout { grid-template-columns: 320px 1fr; gap: 4rem; }

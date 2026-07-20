@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jaiswal Enterprises — Bricks & Fuel | Chhapra, Bihar</title>
+  <title>Jaiswal Enterprises — Bricks &amp; Fuel | Chhapra, Bihar</title>
   <meta name="description" content="Jaiswal Enterprises runs two businesses in Chhapra, Bihar: Gramin Brick Field (brick supply) and Pawan Filling Station (official HP fuel pump). Trusted by builders and businesses for decades." />
   <meta property="og:title" content="Jaiswal Enterprises" />
   <meta property="og:description" content="We make bricks. We sell fuel. Two businesses. One name." />
@@ -19,11 +19,11 @@
 
   <!-- MOBILE MENU -->
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-    <a href="#founder" onclick="closeMobileNav()">About</a>
-    <a href="#business-brief" onclick="closeMobileNav()">Our Businesses</a>
-    <a href="#testimonials" onclick="closeMobileNav()">What Clients Say</a>
-    <a href="bricks.html">Brick Field</a>
-    <a href="fuel.html">Filling Station</a>
+    <a href="#founder" onclick="closeMobileNav()" data-i18n="nav.about">About</a>
+    <a href="#business-brief" onclick="closeMobileNav()" data-i18n="nav.businesses">Our Businesses</a>
+    <a href="#testimonials" onclick="closeMobileNav()" data-i18n="test.tag">What Clients Say</a>
+    <a href="bricks.html" data-i18n="card.bricks.title">Gramin Brick Field</a>
+    <a href="fuel.html" data-i18n="card.fuel.title">Pawan Filling Station</a>
     <button class="mobile-nav-close" onclick="closeMobileNav()" aria-label="Close menu">✕</button>
   </nav>
 
@@ -34,11 +34,11 @@
       <span class="nav-logo-sub">Enterprises</span>
     </a>
     <ul class="nav-links">
-      <li><a href="#founder">About</a></li>
-      <li><a href="#business-brief">Our Businesses</a></li>
-      <li><a href="#testimonials">Clients</a></li>
+      <li><a href="#founder" data-i18n="nav.about">About</a></li>
+      <li><a href="#business-brief" data-i18n="nav.businesses">Our Businesses</a></li>
+      <li><a href="#testimonials" data-i18n="nav.clients">Clients</a></li>
     </ul>
-    <a href="#business-brief" class="nav-cta">See Our Businesses</a>
+    <a href="#business-brief" class="nav-cta" data-i18n="nav.see-businesses">See Our Businesses</a>
     <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -50,18 +50,18 @@
     <div class="hero-year-strip" aria-hidden="true">EST. SINCE GENERATIONS · CHHAPRA, BIHAR</div>
 
     <div class="hero-content">
-      <p class="hero-eyebrow">Brick Field · HP Fuel Pump · Chhapra, Bihar</p>
+      <p class="hero-eyebrow" data-i18n="hero.eyebrow">Brick Field · HP Fuel Pump · Chhapra, Bihar</p>
 
       <h1 class="hero-h1">
-        <span>Built From</span>
-        <span class="accent">The Ground</span>
-        <span class="outline-text">Up.</span>
+        <span data-i18n="hero.h1.line1">Built From</span>
+        <span class="accent" data-i18n="hero.h1.line2">The Ground</span>
+        <span class="outline-text" data-i18n="hero.h1.line3">Up.</span>
       </h1>
 
       <div class="hero-descriptor">
         <div class="hero-descriptor-line" aria-hidden="true"></div>
         <div class="hero-descriptor-text">
-          <p>We make bricks. We sell fuel. Two businesses running in Chhapra for decades — supplying what Bihar builds and drives with. No frills. Just reliable supply.</p>
+          <p data-i18n="hero.desc">We make bricks. We sell fuel. Two businesses running in Chhapra for decades — supplying what Bihar builds and drives with. No frills. Just reliable supply.</p>
         </div>
       </div>
 
@@ -72,12 +72,12 @@
           <div>
             <div class="hub-card-tag">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="2" y="8" width="20" height="8" rx="1"/><rect x="2" y="4" width="9" height="3" rx="1"/><rect x="13" y="4" width="9" height="3" rx="1"/></svg>
-              Business 01
+              <span data-i18n="card.bricks.tag">Business 01</span>
             </div>
-            <div class="hub-card-title">Gramin<br>Brick Field</div>
-            <div class="hub-card-desc">Strong, reliable bricks fired in our kiln. Three grades. Delivered to your site within 60km. We also work with builders who need large orders.</div>
+            <div class="hub-card-title" data-i18n="card.bricks.title">Gramin Brick Field</div>
+            <div class="hub-card-desc" data-i18n="card.bricks.desc">Strong, reliable bricks fired in our kiln. Three grades. Delivered to your site within 60km. We also work with builders who need large orders.</div>
           </div>
-          <div class="hub-card-cta">Visit Brick Field</div>
+          <div class="hub-card-cta" data-i18n="card.bricks.cta">Visit Brick Field</div>
           <div class="hub-card-num" aria-hidden="true">01</div>
         </a>
 
@@ -85,12 +85,12 @@
           <div>
             <div class="hub-card-tag">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 22V7l9-4 9 4v15H3z"/><path d="M9 22V12h6v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-              Business 02
+              <span data-i18n="card.fuel.tag">Business 02</span>
             </div>
-            <div class="hub-card-title">Pawan<br>Filling Station</div>
-            <div class="hub-card-desc">Official HP fuel pump. Open 24 hours. Petrol and diesel. Lower prices for businesses with delivery vehicles.</div>
+            <div class="hub-card-title" data-i18n="card.fuel.title">Pawan Filling Station</div>
+            <div class="hub-card-desc" data-i18n="card.fuel.desc">Official HP fuel pump. Open 24 hours. Petrol and diesel. Lower prices for businesses with delivery vehicles.</div>
           </div>
-          <div class="hub-card-cta">Visit Filling Station</div>
+          <div class="hub-card-cta" data-i18n="card.fuel.cta">Visit Filling Station</div>
           <div class="hub-card-num" aria-hidden="true">02</div>
         </a>
 
@@ -99,23 +99,23 @@
 
     <div class="hero-scroll-cue" aria-hidden="true">
       <div class="hero-scroll-line"></div>
-      <span>Scroll</span>
+      <span data-i18n="hero.scroll">Scroll</span>
     </div>
   </section>
 
   <!-- MARQUEE TICKER -->
   <div class="divider-strip" aria-hidden="true">
     <div class="divider-marquee">
-      <span>Brick Supply</span><span class="dot">◆</span>
-      <span>Official HP Fuel</span><span class="dot">◆</span>
-      <span>Open 24 Hours</span><span class="dot">◆</span>
-      <span>Chhapra, Bihar</span><span class="dot">◆</span>
-      <span>We Also Work With Businesses</span><span class="dot">◆</span>
-      <span>Brick Supply</span><span class="dot">◆</span>
-      <span>Official HP Fuel</span><span class="dot">◆</span>
-      <span>Open 24 Hours</span><span class="dot">◆</span>
-      <span>Chhapra, Bihar</span><span class="dot">◆</span>
-      <span>We Also Work With Businesses</span><span class="dot">◆</span>
+      <span data-i18n="ticker.index.1">Brick Supply</span><span class="dot">◆</span>
+      <span data-i18n="ticker.index.2">Official HP Fuel</span><span class="dot">◆</span>
+      <span data-i18n="ticker.index.3">Open 24 Hours</span><span class="dot">◆</span>
+      <span data-i18n="ticker.index.4">Chhapra, Bihar</span><span class="dot">◆</span>
+      <span data-i18n="ticker.index.5">We Also Work With Businesses</span><span class="dot">◆</span>
+      <span data-i18n="ticker.index.1">Brick Supply</span><span class="dot">◆</span>
+      <span data-i18n="ticker.index.2">Official HP Fuel</span><span class="dot">◆</span>
+      <span data-i18n="ticker.index.3">Open 24 Hours</span><span class="dot">◆</span>
+      <span data-i18n="ticker.index.4">Chhapra, Bihar</span><span class="dot">◆</span>
+      <span data-i18n="ticker.index.5">We Also Work With Businesses</span><span class="dot">◆</span>
     </div>
   </div>
 
@@ -125,7 +125,6 @@
 
       <div class="founder-portrait-col reveal">
         <div class="founder-portrait-frame">
-          <!-- Swap this div for <img class="founder-portrait-img" src="founder.jpg" alt="Founder name"> when photo is ready -->
           <div class="founder-portrait-placeholder" aria-label="Founder photo placeholder">
             <div class="founder-portrait-placeholder-icon">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -133,43 +132,43 @@
                 <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
               </svg>
             </div>
-            <p>Photo Coming Soon</p>
+            <p data-i18n="founder.photo-soon">Photo Coming Soon</p>
           </div>
         </div>
         <div class="founder-portrait-caption">
           <span class="founder-portrait-name">Shri [Founder Name]</span>
-          <span class="founder-portrait-title">Founder · Jaiswal Enterprises</span>
+          <span class="founder-portrait-title" data-i18n="founder.title-label">Founder · Jaiswal Enterprises</span>
         </div>
       </div>
 
       <div class="founder-content-col">
-        <div class="section-tag reveal" id="founder-heading">About the Founder</div>
+        <div class="section-tag reveal" id="founder-heading" data-i18n="founder.section-tag">About the Founder</div>
 
         <blockquote class="founder-pullquote reveal reveal-delay-1">
-          Built on <em>Integrity.</em><br>Sustained by<br>Hard Work.
+          <span data-i18n="founder.quote.line1">Built on</span> <em data-i18n="founder.quote.em">Integrity.</em><br><span data-i18n="founder.quote.line2">Sustained by</span><br><span data-i18n="founder.quote.line3">Hard Work.</span>
         </blockquote>
 
         <div class="founder-bio-grid reveal reveal-delay-2">
           <div class="founder-bio-block">
-            <p>A well-known figure in Chhapra's civic and business life, the founder of Jaiswal Enterprises has deep roots in Saran district. He started this business not for profit alone — but as a way to give back to the region he calls home.</p>
+            <p data-i18n="founder.bio1">A well-known figure in Chhapra's civic and business life, the founder of Jaiswal Enterprises has deep roots in Saran district. He started this business not for profit alone — but as a way to give back to the region he calls home.</p>
           </div>
           <div class="founder-bio-block">
-            <p>From growing the Gramin Brick Field to serve Bihar's building boom, to running one of the area's most trusted HP fuel pumps — every decision has followed one rule: do what you say you will. That reputation keeps clients coming back year after year.</p>
+            <p data-i18n="founder.bio2">From growing the Gramin Brick Field to serve Bihar's building boom, to running one of the area's most trusted HP fuel pumps — every decision has followed one rule: do what you say you will. That reputation keeps clients coming back year after year.</p>
           </div>
         </div>
 
         <div class="founder-stats-row reveal reveal-delay-3">
           <div class="founder-stat">
             <span class="founder-stat-num">2</span>
-            <span class="founder-stat-label">Businesses Running</span>
+            <span class="founder-stat-label" data-i18n="founder.stat1">Businesses Running</span>
           </div>
           <div class="founder-stat">
             <span class="founder-stat-num">60<span style="font-size:0.5em; color: var(--mist);"> km</span></span>
-            <span class="founder-stat-label">Brick Delivery Range</span>
+            <span class="founder-stat-label" data-i18n="founder.stat2">Brick Delivery Range</span>
           </div>
           <div class="founder-stat">
             <span class="founder-stat-num">∞</span>
-            <span class="founder-stat-label">Repeat Clients</span>
+            <span class="founder-stat-label" data-i18n="founder.stat3">Repeat Clients</span>
           </div>
         </div>
       </div>
@@ -180,9 +179,9 @@
   <!-- OUR TWO BUSINESSES -->
   <section id="business-brief" aria-labelledby="brief-heading">
     <div class="brief-header">
-      <div class="section-tag reveal" id="brief-heading">Our Two Businesses</div>
+      <div class="section-tag reveal" id="brief-heading" data-i18n="brief.tag">Our Two Businesses</div>
       <h2 class="brief-headline reveal reveal-delay-1">
-        We Make Bricks.<br>We Sell Fuel.
+        <span data-i18n="brief.headline.1">We Make Bricks.</span><br><span data-i18n="brief.headline.2">We Sell Fuel.</span>
       </h2>
     </div>
 
@@ -197,12 +196,12 @@
             <rect x="13" y="4" width="9" height="3" rx="1"/>
           </svg>
         </div>
-        <div class="brief-panel-tag">Brick Supply</div>
+        <div class="brief-panel-tag" data-i18n="brief.bricks.tag">Brick Supply</div>
         <h3 class="brief-panel-heading">Gramin<br>Brick Field</h3>
-        <p class="brief-panel-body">
+        <p class="brief-panel-body" data-i18n="brief.bricks.body">
           Strong, reliable bricks fired in our own kiln. Three grades to choose from. 50,000+ bricks per firing round. Checked for quality before they leave the yard. Delivered to your site.
         </p>
-        <a href="bricks.html" class="brief-panel-link" aria-label="Go to Gramin Brick Field">Go to Brick Field</a>
+        <a href="bricks.html" class="brief-panel-link" data-i18n="brief.bricks.link">Go to Brick Field</a>
       </div>
 
       <div class="brief-panel reveal reveal-delay-1">
@@ -213,12 +212,12 @@
             <rect x="9" y="12" width="6" height="10" fill="var(--hp-blue)"/>
           </svg>
         </div>
-        <div class="brief-panel-tag">Official HP Fuel Pump</div>
+        <div class="brief-panel-tag" data-i18n="brief.fuel.tag">Official HP Fuel Pump</div>
         <h3 class="brief-panel-heading">Pawan<br>Filling Station</h3>
-        <p class="brief-panel-body">
+        <p class="brief-panel-body" data-i18n="brief.fuel.body">
           Licensed HP fuel station. Petrol and diesel. Open 24 hours, every day. Set up an account if you run delivery vehicles — we offer lower prices for regular business customers.
         </p>
-        <a href="fuel.html" class="brief-panel-link" aria-label="Go to Pawan Filling Station">Go to Filling Station</a>
+        <a href="fuel.html" class="brief-panel-link" data-i18n="brief.fuel.link">Go to Filling Station</a>
       </div>
 
     </div>
@@ -228,12 +227,12 @@
   <section id="testimonials" aria-labelledby="testimonials-heading">
     <div class="testimonials-header">
       <div>
-        <div class="section-tag reveal" id="testimonials-heading">What Clients Say</div>
+        <div class="section-tag reveal" id="testimonials-heading" data-i18n="test.tag">What Clients Say</div>
         <h2 class="testimonials-heading reveal reveal-delay-1">
-          They Don't<br>Switch.<br><em>Ever.</em>
+          <span data-i18n="test.h2.1">They Don't</span><br><span data-i18n="test.h2.2">Switch.</span><br><em data-i18n="test.h2.em">Ever.</em>
         </h2>
       </div>
-      <p class="testimonials-intro reveal reveal-delay-2">
+      <p class="testimonials-intro reveal reveal-delay-2" data-i18n="test.intro">
         Our clients aren't just customers — they've been using us for years. Builders who've sourced every single brick from us. Transport businesses who fill up nowhere else. That's what real trust looks like.
       </p>
     </div>
@@ -241,57 +240,57 @@
     <div class="testimonials-grid">
 
       <div class="testimonial-card reveal">
-        <div class="testimonial-tenure">Builder · Using Us Since 2009</div>
-        <blockquote class="testimonial-quote">
+        <div class="testimonial-tenure" data-i18n="test.1.tenure">Builder · Using Us Since 2009</div>
+        <blockquote class="testimonial-quote" data-i18n="test.1.quote">
           "Fifteen years. Three hundred projects. Every brick from Gramin Brick Field. When your supplier never lets you down, you don't look for another one."
         </blockquote>
         <div class="testimonial-author">
           <div class="testimonial-avatar" aria-hidden="true">RK</div>
           <div>
             <span class="testimonial-author-name">Rajesh Kumar Mishra</span>
-            <span class="testimonial-author-role">Contractor · Chhapra</span>
+            <span class="testimonial-author-role" data-i18n="test.1.role">Contractor · Chhapra</span>
           </div>
         </div>
       </div>
 
       <div class="testimonial-card reveal reveal-delay-1">
-        <div class="testimonial-tenure">Transport Business Owner · Using Pawan Station · 8 Years</div>
-        <blockquote class="testimonial-quote">
+        <div class="testimonial-tenure" data-i18n="test.2.tenure">Transport Business Owner · Using Pawan Station · 8 Years</div>
+        <blockquote class="testimonial-quote" data-i18n="test.2.quote">
           "We run forty trucks from Chhapra. Every truck fills up at Pawan Station. The billing is easy, the staff knows our routine, and we've never had a problem with the fuel quality. Not once. That's why we don't change."
         </blockquote>
         <div class="testimonial-author">
           <div class="testimonial-avatar" aria-hidden="true">SP</div>
           <div>
             <span class="testimonial-author-name">Suresh Prasad Yadav</span>
-            <span class="testimonial-author-role">Director · Prasad Logistics Pvt. Ltd.</span>
+            <span class="testimonial-author-role" data-i18n="test.2.role">Director · Prasad Logistics Pvt. Ltd.</span>
           </div>
         </div>
       </div>
 
       <div class="testimonial-card reveal reveal-delay-2">
-        <div class="testimonial-tenure">Builder · Large Orders · Since 2014</div>
-        <blockquote class="testimonial-quote">
+        <div class="testimonial-tenure" data-i18n="test.3.tenure">Builder · Large Orders · Since 2014</div>
+        <blockquote class="testimonial-quote" data-i18n="test.3.quote">
           "I build multi-storey housing. I always ask for First Class brick. I've tried two other suppliers over ten years — both times I came straight back to Jaiswal's yard. No one else in this area delivers the same consistency and quality."
         </blockquote>
         <div class="testimonial-author">
           <div class="testimonial-avatar" aria-hidden="true">AM</div>
           <div>
             <span class="testimonial-author-name">Arun Mohan Singh</span>
-            <span class="testimonial-author-role">Builder · Siwan</span>
+            <span class="testimonial-author-role" data-i18n="test.3.role">Builder · Siwan</span>
           </div>
         </div>
       </div>
 
       <div class="testimonial-card reveal reveal-delay-3">
-        <div class="testimonial-tenure">Regular Customer · Pawan Station · Since 2017</div>
-        <blockquote class="testimonial-quote">
+        <div class="testimonial-tenure" data-i18n="test.4.tenure">Regular Customer · Pawan Station · Since 2017</div>
+        <blockquote class="testimonial-quote" data-i18n="test.4.quote">
           "Always open, easy to pay, HP-quality fuel every time. Pawan Station has never been shut when I needed it. That matters when you're on the road at 3am."
         </blockquote>
         <div class="testimonial-author">
           <div class="testimonial-avatar" aria-hidden="true">VT</div>
           <div>
             <span class="testimonial-author-name">Vijay Kumar Tiwari</span>
-            <span class="testimonial-author-role">Owner · Tiwari Transport Co.</span>
+            <span class="testimonial-author-role" data-i18n="test.4.role">Owner · Tiwari Transport Co.</span>
           </div>
         </div>
       </div>
@@ -304,20 +303,20 @@
     <div class="footer-top">
       <div>
         <p class="footer-brand-name">Jaiswal Enterprises</p>
-        <span class="footer-brand-tag">Chhapra, Bihar · Est. Since Generations</span>
-        <p class="footer-brand-desc">Two businesses, one name. Bricks and fuel for Bihar's builders and drivers.</p>
+        <span class="footer-brand-tag" data-i18n="footer.index.brand-tag">Chhapra, Bihar · Est. Since Generations</span>
+        <p class="footer-brand-desc" data-i18n="footer.index.brand-desc">Two businesses, one name. Bricks and fuel for Bihar's builders and drivers.</p>
       </div>
       <div>
-        <span class="footer-col-title">Our Businesses</span>
+        <span class="footer-col-title" data-i18n="footer.col.businesses">Our Businesses</span>
         <ul class="footer-links">
-          <li><a href="bricks.html">Gramin Brick Field</a></li>
-          <li><a href="fuel.html">Pawan Filling Station</a></li>
-          <li><a href="#founder">About the Founder</a></li>
-          <li><a href="#testimonials">What Clients Say</a></li>
+          <li><a href="bricks.html" data-i18n="card.bricks.title">Gramin Brick Field</a></li>
+          <li><a href="fuel.html" data-i18n="card.fuel.title">Pawan Filling Station</a></li>
+          <li><a href="#founder" data-i18n="footer.link.about-founder">About the Founder</a></li>
+          <li><a href="#testimonials" data-i18n="footer.link.what-clients">What Clients Say</a></li>
         </ul>
       </div>
       <div>
-        <span class="footer-col-title">Contact</span>
+        <span class="footer-col-title" data-i18n="footer.col.contact">Contact</span>
         <ul class="footer-links">
           <li><a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a></li>
           <li><a href="mailto:enquiries@jaiswalenterprises.in">enquiries@jaiswalenterprises.in</a></li>
@@ -327,10 +326,11 @@
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">© <span class="footer-year"></span> <span>Jaiswal Enterprises</span> · All Rights Reserved · Chhapra, Bihar</p>
-      <p class="footer-copy">HP is a registered brand of <span>Hindustan Petroleum Corp. Ltd.</span></p>
+      <p class="footer-copy"><span data-i18n="footer.hp-disclaimer">HP is a registered brand of</span> <span>Hindustan Petroleum Corp. Ltd.</span></p>
     </div>
   </footer>
 
   <script src="main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>
