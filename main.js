@@ -240,7 +240,7 @@ if (mobileNav) {
       // WEB3FORMS INTEGRATION
       // ==========================================
       // Paste your Web3Forms Access Key here:
-      formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+      formData.append("access_key", "c72b3829-c52c-4eba-9dec-042c62a31529");
       
       // Auto-generate an email subject based on which page the form is on
       const pageType = document.body.dataset.page === 'bricks' ? 'Gramin Brick Field' : 
