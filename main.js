@@ -77,7 +77,15 @@ function closeMobileNav() {
   document.body.style.overflow = '';
 }
 
-if (hamburger) hamburger.addEventListener('click', openMobileNav);
+if (hamburger) {
+  hamburger.addEventListener('click', () => {
+    if (mobileNav && mobileNav.classList.contains('open')) {
+      closeMobileNav();
+    } else {
+      openMobileNav();
+    }
+  });
+}
 if (mobileNav) {
   mobileNav.addEventListener('click', (e) => {
     if (e.target === mobileNav) closeMobileNav();

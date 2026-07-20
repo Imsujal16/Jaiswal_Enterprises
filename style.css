@@ -357,16 +357,8 @@ body.page-fuel .mobile-nav a:focus { color: var(--hp-blue-lt); }
 }
 .mobile-nav-loc:hover { color: var(--mist) !important; padding-left: 0 !important; }
 .mobile-nav-close {
-  position: absolute;
-  top: 1.5rem; right: 5vw;
-  background: none; border: none;
-  font-size: 1.5rem; color: var(--paper);
-  cursor: pointer; padding: 0.5rem;
-  line-height: 1;
-  opacity: 0.6;
-  transition: opacity 0.2s;
+  display: none;
 }
-.mobile-nav-close:hover { opacity: 1; }
 
 /* ─── SECTION UTILITIES ──────────────────────────────────── */
 .section-tag {
