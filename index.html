@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaiswal Enterprises — Bricks & Petroleum | Chhapra, Bihar</title>
+  <meta name="description" content="Jaiswal Enterprises: Industrial-grade brick manufacturing at Gramin Brick Field and official HP Petroleum franchise at Pawan Filling Station. Bihar's most trusted industrial house." />
+  <meta property="og:title" content="Jaiswal Enterprises" />
+  <meta property="og:description" content="Firing bricks. Fuelling machines. Two industries. One name." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body data-page="index">
+
+  <!-- CURSOR -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- MOBILE NAV OVERLAY -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+    <a href="#founder" onclick="closeMobileNav()">About</a>
+    <a href="#business-brief" onclick="closeMobileNav()">Businesses</a>
+    <a href="#testimonials" onclick="closeMobileNav()">Clients</a>
+    <a href="bricks.html">Brick Field</a>
+    <a href="fuel.html">Filling Station</a>
+    <button class="mobile-nav-close" onclick="closeMobileNav()" aria-label="Close menu">✕</button>
+  </nav>
+
+  <!-- ─── NAV ──────────────────────────────────────────────────── -->
+  <nav id="mainNav" aria-label="Main Navigation">
+    <a href="index.html" class="nav-logo" aria-label="Jaiswal Enterprises Home">
+      <span class="nav-logo-main">Jaiswal</span>
+      <span class="nav-logo-sub">Enterprises</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#founder">About</a></li>
+      <li><a href="#business-brief">Businesses</a></li>
+      <li><a href="#testimonials">Clients</a></li>
+    </ul>
+    <a href="#business-brief" class="nav-cta">Explore Divisions</a>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── HERO ─────────────────────────────────────────────────── -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-bg" id="heroBg" role="presentation"></div>
+    <div class="hero-year-strip" aria-hidden="true">EST. SINCE GENERATIONS · CHHAPRA, BIHAR</div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow" aria-label="Dual operations">Brick Field · HP Petroleum Franchise</p>
+
+      <h1 class="hero-h1">
+        <span>Built From</span>
+        <span class="accent">The Ground</span>
+        <span class="outline-text">Up.</span>
+      </h1>
+
+      <div class="hero-descriptor">
+        <div class="hero-descriptor-line" aria-hidden="true"></div>
+        <div class="hero-descriptor-text">
+          <p>We fire bricks. We fuel machines. Two industries. One name. Jaiswal Enterprises has operated at the intersection of construction and energy for decades — supplying what Bihar builds with.</p>
+        </div>
+      </div>
+
+      <!-- TWO HUB ROUTING CARDS -->
+      <div class="hub-routing-cards" role="navigation" aria-label="Explore our businesses">
+
+        <a href="bricks.html" class="hub-card hub-card--bricks" aria-label="Explore Gramin Brick Field">
+          <div>
+            <div class="hub-card-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="2" y="8" width="20" height="8" rx="1"/><rect x="2" y="4" width="9" height="3" rx="1"/><rect x="13" y="4" width="9" height="3" rx="1"/></svg>
+              Business Line 01
+            </div>
+            <div class="hub-card-title">Gramin<br>Brick Field</div>
+            <div class="hub-card-desc">Continuous-fire kiln. 50,000+ bricks per cycle. First-class to bulk contractor grades. Delivering across Saran district and beyond.</div>
+          </div>
+          <div class="hub-card-cta">Explore Gramin Brick Field</div>
+          <div class="hub-card-num" aria-hidden="true">01</div>
+        </a>
+
+        <a href="fuel.html" class="hub-card hub-card--fuel" aria-label="Explore Pawan Filling Station">
+          <div>
+            <div class="hub-card-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 22V7l9-4 9 4v15H3z"/><path d="M9 22V12h6v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+              Business Line 02
+            </div>
+            <div class="hub-card-title">Pawan<br>Filling Station</div>
+            <div class="hub-card-desc">Official HP Petroleum franchise. 24×7 operations. SPEED Diesel, Power Petrol. Fleet accounts and commercial truck access.</div>
+          </div>
+          <div class="hub-card-cta">Explore Pawan Filling Station</div>
+          <div class="hub-card-num" aria-hidden="true">02</div>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="hero-scroll-cue" aria-hidden="true">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ─── DIVIDER MARQUEE ───────────────────────────────────────── -->
+  <div class="divider-strip" aria-hidden="true">
+    <div class="divider-marquee" id="marqueeTrack">
+      <span>Brick Manufacturing</span><span class="dot">◆</span>
+      <span>HP Petroleum Franchise</span><span class="dot">◆</span>
+      <span>Bulk Supply · Chhapra</span><span class="dot">◆</span>
+      <span>B2B Contracts Welcome</span><span class="dot">◆</span>
+      <span>Industrial Grade Quality</span><span class="dot">◆</span>
+      <span>Gramin Brick Field</span><span class="dot">◆</span>
+      <span>Pawan Filling Station</span><span class="dot">◆</span>
+      <span>Brick Manufacturing</span><span class="dot">◆</span>
+      <span>HP Petroleum Franchise</span><span class="dot">◆</span>
+      <span>Bulk Supply · Chhapra</span><span class="dot">◆</span>
+      <span>B2B Contracts Welcome</span><span class="dot">◆</span>
+      <span>Industrial Grade Quality</span><span class="dot">◆</span>
+      <span>Gramin Brick Field</span><span class="dot">◆</span>
+      <span>Pawan Filling Station</span><span class="dot">◆</span>
+    </div>
+  </div>
+
+  <!-- ─── FOUNDER / ABOUT ───────────────────────────────────────── -->
+  <section id="founder" aria-labelledby="founder-heading">
+    <div class="founder-layout">
+
+      <div class="founder-portrait-col reveal">
+        <div class="founder-portrait-frame">
+          <!-- Replace the placeholder below with an <img> tag when photo is ready -->
+          <div class="founder-portrait-placeholder" aria-label="Founder portrait placeholder">
+            <div class="founder-portrait-placeholder-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+              </svg>
+            </div>
+            <p>Portrait Placeholder</p>
+          </div>
+        </div>
+        <div class="founder-portrait-caption">
+          <span class="founder-portrait-name">Shri [Founder Name]</span>
+          <span class="founder-portrait-title">Founder & Managing Director · Jaiswal Enterprises</span>
+        </div>
+      </div>
+
+      <div class="founder-content-col">
+        <div class="section-tag reveal" id="founder-heading">02 — The Founder</div>
+
+        <blockquote class="founder-pullquote reveal reveal-delay-1">
+          Built on <em>Integrity.</em><br>Sustained by<br>Hard Work.
+        </blockquote>
+
+        <div class="founder-bio-grid reveal reveal-delay-2">
+          <div class="founder-bio-block">
+            <p>A respected figure in Chhapra's civic and industrial landscape, the founder of Jaiswal Enterprises is known equally in the corridors of politics and the yards of industry. With deep roots in Saran district's community, he built this enterprise not as a business venture, but as a commitment to the region he serves.</p>
+          </div>
+          <div class="founder-bio-block">
+            <p>From expanding the Gramin Brick Field to serve Bihar's construction surge, to securing one of the region's most trusted HP Petroleum franchises — every decision has been made with the same principle: deliver what you promise, and do it right. That reputation is the backbone of Jaiswal Enterprises.</p>
+          </div>
+        </div>
+
+        <div class="founder-stats-row reveal reveal-delay-3">
+          <div class="founder-stat">
+            <span class="founder-stat-num">2</span>
+            <span class="founder-stat-label">Active Industries</span>
+          </div>
+          <div class="founder-stat">
+            <span class="founder-stat-num">60<span style="font-size:0.55em; color: var(--mist);">km</span></span>
+            <span class="founder-stat-label">Supply Radius</span>
+          </div>
+          <div class="founder-stat">
+            <span class="founder-stat-num">∞</span>
+            <span class="founder-stat-label">Long-term Clients</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── BUSINESS BRIEF ────────────────────────────────────────── -->
+  <section id="business-brief" aria-labelledby="brief-heading">
+    <div style="padding: 6rem 4vw 3rem; background: var(--void);">
+      <div class="section-tag reveal" id="brief-heading">03 — Our Two Pillars</div>
+      <h2 class="reveal reveal-delay-1" style="font-family: var(--font-display); font-weight: 900; font-size: clamp(2.5rem, 5vw, 4rem); text-transform: uppercase; color: var(--white); line-height: 0.9; margin-top: 1.5rem; max-width: 700px;">
+        We Fire Bricks.<br>We Fuel Machines.
+      </h2>
+    </div>
+
+    <div class="brief-layout">
+
+      <!-- Bricks Panel -->
+      <div class="brief-panel reveal">
+        <span class="brief-panel-num" aria-hidden="true">01</span>
+        <div class="brief-panel-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="var(--terra)" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="8" width="20" height="8" rx="1"/>
+            <rect x="2" y="4" width="9" height="3" rx="1"/>
+            <rect x="13" y="4" width="9" height="3" rx="1"/>
+          </svg>
+        </div>
+        <div class="brief-panel-tag">Brick Manufacturing</div>
+        <h3 class="brief-panel-heading">Gramin<br>Brick Field</h3>
+        <p class="brief-panel-body">
+          High-plasticity alluvial clay, fired at 900–1100°C. Three brick grades. 50,000+ bricks per firing cycle. Quality-checked before dispatch, delivered within 60km direct to your construction site.
+        </p>
+        <a href="bricks.html" class="brief-panel-link" aria-label="Explore Gramin Brick Field">Explore Brick Field</a>
+      </div>
+
+      <!-- Fuel Panel -->
+      <div class="brief-panel reveal reveal-delay-1">
+        <span class="brief-panel-num" aria-hidden="true">02</span>
+        <div class="brief-panel-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="var(--hp-blue-lt)" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 22V7l9-4 9 4v15H3z"/>
+            <rect x="9" y="12" width="6" height="10" fill="var(--hp-blue)"/>
+          </svg>
+        </div>
+        <div class="brief-panel-tag">HP Petroleum Franchise</div>
+        <h3 class="brief-panel-heading">Pawan<br>Filling Station</h3>
+        <p class="brief-panel-body">
+          Licensed HP Petroleum franchise. SPEED Diesel and Power Petrol. 24×7 commercial access. Fleet account setup for logistics operators. Backed by Hindustan Petroleum's national quality standards.
+        </p>
+        <a href="fuel.html" class="brief-panel-link" aria-label="Explore Pawan Filling Station">Explore Filling Station</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIALS ──────────────────────────────────────────── -->
+  <section id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="testimonials-header">
+      <div>
+        <div class="section-tag reveal" id="testimonials-heading">04 — Loyal Supporters</div>
+        <h2 class="testimonials-heading reveal reveal-delay-1">
+          They Don't<br>Switch.<br><em>Ever.</em>
+        </h2>
+      </div>
+      <p class="testimonials-intro reveal reveal-delay-2">
+        Our clients are not clients — they are long-running business relationships. Contractors who've sourced every brick from us. Fleet operators who've never filled up elsewhere. This is what trust looks like in the real economy.
+      </p>
+    </div>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-tenure">Contractor · Since 2009</div>
+        <blockquote class="testimonial-quote">
+          "Fifteen years. Three hundred projects. Every single brick from Gramin Brick Field. When your supplier never lets you down, you never look elsewhere."
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">RK</div>
+          <div>
+            <span class="testimonial-author-name">Rajesh Kumar Mishra</span>
+            <span class="testimonial-author-role">Principal Contractor · Chhapra</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-tenure">Fleet Operator · Pawan Station · 8 Years</div>
+        <blockquote class="testimonial-quote">
+          "We run forty trucks out of Chhapra. Every one of them refuels at Pawan Station. The fleet account system is seamless, the staff knows our schedule, and we've never had a quality issue. Not once. That's why we don't change."
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">SP</div>
+          <div>
+            <span class="testimonial-author-name">Suresh Prasad Yadav</span>
+            <span class="testimonial-author-role">Director · Prasad Logistics Pvt. Ltd.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-tenure">B2B Contractor · Bulk Orders · Since 2014</div>
+        <blockquote class="testimonial-quote">
+          "I build multi-storey residential blocks. My specification always says First Class Brick. I have tried other suppliers twice in ten years — both times I came straight back to Jaiswal's yard. The grade consistency and delivery reliability is not matched anywhere in this region."
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">AM</div>
+          <div>
+            <span class="testimonial-author-name">Arun Mohan Singh</span>
+            <span class="testimonial-author-role">Builder & Contractor · Siwan</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-3">
+        <div class="testimonial-tenure">Fuel Account · Since 2017</div>
+        <blockquote class="testimonial-quote">
+          "24-hour access, digital billing, and HP quality fuel at every pump. Pawan Station has never been closed when we needed it. That matters at 3am on a deadline run."
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">VT</div>
+          <div>
+            <span class="testimonial-author-name">Vijay Kumar Tiwari</span>
+            <span class="testimonial-author-role">Owner · Tiwari Transport Co.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────── -->
+  <footer role="contentinfo">
+    <div class="footer-top">
+      <div>
+        <p class="footer-brand-name">Jaiswal Enterprises</p>
+        <span class="footer-brand-tag">Chhapra, Bihar · Est. Since Generations</span>
+        <p class="footer-brand-desc">Two decades of ground-level industrial operations in Bihar's construction and energy sectors. Real supply. Real scale.</p>
+      </div>
+      <div>
+        <span class="footer-col-title">Our Businesses</span>
+        <ul class="footer-links">
+          <li><a href="bricks.html">Gramin Brick Field</a></li>
+          <li><a href="fuel.html">Pawan Filling Station</a></li>
+          <li><a href="#founder">About the Founder</a></li>
+          <li><a href="#testimonials">Our Clients</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="footer-col-title">Contact</span>
+        <ul class="footer-links">
+          <li><a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a></li>
+          <li><a href="mailto:enquiries@jaiswalenterprises.in">enquiries@jaiswalenterprises.in</a></li>
+          <li><a href="#">Chhapra, Saran, Bihar — 841301</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© <span class="footer-year"></span> <span>Jaiswal Enterprises</span> · All Rights Reserved · Chhapra, Bihar</p>
+      <p class="footer-copy">HP Petroleum is a registered brand of <span>Hindustan Petroleum Corp. Ltd.</span></p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
