@@ -233,14 +233,45 @@ if (mobileNav) {
       if (submitText) submitText.textContent = 'Sending…';
       if (submitBtn)  { submitBtn.disabled = true; submitBtn.style.opacity = '0.7'; }
 
-      await new Promise(resolve => setTimeout(resolve, 1400));
+      // Gather form data
+      const formData = new FormData(form);
+      
+      // ==========================================
+      // WEB3FORMS INTEGRATION
+      // ==========================================
+      // Paste your Web3Forms Access Key here:
+      formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+      
+      // Auto-generate an email subject based on which page the form is on
+      const pageType = document.body.dataset.page === 'bricks' ? 'Gramin Brick Field' : 
+                       document.body.dataset.page === 'fuel' ? 'Pawan Filling Station' : 'Jaiswal Enterprises';
+      formData.append("subject", `New Enquiry from ${pageType} Website`);
+      formData.append("from_name", pageType + " Website");
 
-      form.style.opacity    = '0';
-      form.style.transition = 'opacity 0.4s ease';
-      setTimeout(() => {
-        form.style.display = 'none';
-        if (success) success.classList.add('visible');
-      }, 400);
+      try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+          form.style.opacity    = '0';
+          form.style.transition = 'opacity 0.4s ease';
+          setTimeout(() => {
+            form.style.display = 'none';
+            if (success) success.classList.add('visible');
+          }, 400);
+        } else {
+          throw new Error(data.message || 'Form submission failed');
+        }
+      } catch (error) {
+        console.error(error);
+        if (submitText) submitText.textContent = 'Error! Try Again.';
+        if (submitBtn)  { submitBtn.disabled = false; submitBtn.style.opacity = '1'; }
+        alert("Sorry, there was an issue sending your message. Please try again.");
+      }
     });
 
     // Clear errors on input
