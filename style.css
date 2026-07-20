@@ -134,32 +134,55 @@ body.page-fuel .page-brand-strip {
   background: linear-gradient(to right, var(--hp-blue) 60%, var(--hp-red));
 }
 
-/* ─── NAV ────────────────────────────────────────────────── */
+/* ─── NAV (FLOATING GLASS PILL) ──────────────────────────── */
 nav#mainNav {
-  position: fixed; top: 0; left: 0; right: 0;
+  position: fixed;
+  top: 1.5rem;
+  left: 2rem;
+  right: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  /* Always has a solid background — never overlaps hero content */
-  background: rgba(10, 9, 6, 0.88);
+  
+  background: rgba(20, 18, 16, 0.45);
   backdrop-filter: blur(28px) saturate(1.5);
   -webkit-backdrop-filter: blur(28px) saturate(1.5);
-  border-bottom: 1px solid rgba(255, 248, 238, 0.07);
-  padding: 0 5vw;
+  border: 1px solid rgba(255, 248, 238, 0.12);
+  border-radius: 100px;
+  box-shadow: 
+    0 12px 36px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 248, 238, 0.06);
+  
+  padding: 0 0.8rem 0 2rem;
   height: 72px;
-  transition: height 0.4s var(--ease-smooth), background 0.4s var(--ease-smooth), border-color 0.4s;
+  transition: height 0.4s var(--ease-smooth), background 0.4s var(--ease-smooth), top 0.4s var(--ease-smooth), border-color 0.4s;
 }
 nav#mainNav.scrolled {
-  height: 60px;
-  background: rgba(8, 7, 5, 0.96);
-  border-bottom-color: rgba(255, 248, 238, 0.12);
+  top: 1rem;
+  height: 64px;
+  background: rgba(14, 12, 10, 0.75);
+  border-color: rgba(255, 248, 238, 0.18);
+  box-shadow: 
+    0 8px 24px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 248, 238, 0.08);
 }
 
-/* Brand-colour top accent line on sub-pages */
-body.page-bricks nav#mainNav { border-top: 2px solid var(--terra); }
-body.page-fuel   nav#mainNav { border-top: 2px solid var(--hp-blue-lt); }
+/* Brand-colour top accent applied via border and inner shadow on sub-pages */
+body.page-bricks nav#mainNav { 
+  border-color: rgba(194, 82, 43, 0.35); 
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(194, 82, 43, 0.2);
+}
+body.page-bricks nav#mainNav.scrolled { border-color: rgba(194, 82, 43, 0.5); }
+
+body.page-fuel nav#mainNav { 
+  border-color: rgba(37, 137, 216, 0.35); 
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(37, 137, 216, 0.2);
+}
+body.page-fuel nav#mainNav.scrolled { border-color: rgba(37, 137, 216, 0.5); }
 
 /* Logo — bigger, bolder, industrial */
 .nav-logo {
@@ -229,7 +252,7 @@ body.page-fuel .nav-logo-sub { color: var(--hp-blue-lt); }
   position: relative;
   transition: color 0.25s;
 }
-nav#mainNav.scrolled .nav-links a { height: 60px; }
+nav#mainNav.scrolled .nav-links a { height: 64px; }
 .nav-links a::after {
   content: '';
   position: absolute; bottom: 0; left: 1.4rem; right: 1.4rem;
@@ -243,7 +266,7 @@ body.page-fuel .nav-links a::after { background: var(--hp-blue-lt); }
 .nav-links a:hover { color: var(--white); }
 .nav-links a:hover::after { transform: scaleX(1); }
 
-/* CTA — solid, confident, no parallelogram gimmick */
+/* CTA — pill-shaped to match the container */
 .nav-cta {
   font-family: var(--font-display);
   font-weight: 900;
@@ -253,14 +276,19 @@ body.page-fuel .nav-links a::after { background: var(--hp-blue-lt); }
   color: var(--ink);
   background: var(--terra);
   border: none;
-  padding: 0.7rem 1.6rem;
-  cursor: none;
+  padding: 0 1.6rem;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   text-decoration: none;
-  clip-path: none;
+  border-radius: 100px;
   white-space: nowrap;
   flex-shrink: 0;
-  transition: background 0.25s, transform 0.2s var(--ease-back), box-shadow 0.25s;
+  transition: background 0.25s, transform 0.2s var(--ease-back), box-shadow 0.25s, height 0.4s var(--ease-smooth);
 }
+nav#mainNav.scrolled .nav-cta { height: 46px; }
 .nav-cta:hover {
   background: var(--terra-lite);
   transform: translateY(-2px);
@@ -281,7 +309,7 @@ body.page-fuel .nav-cta:hover {
   background: none;
   border: none;
   padding: 10px;
-  margin-right: -10px;
+  margin-right: 4px;
 }
 .nav-hamburger span {
   display: block;
@@ -2302,14 +2330,23 @@ body.page-fuel .lang-toggle-active { color: var(--hp-blue-lt); }
     --space-3xl: 5.5rem;
   }
 
-  /* Nav — fixed-height bar, collapse links to hamburger */
+  /* Nav — floating pill on mobile */
   .nav-links, .nav-cta { display: none; }
   .nav-hamburger { display: flex; }
-  nav#mainNav { height: 60px; padding: 0 5vw; }
-  nav#mainNav.scrolled { height: 56px; }
+  nav#mainNav { 
+    height: 60px; 
+    padding: 0 0.5rem 0 1.25rem;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+  }
+  nav#mainNav.scrolled { 
+    height: 56px; 
+    top: 0.75rem; 
+  }
 
-  /* Hero — clear the 60px mobile nav with room to breathe */
-  #hero { padding-bottom: 6vh; padding-top: 80px; }
+  /* Hero — clear the floating mobile nav */
+  #hero { padding-bottom: 6vh; padding-top: 100px; }
   .hero-year-strip { display: none; }
   .hub-card { padding: 1.75rem; min-height: auto; }
   .hub-card-num { font-size: 3.5rem; }
