@@ -201,7 +201,7 @@
     'form.inp.message.fuel':   { en: 'Your Message',        hi: 'आपका संदेश' },
     'form.inp.enquiry-type':   { en: 'What\'s Your Enquiry About?', hi: 'किस बारे में पूछना है?' },
     'form.inp.vehicle-count':  { en: 'How Many Vehicles? (if applicable)', hi: 'कितने वाहन? (यदि लागू हो)' },
-    'form.inp.vehicle-type':   { en: 'What Type of Vehicles Do You Operate?', hi: 'आप किस तरह के वाहन चलाते हैं?' },
+    'form.inp.vehicle-type':   { en: 'What Type of Vehicles Do You Operate? (optional)', hi: 'आप किस तरह के वाहन चलाते हैं? (वैकल्पिक)' },
     'form.check.label.bricks': { en: 'I\'d also like to know about:', hi: 'मैं यह भी जानना चाहूँगा/चाहूँगी:' },
     'form.check.pricing':      { en: 'Current prices',      hi: 'मौजूदा कीमतें' },
     'form.check.delivery':     { en: 'Delivery schedule',   hi: 'डिलीवरी समय-सारणी' },
