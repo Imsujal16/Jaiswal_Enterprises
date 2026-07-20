@@ -254,23 +254,6 @@ if (mobileNav) {
     if (line) { line.style.background = ''; line.style.width = '0'; }
     parent.classList.remove('error');
   }
-
-  /* ─── DYNAMIC FORM FIELDS (FUEL) ─────────────────────────── */
-  const fuelEnquirySelect = document.getElementById('fuel-inp-enquiry');
-  const fuelBusinessFields = document.getElementById('fuel-business-fields');
-  
-  if (fuelEnquirySelect && fuelBusinessFields) {
-    fuelEnquirySelect.addEventListener('change', () => {
-      const val = fuelEnquirySelect.value;
-      if (val === 'fleet-account' || val === 'bulk-diesel') {
-        fuelBusinessFields.classList.remove('business-fields-hidden');
-        fuelBusinessFields.style.display = 'block'; // Ensure visibility
-      } else {
-        fuelBusinessFields.classList.add('business-fields-hidden');
-        fuelBusinessFields.style.display = 'none';
-      }
-    });
-  }
 })();
 
 /* ─── TRANSLATION MODULE ─────────────────────────────────── */
