@@ -237,6 +237,11 @@ if (mobileNav) {
       const formData = new FormData(form);
       
       // ==========================================
+      // Auto-generate an email subject based on which page the form is on
+      const pageType = document.body.dataset.page === 'bricks' ? 'Gramin Brick Field' : 
+                       document.body.dataset.page === 'fuel' ? 'Pawan Filling Station' : 'Pawan Enterprise';
+      formData.append("subject", `New Enquiry from ${pageType} Website`);
+      
       // Send to our Vercel Serverless Function
       const formProps = Object.fromEntries(formData);
       

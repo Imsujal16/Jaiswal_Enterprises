@@ -32,7 +32,7 @@ export default async function handler(req, res) {
       <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
         <div style="background-color: #d85c27; padding: 24px; text-align: center;">
           <h1 style="color: #ffffff; margin: 0; font-size: 22px; font-weight: 600;">New Enquiry Received</h1>
-          <p style="color: #ffedd5; margin: 6px 0 0 0; font-size: 15px;">Pawan Enterprise Website</p>
+          <p style="color: #ffedd5; margin: 6px 0 0 0; font-size: 15px;">${subject}</p>
         </div>
         <div style="padding: 32px 24px;">
           <table style="width: 100%; border-collapse: collapse; text-align: left;">
