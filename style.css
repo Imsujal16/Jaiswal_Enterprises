@@ -1693,7 +1693,7 @@ body.page-fuel .page-hero-stat-num span { color: var(--hp-blue-lt); }
   position: absolute; top: 0; left: 0;
   width: 48%;
   height: 100%;
-  background-image: url('petroleum_bg.png');
+  background-image: url('petrol_bg.png');
   background-size: cover;
   background-position: center right;
   filter: brightness(0.18) saturate(0.6);
