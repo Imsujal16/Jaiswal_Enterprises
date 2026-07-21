@@ -1245,7 +1245,7 @@ body.page-fuel .hero-scroll-line {
   filter: brightness(0.4) saturate(0.7);
 }
 .page-hero-bg--fuel {
-  background-image: url('petroleum_bg.png');
+  background-image: url('petrol_bg.png');
   filter: brightness(0.55) saturate(0.85);
 }
 
