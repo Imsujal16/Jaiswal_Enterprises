@@ -237,21 +237,14 @@ if (mobileNav) {
       const formData = new FormData(form);
       
       // ==========================================
-      // WEB3FORMS INTEGRATION
-      // ==========================================
-      // Paste your Web3Forms Access Key here:
-      formData.append("access_key", "c72b3829-c52c-4eba-9dec-042c62a31529");
+      // Send to our Vercel Serverless Function
+      const formProps = Object.fromEntries(formData);
       
-      // Auto-generate an email subject based on which page the form is on
-      const pageType = document.body.dataset.page === 'bricks' ? 'Gramin Brick Field' : 
-                       document.body.dataset.page === 'fuel' ? 'Pawan Filling Station' : 'Pawan Enterprise';
-      formData.append("subject", `New Enquiry from ${pageType} Website`);
-      formData.append("from_name", pageType + " Website");
-
       try {
-        const response = await fetch("https://api.web3forms.com/submit", {
+        const response = await fetch("/api/contact", {
           method: "POST",
-          body: formData
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formProps)
         });
         
         const data = await response.json();
