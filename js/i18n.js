@@ -121,11 +121,12 @@
     'bricks.stat.4':         { en: 'Quality Checked',    hi: 'गुणवत्ता जाँची' },
 
     /* ── BRICKS: TICKER ─────────────────────────────────────── */
-    'ticker.bricks.1': { en: 'Awwal Brick (No. 1)',       hi: 'अव्वल ईंट (नं. 1)' },
-    'ticker.bricks.2': { en: 'Doyam Brick (No. 2)',    hi: 'दोयम ईंट (नं. 2)' },
-    'ticker.bricks.3': { en: 'Heavy Duty Brick (No. 3)', hi: 'हेवी ड्यूटी ईंट (नं. 3)' },
-    'ticker.bricks.4': { en: 'Large Orders Welcome', hi: 'बड़े ऑर्डर का स्वागत' },
-    'ticker.bricks.5': { en: 'Delivered Within 60km', hi: '60 किमी में डिलीवरी' },
+    'ticker.bricks.1': { en: 'Awwal Bricks',       hi: 'अव्वल ईंटें' },
+    'ticker.bricks.2': { en: 'Doma Bricks',        hi: 'दोमा ईंटें' },
+    'ticker.bricks.3': { en: 'Pela Bricks',        hi: 'पीला ईंटें' },
+    'ticker.bricks.4': { en: 'Tamda Bricks',       hi: 'टामड़ा ईंटें' },
+    'ticker.bricks.5': { en: 'Large Orders Welcome', hi: 'बड़े ऑर्डर का स्वागत' },
+    'ticker.bricks.6': { en: 'Delivered Within 60km', hi: '60 किमी में डिलीवरी' },
 
     /* ── BRICKS: PRODUCTS ───────────────────────────────────── */
     'bricks.prod.tag':         { en: 'Our Bricks',     hi: 'हमारी ईंटें' },
