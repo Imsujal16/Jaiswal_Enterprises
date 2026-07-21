@@ -25,11 +25,11 @@
     'nav.setup-account':  { en: 'Set Up an Account', hi: 'खाता बनाएं' },
 
     /* ── INDEX: HERO ─────────────────────────────────────────── */
-    'hero.eyebrow':        { en: 'Brick Field · HP Fuel Pump · Chhapra, Bihar', hi: 'ईंट भट्ठा · HP पेट्रोल पंप · छपरा, बिहार' },
+    'hero.eyebrow':        { en: 'Brick Field · HP Fuel Pump · Aliganj, Sultanpur', hi: 'ईंट भट्ठा · HP पेट्रोल पंप · अलीगंज, सुल्तानपुर' },
     'hero.h1.line1':       { en: 'Built From',    hi: 'बना है' },
     'hero.h1.line2':       { en: 'The Ground',    hi: 'ज़मीन से' },
     'hero.h1.line3':       { en: 'Up.',            hi: 'ऊपर तक।' },
-    'hero.desc':           { en: 'We make bricks. We sell fuel. Two businesses running in Chhapra for decades — supplying what Bihar builds and drives with. No frills. Just reliable supply.', hi: 'हम ईंटें बनाते हैं। हम ईंधन बेचते हैं। दशकों से छपरा में चल रहे दो व्यवसाय — बिहार के निर्माण और परिवहन की जरूरत पूरी करते हैं। कोई दिखावा नहीं। बस भरोसेमंद आपूर्ति।' },
+    'hero.desc':           { en: 'We make bricks. We sell fuel. Two businesses running in Sultanpur for decades — supplying what UP builds and drives with. No frills. Just reliable supply.', hi: 'हम ईंटें बनाते हैं। हम ईंधन बेचते हैं। दशकों से सुल्तानपुर में चल रहे दो व्यवसाय — यूपी के निर्माण और परिवहन की जरूरत पूरी करते हैं। कोई दिखावा नहीं। बस भरोसेमंद आपूर्ति।' },
     'hero.scroll':         { en: 'Scroll',         hi: 'नीचे जाएं' },
 
     /* ── INDEX: HUB CARDS ───────────────────────────────────── */
@@ -47,7 +47,7 @@
     'ticker.index.1': { en: 'Brick Supply',               hi: 'ईंट आपूर्ति' },
     'ticker.index.2': { en: 'Official HP Fuel',           hi: 'आधिकारिक HP ईंधन' },
     'ticker.index.3': { en: 'Open 24 Hours',              hi: '24 घंटे खुला' },
-    'ticker.index.4': { en: 'Chhapra, Bihar',             hi: 'छपरा, बिहार' },
+    'ticker.index.4': { en: 'Sultanpur, UP',             hi: 'सुल्तानपुर, यूपी' },
     'ticker.index.5': { en: 'We Also Work With Businesses', hi: 'व्यवसायों के साथ भी काम करते हैं' },
 
     /* ── INDEX: FOUNDER ─────────────────────────────────────── */
@@ -58,7 +58,7 @@
     'founder.quote.em':      { en: 'Integrity.',           hi: 'ईमानदारी पर।' },
     'founder.quote.line2':   { en: 'Sustained by',         hi: 'टिका है' },
     'founder.quote.line3':   { en: 'Hard Work.',           hi: 'मेहनत से।' },
-    'founder.bio1':          { en: 'A well-known figure in Chhapra\'s civic and business life, the founder of Jaiswal Enterprises has deep roots in Saran district. He started this business not for profit alone — but as a way to give back to the region he calls home.', hi: 'छपरा के नागरिक और व्यावसायिक जीवन में एक जाना-माना नाम, जायसवाल एंटरप्राइजेज़ के संस्थापक की सारण जिले में गहरी जड़ें हैं। उन्होंने यह व्यवसाय सिर्फ लाभ के लिए नहीं — बल्कि अपने क्षेत्र को कुछ वापस देने के लिए शुरू किया।' },
+    'founder.bio1':          { en: 'A well-known figure in Sultanpur\'s civic and business life, the founder of Jaiswal Enterprises has deep roots in Aliganj. He started this business not for profit alone — but as a way to give back to the region he calls home.', hi: 'सुल्तानपुर के नागरिक और व्यावसायिक जीवन में एक जाना-माना नाम, जायसवाल एंटरप्राइजेज़ के संस्थापक की अलीगंज में गहरी जड़ें हैं। उन्होंने यह व्यवसाय सिर्फ लाभ के लिए नहीं — बल्कि अपने क्षेत्र को कुछ वापस देने के लिए शुरू किया।' },
     'founder.bio2':          { en: 'From growing the Gramin Brick Field to serve Bihar\'s building boom, to running one of the area\'s most trusted HP fuel pumps — every decision has followed one rule: do what you say you will. That reputation keeps clients coming back year after year.', hi: 'ग्रामीण ईंट भट्ठे को बिहार के निर्माण-उछाल के लिए बढ़ाने से लेकर, इलाके के सबसे भरोसेमंद HP पेट्रोल पंप को चलाने तक — हर फैसला एक नियम से हुआ: जो कहो, वो करो। यही साख ग्राहकों को साल-दर-साल वापस लाती है।' },
     'founder.stat1':         { en: 'Businesses Running',  hi: 'चलते व्यवसाय' },
     'founder.stat2':         { en: 'Brick Delivery Range', hi: 'ईंट डिलीवरी दायरा' },
@@ -84,10 +84,10 @@
 
     'test.1.tenure':         { en: 'Builder · Using Us Since 2009', hi: 'ठेकेदार · 2009 से हमारे ग्राहक' },
     'test.1.quote':          { en: '"Fifteen years. Three hundred projects. Every brick from Gramin Brick Field. When your supplier never lets you down, you don\'t look for another one."', hi: '"पंद्रह साल। तीन सौ प्रोजेक्ट। हर ईंट ग्रामीण ईंट भट्ठे से। जब सप्लायर कभी निराश न करे, तो दूसरा क्यों ढूंढें।"' },
-    'test.1.role':           { en: 'Contractor · Chhapra',          hi: 'ठेकेदार · छपरा' },
+    'test.1.role':           { en: 'Contractor · Sultanpur',          hi: 'ठेकेदार · सुल्तानपुर' },
 
     'test.2.tenure':         { en: 'Transport Business Owner · Using Pawan Station · 8 Years', hi: 'ट्रांसपोर्ट व्यवसाय मालिक · पवन स्टेशन के ग्राहक · 8 साल' },
-    'test.2.quote':          { en: '"We run forty trucks from Chhapra. Every truck fills up at Pawan Station. The billing is easy, the staff knows our routine, and we\'ve never had a problem with the fuel quality. Not once. That\'s why we don\'t change."', hi: '"हम छपरा से चालीस ट्रक चलाते हैं। हर ट्रक पवन स्टेशन पर भरता है। बिलिंग आसान है, स्टाफ हमारी दिनचर्या जानता है, और ईंधन की गुणवत्ता में कभी कोई परेशानी नहीं हुई। एक बार भी नहीं। इसीलिए हम नहीं बदलते।"' },
+    'test.2.quote':          { en: '"We run forty trucks from Sultanpur. Every truck fills up at Pawan Station. The billing is easy, the staff knows our routine, and we\'ve never had a problem with the fuel quality. Not once. That\'s why we don\'t change."', hi: '"हम सुल्तानपुर से चालीस ट्रक चलाते हैं। हर ट्रक पवन स्टेशन पर भरता है। बिलिंग आसान है, स्टाफ हमारी दिनचर्या जानता है, और ईंधन की गुणवत्ता में कभी कोई परेशानी नहीं हुई। एक बार भी नहीं। इसीलिए हम नहीं बदलते।"' },
     'test.2.role':           { en: 'Director · Prasad Logistics Pvt. Ltd.', hi: 'निदेशक · प्रसाद लॉजिस्टिक्स प्रा. लि.' },
 
     'test.3.tenure':         { en: 'Builder · Large Orders · Since 2014', hi: 'ठेकेदार · बड़े ऑर्डर · 2014 से' },
@@ -99,7 +99,7 @@
     'test.4.role':           { en: 'Owner · Tiwari Transport Co.',   hi: 'मालिक · तिवारी ट्रांसपोर्ट कं.' },
 
     /* ── INDEX: FOOTER ──────────────────────────────────────── */
-    'footer.index.brand-tag':  { en: 'Chhapra, Bihar · Est. Since Generations', hi: 'छपरा, बिहार · पुराना घराना' },
+    'footer.index.brand-tag':  { en: 'Sultanpur, UP · Est. Since Generations', hi: 'सुल्तानपुर, यूपी · पुराना घराना' },
     'footer.index.brand-desc': { en: 'Two businesses, one name. Bricks and fuel for Bihar\'s builders and drivers.', hi: 'दो व्यवसाय, एक नाम। बिहार के निर्माताओं और ड्राइवरों के लिए ईंट और ईंधन।' },
     'footer.col.businesses':   { en: 'Our Businesses',    hi: 'हमारे व्यवसाय' },
     'footer.col.contact':      { en: 'Contact',            hi: 'संपर्क' },
@@ -109,7 +109,7 @@
 
     /* ── BRICKS: HERO ───────────────────────────────────────── */
     'bricks.hero.parent':    { en: 'Jaiswal Enterprises — Business 01', hi: 'जायसवाल एंटरप्राइजेज़ — व्यवसाय 01' },
-    'bricks.hero.eyebrow':   { en: 'Gramin Brick Field · Chhapra, Bihar', hi: 'ग्रामीण ईंट भट्ठा · छपरा, बिहार' },
+    'bricks.hero.eyebrow':   { en: 'Gramin Brick Field · Hakuha kokhipur, Sultanpur', hi: 'ग्रामीण ईंट भट्ठा · हकूहा कोखीपुर, सुल्तानपुर' },
     'bricks.hero.h1.1':      { en: 'Fired',        hi: 'पकाई गई' },
     'bricks.hero.h1.2':      { en: 'Hard.',         hi: 'मजबूत।' },
     'bricks.hero.h1.3':      { en: 'Delivered',     hi: 'पहुंचाई गई' },
@@ -138,7 +138,7 @@
     'bricks.spec.2.label':     { en: 'Brick Grades',     hi: 'ईंट श्रेणियां' },
     'bricks.spec.2.desc':      { en: 'Standard, First Class, and Heavy Duty — pick what your job needs.', hi: 'सामान्य, प्रथम श्रेणी और भारी-ड्यूटी — अपने काम के अनुसार चुनें।' },
     'bricks.spec.3.label':     { en: 'Delivery Range',   hi: 'डिलीवरी दायरा' },
-    'bricks.spec.3.desc':      { en: 'We deliver to Chhapra, Saran, Siwan and nearby areas.', hi: 'हम छपरा, सारण, सिवान और आसपास के क्षेत्रों में डिलीवरी करते हैं।' },
+    'bricks.spec.3.desc':      { en: 'We deliver to Sultanpur and nearby areas.', hi: 'हम सुल्तानपुर और आसपास के क्षेत्रों में डिलीवरी करते हैं।' },
     'bricks.spec.4.label':     { en: 'Quality Checked',  hi: 'गुणवत्ता जाँची' },
     'bricks.spec.4.desc':      { en: 'Every batch is inspected before loading. No substandard bricks leave the yard.', hi: 'लोडिंग से पहले हर बैच की जांच होती है। कोई घटिया ईंट यार्ड से नहीं निकलती।' },
 
@@ -243,7 +243,7 @@
     'form.success.fuel.p':     { en: 'We\'ll get back to you within one working day.\nThank you for reaching out to Pawan Filling Station.', hi: 'हम एक कार्यदिवस के भीतर आपसे संपर्क करेंगे।\nपवन फिलिंग स्टेशन से संपर्क करने के लिए धन्यवाद।' },
 
     /* ── BRICKS: FOOTER ─────────────────────────────────────── */
-    'bricks.footer.brand-tag': { en: 'A Jaiswal Enterprises Business · Chhapra, Bihar', hi: 'जायसवाल एंटरप्राइजेज़ का व्यवसाय · छपरा, बिहार' },
+    'bricks.footer.brand-tag': { en: 'A Jaiswal Enterprises Business · Sultanpur, UP', hi: 'जायसवाल एंटरप्राइजेज़ का व्यवसाय · सुल्तानपुर, यूपी' },
     'bricks.footer.brand-desc':{ en: 'Reliable kiln-fired bricks in three grades. Delivered to your site within 60km.', hi: 'तीन श्रेणियों में भरोसेमंद भट्ठे की ईंटें। 60 किमी के अंदर आपकी साइट पर डिलीवरी।' },
     'footer.col.quick-links':  { en: 'Quick Links',          hi: 'त्वरित लिंक' },
     'footer.col.je':           { en: 'Jaiswal Enterprises',  hi: 'जायसवाल एंटरप्राइजेज़' },
@@ -252,7 +252,7 @@
 
     /* ── FUEL: HERO ─────────────────────────────────────────── */
     'fuel.hero.parent':    { en: 'Jaiswal Enterprises — Business 02', hi: 'जायसवाल एंटरप्राइजेज़ — व्यवसाय 02' },
-    'fuel.hero.eyebrow':   { en: 'Pawan Filling Station · Official HP Pump · Chhapra', hi: 'पवन फिलिंग स्टेशन · आधिकारिक HP पंप · छपरा' },
+    'fuel.hero.eyebrow':   { en: 'Pawan Filling Station · Official HP Pump · Sultanpur', hi: 'पवन फिलिंग स्टेशन · आधिकारिक HP पंप · सुल्तानपुर' },
     'fuel.hero.h1.1':      { en: 'HP',          hi: 'HP' },
     'fuel.hero.h1.2':      { en: 'Fuel.',        hi: 'ईंधन।' },
     'fuel.hero.h1.3':      { en: 'Always',       hi: 'हमेशा' },
@@ -271,7 +271,7 @@
     'ticker.fuel.5': { en: 'Rewards for Regular Customers', hi: 'नियमित ग्राहकों के लिए इनाम' },
 
     /* ── FUEL: SERVICES ─────────────────────────────────────── */
-    'fuel.badge':          { en: 'Official HP Fuel Pump · Chhapra, Bihar', hi: 'आधिकारिक HP पेट्रोल पंप · छपरा, बिहार' },
+    'fuel.badge':          { en: 'Official HP Fuel Pump · Sultanpur, UP', hi: 'आधिकारिक HP पेट्रोल पंप · सुल्तानपुर, यूपी' },
     'fuel.h2.1':           { en: 'HP',            hi: 'HP' },
     'fuel.h2.2':           { en: 'Quality.',       hi: 'गुणवत्ता।' },
     'fuel.h2.3':           { en: 'Every',          hi: 'हर' },
@@ -296,7 +296,7 @@
     'fuel.gallery.h2.2':      { en: 'Day & Night.',                hi: 'दिन और रात।' },
     'fuel.gallery.sub':       { en: 'We don\'t close. Here\'s what Pawan Station looks like around the clock.', hi: 'हम बंद नहीं होते। पवन स्टेशन 24 घंटे ऐसा दिखता है।' },
     'fuel.gallery.1.label':   { en: 'During the Day',             hi: 'दिन के समय' },
-    'fuel.gallery.1.sub':     { en: 'Pawan Filling Station · Chhapra', hi: 'पवन फिलिंग स्टेशन · छपरा' },
+    'fuel.gallery.1.sub':     { en: 'Pawan Filling Station · Sultanpur', hi: 'पवन फिलिंग स्टेशन · सुल्तानपुर' },
     'fuel.gallery.2.label':   { en: 'Through the Night',          hi: 'रात के दौरान' },
     'fuel.gallery.2.sub':     { en: '24 Hours · No Downtime',     hi: '24 घंटे · बिना रुके' },
     'fuel.gallery.3.label':   { en: 'Trucks & Businesses',        hi: 'ट्रक और व्यवसाय' },
