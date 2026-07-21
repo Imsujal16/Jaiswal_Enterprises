@@ -818,16 +818,10 @@ body.page-fuel .hero-scroll-line {
   border: 1px solid var(--glass-bdr);
   overflow: hidden;
 }
-.founder-portrait-frame::after {
-  content: '';
-  position: absolute; inset: 0;
-  background: linear-gradient(to bottom, transparent 55%, var(--carbon) 100%);
-}
 .founder-portrait-img {
   width: 100%;
   height: auto;
   display: block;
-  filter: brightness(0.88) grayscale(12%);
 }
 .founder-portrait-placeholder {
   width: 100%; height: 100%;
