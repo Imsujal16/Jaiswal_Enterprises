@@ -1242,11 +1242,11 @@ body.page-fuel .hero-scroll-line {
 }
 .page-hero-bg--bricks {
   background-image: url('brick_bg.png');
-  filter: brightness(0.3) saturate(0.5);
+  filter: brightness(0.4) saturate(0.7);
 }
 .page-hero-bg--fuel {
   background-image: url('petroleum_bg.png');
-  filter: brightness(0.26) saturate(0.6);
+  filter: brightness(0.55) saturate(0.85);
 }
 
 .page-hero-content {
