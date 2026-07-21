@@ -2606,15 +2606,19 @@ body.page-fuel .lang-toggle-active { color: var(--hp-blue-lt); }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.35rem 0.75rem;
+  padding: 0.5rem 1rem;
   border-radius: 50px;
-  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   white-space: nowrap;
+  line-height: 1;
+  min-width: 105px;
+  box-sizing: border-box;
 }
 .brick-badge.excellent { background: rgba(216, 75, 41, 0.15); color: var(--terra); border: 1px solid rgba(216, 75, 41, 0.3); }
-.brick-badge.good { background: rgba(255, 255, 255, 0.1); color: var(--bone); border: 1px solid rgba(255, 255, 255, 0.2); }
-.brick-badge.poor { background: rgba(255, 0, 0, 0.1); color: #ff6b6b; border: 1px solid rgba(255, 0, 0, 0.2); }
-.brick-badge.extreme { background: rgba(216, 75, 41, 0.3); color: #fff; border: 1px solid var(--terra); }
+.brick-badge.good { background: rgba(255, 255, 255, 0.08); color: var(--bone); border: 1px solid rgba(255, 255, 255, 0.15); }
+.brick-badge.poor { background: rgba(255, 0, 0, 0.15); color: #ff6b6b; border: 1px solid rgba(255, 0, 0, 0.3); }
+.brick-badge.extreme { background: rgba(216, 75, 41, 0.4); color: #fff; border: 1px solid var(--terra); }
