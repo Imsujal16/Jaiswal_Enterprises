@@ -59,7 +59,7 @@
     'founder.quote.line2':   { en: 'Sustained by',         hi: 'टिका है' },
     'founder.quote.line3':   { en: 'Hard Work.',           hi: 'मेहनत से।' },
     'founder.bio1':          { en: 'A well-known figure in Sultanpur\'s civic and business life, the founder of Jaiswal Enterprises has deep roots in Aliganj. He started this business not for profit alone — but as a way to give back to the region he calls home.', hi: 'सुल्तानपुर के नागरिक और व्यावसायिक जीवन में एक जाना-माना नाम, जायसवाल एंटरप्राइजेज़ के संस्थापक की अलीगंज में गहरी जड़ें हैं। उन्होंने यह व्यवसाय सिर्फ लाभ के लिए नहीं — बल्कि अपने क्षेत्र को कुछ वापस देने के लिए शुरू किया।' },
-    'founder.bio2':          { en: 'From growing the Gramin Brick Field to serve Bihar\'s building boom, to running one of the area\'s most trusted HP fuel pumps — every decision has followed one rule: do what you say you will. That reputation keeps clients coming back year after year.', hi: 'ग्रामीण ईंट भट्ठे को बिहार के निर्माण-उछाल के लिए बढ़ाने से लेकर, इलाके के सबसे भरोसेमंद HP पेट्रोल पंप को चलाने तक — हर फैसला एक नियम से हुआ: जो कहो, वो करो। यही साख ग्राहकों को साल-दर-साल वापस लाती है।' },
+    'founder.bio2':          { en: 'From growing the Gramin Brick Field to serve Sultanpur\'s building boom, to running one of the area\'s most trusted HP fuel pumps — every decision has followed one rule: do what you say you will. That reputation keeps clients coming back year after year.', hi: 'ग्रामीण ईंट भट्ठे को सुल्तानपुर के निर्माण-उछाल के लिए बढ़ाने से लेकर, इलाके के सबसे भरोसेमंद HP पेट्रोल पंप को चलाने तक — हर फैसला एक नियम से हुआ: जो कहो, वो करो। यही साख ग्राहकों को साल-दर-साल वापस लाती है।' },
     'founder.stat1':         { en: 'Businesses Running',  hi: 'चलते व्यवसाय' },
     'founder.stat2':         { en: 'Brick Delivery Range', hi: 'ईंट डिलीवरी दायरा' },
     'founder.stat3':         { en: 'Repeat Clients',       hi: 'नियमित ग्राहक' },
@@ -100,7 +100,7 @@
 
     /* ── INDEX: FOOTER ──────────────────────────────────────── */
     'footer.index.brand-tag':  { en: 'Sultanpur, UP · Est. Since Generations', hi: 'सुल्तानपुर, यूपी · पुराना घराना' },
-    'footer.index.brand-desc': { en: 'Two businesses, one name. Bricks and fuel for Bihar\'s builders and drivers.', hi: 'दो व्यवसाय, एक नाम। बिहार के निर्माताओं और ड्राइवरों के लिए ईंट और ईंधन।' },
+    'footer.index.brand-desc': { en: 'Two businesses, one name. Bricks and fuel for Sultanpur\'s builders and drivers.', hi: 'दो व्यवसाय, एक नाम। सुल्तानपुर के निर्माताओं और ड्राइवरों के लिए ईंट और ईंधन।' },
     'footer.col.businesses':   { en: 'Our Businesses',    hi: 'हमारे व्यवसाय' },
     'footer.col.contact':      { en: 'Contact',            hi: 'संपर्क' },
     'footer.link.about-founder': { en: 'About the Founder', hi: 'संस्थापक के बारे में' },
