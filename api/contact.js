@@ -5,7 +5,6 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: 'Method Not Allowed' });
   }
 
-  // The email we are sending to and from (authenticated via Google App Password)
   const user = process.env.EMAIL_USER;
   const pass = process.env.EMAIL_PASS;
 
@@ -15,64 +14,207 @@ export default async function handler(req, res) {
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
-    auth: {
-      user,
-      pass,
-    },
+    auth: { user, pass },
   });
 
   const data = req.body;
   const subject = data.subject || 'New Enquiry from Website';
-  
-  // Format the body by iterating through the JSON properties
+
+  // Route to the correct inbox based on which page submitted
+  const isFuel   = subject.includes('Pawan Filling Station');
+  const isBricks = subject.includes('Gramin Brick Field');
+  const recipientEmail = isFuel
+    ? 'anuragjaiswal182@gmail.com'
+    : 'pawansethji9595@gmail.com';
+
+  // ─── BUILD PLAIN TEXT ────────────────────────────────────────
   let text = `You received a new enquiry:\n\n`;
-  
-  let html = `
-    <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f4f4f5; padding: 40px 20px; color: #18181b;">
-      <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
-        <div style="background-color: #d85c27; padding: 24px; text-align: center;">
-          <h1 style="color: #ffffff; margin: 0; font-size: 22px; font-weight: 600;">New Enquiry Received</h1>
-          <p style="color: #ffedd5; margin: 6px 0 0 0; font-size: 15px;">${subject}</p>
-        </div>
-        <div style="padding: 32px 24px;">
-          <table style="width: 100%; border-collapse: collapse; text-align: left;">
-            <tbody>
-  `;
-
   for (const [key, value] of Object.entries(data)) {
-    // Ignore internal keys used by web3forms if any are leftover
     if (['access_key', 'subject', 'from_name'].includes(key)) continue;
-    
-    const formattedKey = key.charAt(0).toUpperCase() + key.slice(1);
-    
-    // Plain text building
-    text += `${formattedKey}: ${value}\n`;
-
-    // HTML building
-    const displayValue = value ? String(value).replace(/\n/g, '<br>') : '<span style="color: #9ca3af; font-style: italic;">Not provided</span>';
-    html += `
-              <tr style="border-bottom: 1px solid #e4e4e7;">
-                <td style="padding: 12px 0; font-weight: 600; color: #52525b; width: 35%; vertical-align: top;">${formattedKey}</td>
-                <td style="padding: 12px 0; color: #27272a; vertical-align: top;">${displayValue}</td>
-              </tr>
-    `;
+    const label = key.charAt(0).toUpperCase() + key.slice(1);
+    text += `${label}: ${value}\n`;
   }
 
-  html += `
-            </tbody>
-          </table>
-        </div>
-        <div style="background-color: #fafafa; padding: 16px 24px; text-align: center; border-top: 1px solid #e4e4e7;">
-          <p style="margin: 0; font-size: 13px; color: #71717a;">This email was sent securely from your Vercel website.</p>
-        </div>
-      </div>
-    </div>
-  `;
+  // ─── SHARED ROW BUILDER ──────────────────────────────────────
+  function buildRows(data) {
+    let rows = '';
+    for (const [key, value] of Object.entries(data)) {
+      if (['access_key', 'subject', 'from_name'].includes(key)) continue;
+      const label = key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+      const displayValue = value
+        ? String(value).replace(/\n/g, '<br>')
+        : '<span style="color:#555555;font-style:italic;">Not provided</span>';
+      rows += `
+        <tr>
+          <td style="padding:14px 20px;border-bottom:1px solid #222222;width:38%;vertical-align:top;">
+            <span style="font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#888888;">${label}</span>
+          </td>
+          <td style="padding:14px 20px;border-bottom:1px solid #222222;vertical-align:top;">
+            <span style="font-family:Helvetica Neue,Arial,sans-serif;font-size:14px;font-weight:500;color:#FFFFFF;">${displayValue}</span>
+          </td>
+        </tr>`;
+    }
+    return rows;
+  }
 
+  // ─── TEMPLATE 1: GRAMIN BRICK FIELD ─────────────────────────
+  function bricksTemplate() {
+    return `<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>New Enquiry // Gramin Brick Field</title></head>
+<body style="margin:0;padding:0;background-color:#0A0A0A;font-family:Helvetica Neue,Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#0A0A0A;padding:40px 20px;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background-color:#121212;border:1px solid #222222;">
+
+          <!-- TOP ACCENT BAR -->
+          <tr>
+            <td style="height:4px;background-color:#CC5500;font-size:0;line-height:0;">&nbsp;</td>
+          </tr>
+
+          <!-- HEADER -->
+          <tr>
+            <td style="padding:32px 28px 24px 28px;border-bottom:1px solid #222222;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#CC5500;">JAISWAL ENTERPRISES · TRANSMISSION</p>
+                    <h1 style="margin:0;font-family:Helvetica Neue,Arial,sans-serif;font-size:22px;font-weight:700;letter-spacing:0.04em;color:#FFFFFF;line-height:1.2;">NEW ENQUIRY // GRAMIN BRICK FIELD</h1>
+                  </td>
+                  <td align="right" valign="top" style="padding-top:4px;">
+                    <div style="display:inline-block;background-color:#1A0E07;border:1px solid #CC5500;padding:6px 12px;">
+                      <span style="font-family:Helvetica Neue,Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.15em;color:#CC5500;">BRICK FIELD</span>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- DOCKET ROWS -->
+          <tr>
+            <td>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                ${buildRows(data)}
+              </table>
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td style="padding:20px 28px;border-top:1px solid #222222;background-color:#0E0E0E;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:#444444;letter-spacing:0.05em;">AUTOMATED TRANSMISSION FROM JAISWAL ENTERPRISES SECURE SERVER</p>
+                    <p style="margin:6px 0 0 0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:#333333;">Gramin Brick Field · Hakuha Kokhipur, Aliganj, Sultanpur, UP</p>
+                  </td>
+                  <td align="right" valign="middle">
+                    <div style="width:8px;height:8px;background-color:#CC5500;display:inline-block;"></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+  }
+
+  // ─── TEMPLATE 2: PAWAN FILLING STATION ──────────────────────
+  function fuelTemplate() {
+    return `<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>New Enquiry // Pawan Filling Station</title></head>
+<body style="margin:0;padding:0;background-color:#0A0A0A;font-family:Helvetica Neue,Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#0A0A0A;padding:40px 20px;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background-color:#121212;border:1px solid #1A2A4A;">
+
+          <!-- TOP ACCENT BAR: HP Blue + Red split -->
+          <tr>
+            <td style="font-size:0;line-height:0;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="height:4px;background-color:#0033A0;width:90%;font-size:0;line-height:0;">&nbsp;</td>
+                  <td style="height:4px;background-color:#E3000F;width:10%;font-size:0;line-height:0;">&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- HEADER -->
+          <tr>
+            <td style="padding:32px 28px 24px 28px;border-bottom:1px solid #1A2A4A;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#0066CC;">JAISWAL ENTERPRISES · TRANSMISSION</p>
+                    <h1 style="margin:0;font-family:Helvetica Neue,Arial,sans-serif;font-size:22px;font-weight:700;letter-spacing:0.04em;color:#FFFFFF;line-height:1.2;">NEW ENQUIRY // PAWAN FILLING STATION</h1>
+                  </td>
+                  <td align="right" valign="top" style="padding-top:4px;">
+                    <div style="display:inline-block;background-color:#00153A;border:1px solid #0033A0;padding:6px 12px;">
+                      <span style="font-family:Helvetica Neue,Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.15em;color:#4D99FF;">HP FUEL</span>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- DOCKET ROWS -->
+          <tr>
+            <td>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                ${buildRows(data)}
+              </table>
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td style="padding:20px 28px;border-top:1px solid #1A2A4A;background-color:#0A0E16;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:#444444;letter-spacing:0.05em;">AUTOMATED TRANSMISSION FROM JAISWAL ENTERPRISES SECURE SERVER</p>
+                    <p style="margin:6px 0 0 0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:#333333;">Pawan Filling Station · Kurwar Road, Aliganj, Sultanpur, UP · 24 Hrs</p>
+                  </td>
+                  <td align="right" valign="middle">
+                    <table cellpadding="0" cellspacing="2" border="0">
+                      <tr>
+                        <td style="width:8px;height:8px;background-color:#0033A0;font-size:0;">&nbsp;</td>
+                        <td style="width:8px;height:8px;background-color:#E3000F;font-size:0;">&nbsp;</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+  }
+
+  // ─── SELECT TEMPLATE ─────────────────────────────────────────
+  const html = isFuel ? fuelTemplate() : bricksTemplate();
+
+  // ─── SEND ────────────────────────────────────────────────────
   try {
     await transporter.sendMail({
-      from: `"${data.name || 'Website Contact Form'}" <${user}>`,
-      to: user, // Sends to yourself
+      from: `"Jaiswal Enterprises Website" <${user}>`,
+      to: recipientEmail,
       replyTo: data.email || undefined,
       subject: subject,
       text: text,
