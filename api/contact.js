@@ -21,11 +21,16 @@ export default async function handler(req, res) {
   const subject = data.subject || 'New Enquiry from Website';
 
   // Route to the correct inbox based on which page submitted
-  const isFuel   = subject.includes('Pawan Filling Station');
-  const isBricks = subject.includes('Gramin Brick Field');
-  const recipientEmail = isFuel
-    ? 'anuragjaiswal182@gmail.com'
-    : 'pawansethji9595@gmail.com';
+  // TODO: Uncomment these lines to enable smart routing in production
+  // const isFuel   = subject.includes('Pawan Filling Station');
+  // const isBricks = subject.includes('Gramin Brick Field');
+  // const recipientEmail = isFuel
+  //   ? 'anuragjaiswal182@gmail.com'
+  //   : 'pawansethji9595@gmail.com';
+
+  // For testing, route all emails to the authenticated testing email account
+  const isFuel = subject.includes('Pawan Filling Station'); // Kept for template selection
+  const recipientEmail = user;
 
   // ─── BUILD PLAIN TEXT ────────────────────────────────────────
   let text = `You received a new enquiry:\n\n`;
