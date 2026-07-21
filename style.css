@@ -1813,6 +1813,7 @@ body.page-fuel .page-hero-stat-num span { color: var(--hp-blue-lt); }
 }
 .fuel-card-type.diesel { color: var(--hp-blue-lt); }
 .fuel-card-type.petrol { color: var(--hp-red); }
+.fuel-card-type.lube { color: var(--terra-lite); }
 .fuel-card-desc {
   font-size: 0.8rem;
   color: var(--mist);
