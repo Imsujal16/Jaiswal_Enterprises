@@ -1353,6 +1353,10 @@ body.page-fuel .page-hero-h1 .outline-text {
 }
 body.page-bricks .page-hero-stat-num span { color: var(--terra); }
 body.page-fuel .page-hero-stat-num span { color: var(--hp-blue-lt); }
+body.page-bricks .page-hero-stat:not(:first-child) .page-hero-stat-num span[data-target],
+body.page-fuel .page-hero-stat:not(:first-child) .page-hero-stat-num span[data-target] {
+  color: inherit;
+}
 .page-hero-stat-label {
   font-family: var(--font-mono);
   font-size: 0.56rem;
