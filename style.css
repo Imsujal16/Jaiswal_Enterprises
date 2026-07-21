@@ -66,6 +66,29 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ─── LENIS SMOOTH SCROLL ──────────────────────────────────
+   When Lenis is active it adds .lenis class to <html>.
+   Override native scroll-behavior so Lenis and the browser
+   don't fight each other on anchor links.
+────────────────────────────────────────────────────────── */
+html.lenis,
+html.lenis body {
+  height: auto;
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
 body {
   background: var(--ink);
   color: var(--paper);
@@ -79,6 +102,27 @@ body {
 img { display: block; max-width: 100%; }
 a { color: inherit; }
 ::selection { background: var(--terra); color: var(--white); }
+
+/* ─── REDUCED MOTION SAFETY ─────────────────────────────────
+   If JS fails or user has prefers-reduced-motion, ALL .reveal
+   elements must be visible — never trapped invisible.
+   Also covers mobile OS reduced-motion preference.
+────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .founder-pullquote {
+    clip-path: none !important;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
 
 /* ─── CUSTOM CURSOR (desktop only) ──────────────────────── */
 #cursor-dot {
