@@ -51,10 +51,10 @@ export default async function handler(req, res) {
         : '<span style="color:#555555;font-style:italic;">Not provided</span>';
       rows += `
         <tr>
-          <td style="padding:14px 20px;border-bottom:1px solid #222222;width:38%;vertical-align:top;">
+          <td bgcolor="#121212" style="padding:14px 20px;border-bottom:1px solid #222222;width:38%;vertical-align:top;background-color:#121212;">
             <span style="font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#888888;">${label}</span>
           </td>
-          <td style="padding:14px 20px;border-bottom:1px solid #222222;vertical-align:top;">
+          <td bgcolor="#121212" style="padding:14px 20px;border-bottom:1px solid #222222;vertical-align:top;background-color:#121212;">
             <span style="font-family:Helvetica Neue,Arial,sans-serif;font-size:14px;font-weight:500;color:#FFFFFF;">${displayValue}</span>
           </td>
         </tr>`;
@@ -66,31 +66,31 @@ export default async function handler(req, res) {
   function bricksTemplate() {
     return `<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>New Enquiry // Gramin Brick Field</title></head>
-<body style="margin:0;padding:0;background-color:#0A0A0A;font-family:Helvetica Neue,Arial,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#0A0A0A;padding:40px 20px;">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>New Enquiry — Gramin Brick Field</title></head>
+<body bgcolor="#0A0A0A" style="margin:0;padding:0;background-color:#0A0A0A;font-family:Helvetica Neue,Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0A0A0A" style="background-color:#0A0A0A;padding:40px 20px;">
     <tr>
       <td align="center">
-        <table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background-color:#121212;border:1px solid #222222;">
+        <table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#121212" style="max-width:600px;width:100%;background-color:#121212;border:1px solid #222222;">
 
           <!-- TOP ACCENT BAR -->
           <tr>
-            <td style="height:4px;background-color:#CC5500;font-size:0;line-height:0;">&nbsp;</td>
+            <td bgcolor="#CC5500" style="height:4px;background-color:#CC5500;font-size:0;line-height:0;">&nbsp;</td>
           </tr>
 
           <!-- HEADER -->
           <tr>
-            <td style="padding:32px 28px 24px 28px;border-bottom:1px solid #222222;">
+            <td bgcolor="#121212" style="padding:32px 28px 24px 28px;border-bottom:1px solid #222222;background-color:#121212;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
                   <td>
-                    <p style="margin:0 0 6px 0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#CC5500;">JAISWAL ENTERPRISES · TRANSMISSION</p>
-                    <h1 style="margin:0;font-family:Helvetica Neue,Arial,sans-serif;font-size:22px;font-weight:700;letter-spacing:0.04em;color:#FFFFFF;line-height:1.2;">NEW ENQUIRY // GRAMIN BRICK FIELD</h1>
+                    <p style="margin:0 0 6px 0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#CC5500;">PAWAN ENTERPRISE &middot; TRANSMISSION</p>
+                    <h1 style="margin:0;font-family:Helvetica Neue,Arial,sans-serif;font-size:22px;font-weight:700;letter-spacing:0.04em;color:#FFFFFF;line-height:1.2;">NEW ENQUIRY &mdash; GRAMIN BRICK FIELD</h1>
                   </td>
                   <td align="right" valign="top" style="padding-top:4px;">
-                    <div style="display:inline-block;background-color:#1A0E07;border:1px solid #CC5500;padding:6px 12px;">
+                    <table cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#1A0E07" style="background-color:#1A0E07;border:1px solid #CC5500;padding:6px 12px;">
                       <span style="font-family:Helvetica Neue,Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.15em;color:#CC5500;">BRICK FIELD</span>
-                    </div>
+                    </td></tr></table>
                   </td>
                 </tr>
               </table>
@@ -99,7 +99,7 @@ export default async function handler(req, res) {
 
           <!-- DOCKET ROWS -->
           <tr>
-            <td>
+            <td bgcolor="#121212" style="background-color:#121212;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 ${buildRows(data)}
               </table>
@@ -108,15 +108,15 @@ export default async function handler(req, res) {
 
           <!-- FOOTER -->
           <tr>
-            <td style="padding:20px 28px;border-top:1px solid #222222;background-color:#0E0E0E;">
+            <td bgcolor="#0E0E0E" style="padding:20px 28px;border-top:1px solid #222222;background-color:#0E0E0E;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
                   <td>
-                    <p style="margin:0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:#444444;letter-spacing:0.05em;">AUTOMATED TRANSMISSION FROM JAISWAL ENTERPRISES SECURE SERVER</p>
-                    <p style="margin:6px 0 0 0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:#333333;">Gramin Brick Field · Hakuha Kokhipur, Aliganj, Sultanpur, UP</p>
+                    <p style="margin:0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:#555555;letter-spacing:0.05em;">AUTOMATED TRANSMISSION FROM PAWAN ENTERPRISE SECURE SERVER</p>
+                    <p style="margin:6px 0 0 0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:#444444;">Gramin Brick Field &middot; Hakuha Kokhipur, Aliganj, Sultanpur, UP</p>
                   </td>
                   <td align="right" valign="middle">
-                    <div style="width:8px;height:8px;background-color:#CC5500;display:inline-block;"></div>
+                    <table cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#CC5500" style="width:8px;height:8px;background-color:#CC5500;font-size:0;">&nbsp;</td></tr></table>
                   </td>
                 </tr>
               </table>
@@ -135,20 +135,20 @@ export default async function handler(req, res) {
   function fuelTemplate() {
     return `<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>New Enquiry // Pawan Filling Station</title></head>
-<body style="margin:0;padding:0;background-color:#0A0A0A;font-family:Helvetica Neue,Arial,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#0A0A0A;padding:40px 20px;">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>New Enquiry — Pawan Filling Station</title></head>
+<body bgcolor="#0A0A0A" style="margin:0;padding:0;background-color:#0A0A0A;font-family:Helvetica Neue,Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0A0A0A" style="background-color:#0A0A0A;padding:40px 20px;">
     <tr>
       <td align="center">
-        <table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background-color:#121212;border:1px solid #1A2A4A;">
+        <table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#121212" style="max-width:600px;width:100%;background-color:#121212;border:1px solid #1A2A4A;">
 
           <!-- TOP ACCENT BAR: HP Blue + Red split -->
           <tr>
-            <td style="font-size:0;line-height:0;">
+            <td bgcolor="#121212" style="font-size:0;line-height:0;background-color:#121212;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
-                  <td style="height:4px;background-color:#0033A0;width:90%;font-size:0;line-height:0;">&nbsp;</td>
-                  <td style="height:4px;background-color:#E3000F;width:10%;font-size:0;line-height:0;">&nbsp;</td>
+                  <td bgcolor="#0033A0" style="height:4px;background-color:#0033A0;width:90%;font-size:0;line-height:0;">&nbsp;</td>
+                  <td bgcolor="#E3000F" style="height:4px;background-color:#E3000F;width:10%;font-size:0;line-height:0;">&nbsp;</td>
                 </tr>
               </table>
             </td>
@@ -156,17 +156,17 @@ export default async function handler(req, res) {
 
           <!-- HEADER -->
           <tr>
-            <td style="padding:32px 28px 24px 28px;border-bottom:1px solid #1A2A4A;">
+            <td bgcolor="#121212" style="padding:32px 28px 24px 28px;border-bottom:1px solid #1A2A4A;background-color:#121212;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
                   <td>
-                    <p style="margin:0 0 6px 0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#0066CC;">JAISWAL ENTERPRISES · TRANSMISSION</p>
-                    <h1 style="margin:0;font-family:Helvetica Neue,Arial,sans-serif;font-size:22px;font-weight:700;letter-spacing:0.04em;color:#FFFFFF;line-height:1.2;">NEW ENQUIRY // PAWAN FILLING STATION</h1>
+                    <p style="margin:0 0 6px 0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#0066CC;">PAWAN ENTERPRISE &middot; TRANSMISSION</p>
+                    <h1 style="margin:0;font-family:Helvetica Neue,Arial,sans-serif;font-size:22px;font-weight:700;letter-spacing:0.04em;color:#FFFFFF;line-height:1.2;">NEW ENQUIRY &mdash; PAWAN FILLING STATION</h1>
                   </td>
                   <td align="right" valign="top" style="padding-top:4px;">
-                    <div style="display:inline-block;background-color:#00153A;border:1px solid #0033A0;padding:6px 12px;">
+                    <table cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#00153A" style="background-color:#00153A;border:1px solid #0033A0;padding:6px 12px;">
                       <span style="font-family:Helvetica Neue,Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.15em;color:#4D99FF;">HP FUEL</span>
-                    </div>
+                    </td></tr></table>
                   </td>
                 </tr>
               </table>
@@ -175,7 +175,7 @@ export default async function handler(req, res) {
 
           <!-- DOCKET ROWS -->
           <tr>
-            <td>
+            <td bgcolor="#121212" style="background-color:#121212;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 ${buildRows(data)}
               </table>
@@ -184,18 +184,18 @@ export default async function handler(req, res) {
 
           <!-- FOOTER -->
           <tr>
-            <td style="padding:20px 28px;border-top:1px solid #1A2A4A;background-color:#0A0E16;">
+            <td bgcolor="#0A0E16" style="padding:20px 28px;border-top:1px solid #1A2A4A;background-color:#0A0E16;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
                   <td>
-                    <p style="margin:0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:#444444;letter-spacing:0.05em;">AUTOMATED TRANSMISSION FROM JAISWAL ENTERPRISES SECURE SERVER</p>
-                    <p style="margin:6px 0 0 0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:#333333;">Pawan Filling Station · Kurwar Road, Aliganj, Sultanpur, UP · 24 Hrs</p>
+                    <p style="margin:0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:#555555;letter-spacing:0.05em;">AUTOMATED TRANSMISSION FROM PAWAN ENTERPRISE SECURE SERVER</p>
+                    <p style="margin:6px 0 0 0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:#444444;">Pawan Filling Station &middot; Kurwar Road, Aliganj, Sultanpur, UP &middot; 24 Hrs</p>
                   </td>
                   <td align="right" valign="middle">
                     <table cellpadding="0" cellspacing="2" border="0">
                       <tr>
-                        <td style="width:8px;height:8px;background-color:#0033A0;font-size:0;">&nbsp;</td>
-                        <td style="width:8px;height:8px;background-color:#E3000F;font-size:0;">&nbsp;</td>
+                        <td bgcolor="#0033A0" style="width:8px;height:8px;background-color:#0033A0;font-size:0;">&nbsp;</td>
+                        <td bgcolor="#E3000F" style="width:8px;height:8px;background-color:#E3000F;font-size:0;">&nbsp;</td>
                       </tr>
                     </table>
                   </td>
