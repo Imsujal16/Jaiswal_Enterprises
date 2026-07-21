@@ -69,7 +69,7 @@
     'brief.headline.1':      { en: 'We Make Bricks.',      hi: 'हम ईंटें बनाते हैं।' },
     'brief.headline.2':      { en: 'We Sell Fuel.',        hi: 'हम ईंधन बेचते हैं।' },
     'brief.bricks.tag':      { en: 'Brick Supply',         hi: 'ईंट आपूर्ति' },
-    'brief.bricks.body':     { en: 'Strong, reliable bricks fired in our own kiln. Three grades to choose from. 50,000+ bricks per firing round. Checked for quality before they leave the yard. Delivered to your site.', hi: 'हमारे अपने भट्ठे में पकी हुई मजबूत और भरोसेमंद ईंटें। तीन श्रेणियों में से चुनें। हर राउंड में 50,000+ ईंटें। गुणवत्ता जांच के बाद ही यार्ड से निकलती हैं। आपकी साइट पर डिलीवरी।' },
+    'brief.bricks.body':     { en: 'Strong, reliable bricks fired in our own kiln. Three grades to choose from. 8,00,000+ bricks per firing round. Checked for quality before they leave the yard. Delivered to your site.', hi: 'हमारे अपने भट्ठे में पकी हुई मजबूत और भरोसेमंद ईंटें। तीन श्रेणियों में से चुनें। हर राउंड में 8,00,000+ ईंटें। गुणवत्ता जांच के बाद ही यार्ड से निकलती हैं। आपकी साइट पर डिलीवरी।' },
     'brief.bricks.link':     { en: 'Go to Brick Field',   hi: 'ईंट भट्ठे पर जाएं' },
     'brief.fuel.tag':        { en: 'Official HP Fuel Pump', hi: 'आधिकारिक HP पेट्रोल पंप' },
     'brief.fuel.body':       { en: 'Licensed HP fuel station. Petrol and diesel. Open 24 hours, every day. Set up an account if you run delivery vehicles — we offer lower prices for regular business customers.', hi: 'लाइसेंस प्राप्त HP ईंधन स्टेशन। पेट्रोल और डीजल। हर दिन 24 घंटे खुला। डिलीवरी वाहन चलाने वाले खाता खुलवाएं — नियमित व्यावसायिक ग्राहकों के लिए कम कीमत।' },
@@ -114,7 +114,7 @@
     'bricks.hero.h1.2':      { en: 'Hard.',         hi: 'मजबूत।' },
     'bricks.hero.h1.3':      { en: 'Delivered',     hi: 'पहुंचाई गई' },
     'bricks.hero.h1.4':      { en: 'Fast.',          hi: 'जल्दी।' },
-    'bricks.hero.desc':      { en: 'Our kiln runs continuously. Three brick grades. 50,000+ bricks per round. Every batch is checked before it leaves — no rejects reach your site.', hi: 'हमारा भट्ठा लगातार चलता है। तीन ईंट श्रेणियां। हर राउंड में 50,000+ ईंटें। हर बैच की जांच होती है जाने से पहले — कोई खराब ईंट आपकी साइट तक नहीं पहुंचती।' },
+    'bricks.hero.desc':      { en: 'Our kiln runs continuously. Three brick grades. 8,00,000+ bricks per round. Every batch is checked before it leaves — no rejects reach your site.', hi: 'हमारा भट्ठा लगातार चलता है। तीन ईंट श्रेणियां। हर राउंड में 8,00,000+ ईंटें। हर बैच की जांच होती है जाने से पहले — कोई खराब ईंट आपकी साइट तक नहीं पहुंचती।' },
     'bricks.stat.1':         { en: 'Bricks per Round',  hi: 'प्रति राउंड ईंटें' },
     'bricks.stat.2':         { en: 'Brick Grades',       hi: 'ईंट श्रेणियां' },
     'bricks.stat.3':         { en: 'Delivery Range',     hi: 'डिलीवरी दायरा' },
@@ -149,7 +149,7 @@
     'bricks.type.3.title':     { en: 'Heavy & Hollow Brick', hi: 'भारी और खोखली ईंट' },
     'bricks.type.3.desc':      { en: 'For walls that need extra strength or better insulation. Available on larger orders. Ask us about minimum quantities and lead time.', hi: 'उन दीवारों के लिए जिन्हें अतिरिक्त मजबूती या बेहतर इन्सुलेशन चाहिए। बड़े ऑर्डर पर उपलब्ध। न्यूनतम मात्रा और लीड टाइम के बारे में हमसे पूछें।' },
     'bricks.type.4.title':     { en: 'Large Orders for Builders', hi: 'ठेकेदारों के लिए बड़े ऑर्डर' },
-    'bricks.type.4.desc':      { en: 'If you need 50,000+ bricks, we can arrange phased delivery to fit your project schedule. Call us to talk through the details.', hi: 'अगर आपको 50,000+ ईंटें चाहिए, तो हम आपके प्रोजेक्ट शेड्यूल के अनुसार चरणबद्ध डिलीवरी की व्यवस्था कर सकते हैं। विवरण के लिए हमें फोन करें।' },
+    'bricks.type.4.desc':      { en: 'If you need 8,00,000+ bricks, we can arrange phased delivery to fit your project schedule. Call us to talk through the details.', hi: 'अगर आपको 8,00,000+ ईंटें चाहिए, तो हम आपके प्रोजेक्ट शेड्यूल के अनुसार चरणबद्ध डिलीवरी की व्यवस्था कर सकते हैं। विवरण के लिए हमें फोन करें।' },
 
     /* ── BRICKS: PROCESS ────────────────────────────────────── */
     'process.tag':       { en: 'How We Work',              hi: 'हम कैसे काम करते हैं' },
