@@ -2527,3 +2527,69 @@ body.page-fuel .lang-toggle-active { color: var(--hp-blue-lt); }
   .check-items { gap: 0.6rem; }
   .page-hero-stats { grid-template-columns: 1fr 1fr; }
 }
+
+/* ─── BRICKS COMPARISON TABLE ────────────────────────────── */
+.bricks-table-container {
+  margin-top: 4rem;
+  padding: 2.5rem;
+  background-color: var(--carbon);
+  border: 1px solid var(--charcoal);
+  border-radius: 6px;
+}
+
+.bricks-table-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--bone);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.bricks-comparison-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  text-align: left;
+  font-family: var(--font-body);
+}
+
+.bricks-comparison-table th {
+  padding: 1rem 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--terra);
+  border-bottom: 1px solid var(--charcoal);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.bricks-comparison-table td {
+  padding: 1.25rem 1.5rem;
+  font-size: 0.95rem;
+  color: var(--mist);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.bricks-comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.bricks-comparison-table tbody tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--bone);
+}
+
+@media (max-width: 768px) {
+  .bricks-table-container {
+    padding: 1.5rem;
+    margin-top: 3rem;
+  }
+}
