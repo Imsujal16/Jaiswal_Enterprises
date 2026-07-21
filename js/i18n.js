@@ -121,9 +121,9 @@
     'bricks.stat.4':         { en: 'Quality Checked',    hi: 'गुणवत्ता जाँची' },
 
     /* ── BRICKS: TICKER ─────────────────────────────────────── */
-    'ticker.bricks.1': { en: 'Standard Brick',       hi: 'सामान्य ईंट' },
-    'ticker.bricks.2': { en: 'First Class Brick',    hi: 'प्रथम श्रेणी ईंट' },
-    'ticker.bricks.3': { en: 'Heavy & Hollow Brick', hi: 'भारी और खोखली ईंट' },
+    'ticker.bricks.1': { en: 'Awwal Brick (No. 1)',       hi: 'अव्वल ईंट (नं. 1)' },
+    'ticker.bricks.2': { en: 'Doyam Brick (No. 2)',    hi: 'दोयम ईंट (नं. 2)' },
+    'ticker.bricks.3': { en: 'Heavy Duty Brick (No. 3)', hi: 'हेवी ड्यूटी ईंट (नं. 3)' },
     'ticker.bricks.4': { en: 'Large Orders Welcome', hi: 'बड़े ऑर्डर का स्वागत' },
     'ticker.bricks.5': { en: 'Delivered Within 60km', hi: '60 किमी में डिलीवरी' },
 
