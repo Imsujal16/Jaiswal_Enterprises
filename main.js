@@ -1,5 +1,5 @@
 /* ============================================================
-   JAISWAL ENTERPRISES — MAIN.JS
+   PAWAN ENTERPRISE — MAIN.JS
    Shared Interactions, Animations, Form Handling
    3-Page Hub & Spoke Architecture
    ============================================================ */
@@ -244,7 +244,7 @@ if (mobileNav) {
       
       // Auto-generate an email subject based on which page the form is on
       const pageType = document.body.dataset.page === 'bricks' ? 'Gramin Brick Field' : 
-                       document.body.dataset.page === 'fuel' ? 'Pawan Filling Station' : 'Jaiswal Enterprises';
+                       document.body.dataset.page === 'fuel' ? 'Pawan Filling Station' : 'Pawan Enterprise';
       formData.append("subject", `New Enquiry from ${pageType} Website`);
       formData.append("from_name", pageType + " Website");
 

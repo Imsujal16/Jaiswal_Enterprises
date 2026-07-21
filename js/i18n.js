@@ -1,5 +1,5 @@
 /* ============================================================
-   JAISWAL ENTERPRISES — i18n Engine
+   PAWAN ENTERPRISE — i18n Engine
    Pure JavaScript · No dependencies · EN / HI
    ============================================================ */
 
@@ -14,7 +14,7 @@
     'nav.businesses':     { en: 'Our Businesses',  hi: 'हमारे व्यवसाय' },
     'nav.clients':        { en: 'Clients',          hi: 'ग्राहक' },
     'nav.see-businesses': { en: 'See Our Businesses', hi: 'व्यवसाय देखें' },
-    'nav.back-home':      { en: '← Back to Jaiswal Enterprises', hi: '← जायसवाल एंटरप्राइजेज़ पर वापस' },
+    'nav.back-home':      { en: '← Back to Pawan Enterprise', hi: '← जायसवाल एंटरप्राइजेज़ पर वापस' },
     'nav.our-bricks':     { en: 'Our Bricks',      hi: 'हमारी ईंटें' },
     'nav.how-we-work':    { en: 'How We Work',     hi: 'हम कैसे काम करते हैं' },
     'nav.photos':         { en: 'Photos',           hi: 'तस्वीरें' },
@@ -52,13 +52,13 @@
 
     /* ── INDEX: FOUNDER ─────────────────────────────────────── */
     'founder.photo-soon':    { en: 'Photo Coming Soon',    hi: 'फोटो जल्द आएगी' },
-    'founder.title-label':   { en: 'Founder · Jaiswal Enterprises', hi: 'संस्थापक · जायसवाल एंटरप्राइजेज़' },
+    'founder.title-label':   { en: 'Founder · Pawan Enterprise', hi: 'संस्थापक · जायसवाल एंटरप्राइजेज़' },
     'founder.section-tag':   { en: 'About the Founder',   hi: 'संस्थापक के बारे में' },
     'founder.quote.line1':   { en: 'Built on',             hi: 'बना है' },
     'founder.quote.em':      { en: 'Integrity.',           hi: 'ईमानदारी पर।' },
     'founder.quote.line2':   { en: 'Sustained by',         hi: 'टिका है' },
     'founder.quote.line3':   { en: 'Hard Work.',           hi: 'मेहनत से।' },
-    'founder.bio1':          { en: 'A well-known figure in Sultanpur\'s civic and business life, the founder of Jaiswal Enterprises has deep roots in Aliganj. He started this business not for profit alone — but as a way to give back to the region he calls home.', hi: 'सुल्तानपुर के नागरिक और व्यावसायिक जीवन में एक जाना-माना नाम, जायसवाल एंटरप्राइजेज़ के संस्थापक की अलीगंज में गहरी जड़ें हैं। उन्होंने यह व्यवसाय सिर्फ लाभ के लिए नहीं — बल्कि अपने क्षेत्र को कुछ वापस देने के लिए शुरू किया।' },
+    'founder.bio1':          { en: 'A well-known figure in Sultanpur\'s civic and business life, the founder of Pawan Enterprise has deep roots in Aliganj. He started this business not for profit alone — but as a way to give back to the region he calls home.', hi: 'सुल्तानपुर के नागरिक और व्यावसायिक जीवन में एक जाना-माना नाम, जायसवाल एंटरप्राइजेज़ के संस्थापक की अलीगंज में गहरी जड़ें हैं। उन्होंने यह व्यवसाय सिर्फ लाभ के लिए नहीं — बल्कि अपने क्षेत्र को कुछ वापस देने के लिए शुरू किया।' },
     'founder.bio2':          { en: 'From growing the Gramin Brick Field to serve Sultanpur\'s building boom, to running one of the area\'s most trusted HP fuel pumps — every decision has followed one rule: do what you say you will. That reputation keeps clients coming back year after year.', hi: 'ग्रामीण ईंट भट्ठे को सुल्तानपुर के निर्माण-उछाल के लिए बढ़ाने से लेकर, इलाके के सबसे भरोसेमंद HP पेट्रोल पंप को चलाने तक — हर फैसला एक नियम से हुआ: जो कहो, वो करो। यही साख ग्राहकों को साल-दर-साल वापस लाती है।' },
     'founder.stat1':         { en: 'Businesses Running',  hi: 'चलते व्यवसाय' },
     'founder.stat2':         { en: 'Brick Delivery Range', hi: 'ईंट डिलीवरी दायरा' },
@@ -108,7 +108,7 @@
     'footer.hp-disclaimer':    { en: 'HP is a registered brand of', hi: 'HP, हिंदुस्तान पेट्रोलियम कार्पोरेशन लि. का पंजीकृत ब्रांड है।' },
 
     /* ── BRICKS: HERO ───────────────────────────────────────── */
-    'bricks.hero.parent':    { en: 'Jaiswal Enterprises — Business 01', hi: 'जायसवाल एंटरप्राइजेज़ — व्यवसाय 01' },
+    'bricks.hero.parent':    { en: 'Pawan Enterprise — Business 01', hi: 'जायसवाल एंटरप्राइजेज़ — व्यवसाय 01' },
     'bricks.hero.eyebrow':   { en: 'Gramin Brick Field · Hakuha kokhipur, Sultanpur', hi: 'ग्रामीण ईंट भट्ठा · हकूहा कोखीपुर, सुल्तानपुर' },
     'bricks.hero.h1.1':      { en: 'Fired',        hi: 'पकाई गई' },
     'bricks.hero.h1.2':      { en: 'Hard.',         hi: 'मजबूत।' },
@@ -275,15 +275,15 @@
     'form.success.fuel.p':     { en: 'We\'ll get back to you within one working day.\nThank you for reaching out to Pawan Filling Station.', hi: 'हम एक कार्यदिवस के भीतर आपसे संपर्क करेंगे।\nपवन फिलिंग स्टेशन से संपर्क करने के लिए धन्यवाद।' },
 
     /* ── BRICKS: FOOTER ─────────────────────────────────────── */
-    'bricks.footer.brand-tag': { en: 'A Jaiswal Enterprises Business · Sultanpur, UP', hi: 'जायसवाल एंटरप्राइजेज़ का व्यवसाय · सुल्तानपुर, यूपी' },
+    'bricks.footer.brand-tag': { en: 'A Pawan Enterprise Business · Sultanpur, UP', hi: 'जायसवाल एंटरप्राइजेज़ का व्यवसाय · सुल्तानपुर, यूपी' },
     'bricks.footer.brand-desc':{ en: 'Reliable kiln-fired bricks in three grades. Delivered to your site within 60km.', hi: 'तीन श्रेणियों में भरोसेमंद भट्ठे की ईंटें। 60 किमी के अंदर आपकी साइट पर डिलीवरी।' },
     'footer.col.quick-links':  { en: 'Quick Links',          hi: 'त्वरित लिंक' },
-    'footer.col.je':           { en: 'Jaiswal Enterprises',  hi: 'जायसवाल एंटरप्राइजेज़' },
+    'footer.col.je':           { en: 'Pawan Enterprise',  hi: 'जायसवाल एंटरप्राइजेज़' },
     'footer.link.back-home':   { en: '← Back to Home',      hi: '← होमपेज पर वापस' },
     'footer.link.about-founder2': { en: 'About the Founder', hi: 'संस्थापक के बारे में' },
 
     /* ── FUEL: HERO ─────────────────────────────────────────── */
-    'fuel.hero.parent':    { en: 'Jaiswal Enterprises — Business 02', hi: 'जायसवाल एंटरप्राइजेज़ — व्यवसाय 02' },
+    'fuel.hero.parent':    { en: 'Pawan Enterprise — Business 02', hi: 'जायसवाल एंटरप्राइजेज़ — व्यवसाय 02' },
     'fuel.hero.eyebrow':   { en: 'Pawan Filling Station · Official HP Pump · Sultanpur', hi: 'पवन फिलिंग स्टेशन · आधिकारिक HP पंप · सुल्तानपुर' },
     'fuel.hero.h1.1':      { en: 'HP',          hi: 'HP' },
     'fuel.hero.h1.2':      { en: 'Fuel.',        hi: 'ईंधन।' },
@@ -339,7 +339,7 @@
     'fuel.gallery.4.sub':     { en: 'Official Franchise · Verified', hi: 'आधिकारिक फ्रेंचाइजी · सत्यापित' },
 
     /* ── FUEL: FOOTER ───────────────────────────────────────── */
-    'fuel.footer.brand-tag':  { en: 'A Jaiswal Enterprises Business · Official HP Fuel Pump', hi: 'जायसवाल एंटरप्राइजेज़ का व्यवसाय · आधिकारिक HP पेट्रोल पंप' },
+    'fuel.footer.brand-tag':  { en: 'A Pawan Enterprise Business · Official HP Fuel Pump', hi: 'जायसवाल एंटरप्राइजेज़ का व्यवसाय · आधिकारिक HP पेट्रोल पंप' },
     'fuel.footer.brand-desc': { en: 'HP petrol and diesel. Open 24 hours. Accounts for businesses with delivery vehicles.', hi: 'HP पेट्रोल और डीजल। 24 घंटे खुला। डिलीवरी वाहन वाले व्यवसायों के लिए खाते।' },
     'fuel.footer.link.setup': { en: 'Set Up an Account',         hi: 'खाता बनाएं' },
   };
