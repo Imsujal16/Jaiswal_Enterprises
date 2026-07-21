@@ -51,9 +51,10 @@
     'ticker.index.5': { en: 'We Also Work With Businesses', hi: 'व्यवसायों के साथ भी काम करते हैं' },
 
     /* ── INDEX: FOUNDER ─────────────────────────────────────── */
-    'founder.photo-soon':    { en: 'Photo Coming Soon',    hi: 'फोटो जल्द आएगी' },
+    'founder.photo-soon':    { en: 'Photo Coming Soon',  hi: 'फोटो जल्द आ रही है' },
     'founder.title-label':   { en: 'Founder · Pawan Enterprise', hi: 'संस्थापक · जायसवाल एंटरप्राइजेज़' },
-    'founder.section-tag':   { en: 'About the Founder',   hi: 'संस्थापक के बारे में' },
+    'founder.section-tag':   { en: 'About the Founder',  hi: 'संस्थापक के बारे में' },
+    'founder.name':          { en: 'Shri Pawan Kumar Jaiswal', hi: 'श्री पवन कुमार जायसवाल' },
     'founder.quote.line1':   { en: 'Built on',             hi: 'बना है' },
     'founder.quote.em':      { en: 'Integrity.',           hi: 'ईमानदारी पर।' },
     'founder.quote.line2':   { en: 'Sustained by',         hi: 'टिका है' },
