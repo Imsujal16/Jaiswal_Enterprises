@@ -2530,20 +2530,28 @@ body.page-fuel .lang-toggle-active { color: var(--hp-blue-lt); }
 
 /* ─── BRICKS COMPARISON TABLE ────────────────────────────── */
 .bricks-table-container {
-  margin-top: 4rem;
-  padding: 2.5rem;
-  background-color: var(--carbon);
-  border: 1px solid var(--charcoal);
-  border-radius: 6px;
+  position: relative;
+  z-index: 2;
+  margin-top: 5rem;
+  padding: 3rem;
+  background: rgba(20, 20, 20, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 .bricks-table-title {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
   color: var(--bone);
   margin-bottom: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1rem;
 }
 
 .table-scroll {
@@ -2553,28 +2561,28 @@ body.page-fuel .lang-toggle-active { color: var(--hp-blue-lt); }
 
 .bricks-comparison-table {
   width: 100%;
-  min-width: 700px;
+  min-width: 800px;
   border-collapse: collapse;
   text-align: left;
   font-family: var(--font-body);
 }
 
 .bricks-comparison-table th {
-  padding: 1rem 1.5rem;
+  padding: 1.25rem 1rem;
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   color: var(--terra);
-  border-bottom: 1px solid var(--charcoal);
-  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(216, 75, 41, 0.3);
 }
 
 .bricks-comparison-table td {
-  padding: 1.25rem 1.5rem;
-  font-size: 0.95rem;
+  padding: 1.5rem 1rem;
+  font-size: 1.05rem;
   color: var(--mist);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  vertical-align: middle;
   transition: all 0.3s ease;
 }
 
@@ -2593,3 +2601,20 @@ body.page-fuel .lang-toggle-active { color: var(--hp-blue-lt); }
     margin-top: 3rem;
   }
 }
+
+.brick-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+.brick-badge.excellent { background: rgba(216, 75, 41, 0.15); color: var(--terra); border: 1px solid rgba(216, 75, 41, 0.3); }
+.brick-badge.good { background: rgba(255, 255, 255, 0.1); color: var(--bone); border: 1px solid rgba(255, 255, 255, 0.2); }
+.brick-badge.poor { background: rgba(255, 0, 0, 0.1); color: #ff6b6b; border: 1px solid rgba(255, 0, 0, 0.2); }
+.brick-badge.extreme { background: rgba(216, 75, 41, 0.3); color: #fff; border: 1px solid var(--terra); }
