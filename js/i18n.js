@@ -52,7 +52,7 @@
 
     /* ── INDEX: FOUNDER ─────────────────────────────────────── */
     'founder.photo-soon':    { en: 'Photo Coming Soon',  hi: 'फोटो जल्द आ रही है' },
-    'founder.title-label':   { en: 'Founder · Pawan Enterprise', hi: 'संस्थापक · जायसवाल एंटरप्राइजेज़' },
+    'founder.title-label':   { en: 'Founder · Pawan Enterprise', hi: 'संस्थापक · Pawan Enterprise' },
     'founder.section-tag':   { en: 'About the Founder',  hi: 'संस्थापक के बारे में' },
     'founder.name':          { en: 'Shri Pawan Kumar Jaiswal', hi: 'श्री पवन कुमार जायसवाल' },
     'founder.quote.line1':   { en: 'Built on',             hi: 'बना है' },
