@@ -1701,7 +1701,7 @@ body.page-fuel .page-hero-stat-num span { color: var(--hp-blue-lt); }
 .petro-bg-img::before {
   content: '';
   position: absolute; inset: 0;
-  background: linear-gradient(to left, var(--ink) 22%, transparent 80%);
+  background: linear-gradient(to left, var(--ink) 0%, transparent 45%);
 }
 .petro-bg-img::after {
   content: '';
