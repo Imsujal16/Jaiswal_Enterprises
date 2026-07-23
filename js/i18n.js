@@ -292,7 +292,7 @@
     'fuel.hero.h1.3':      { en: 'Daily',        hi: 'दैनिक' },
     'fuel.hero.h1.4':      { en: 'Service.',     hi: 'सेवा।' },
     'fuel.hero.desc':      { en: 'Official HP fuel station. Petrol and diesel. Open daily from 6:00 AM to 10:00 PM. If you run delivery vehicles, talk to us about an account — we offer lower prices for regular business customers.', hi: 'आधिकारिक HP ईंधन स्टेशन। पेट्रोल और डीजल। प्रतिदिन सुबह 6:00 से रात 10:00 तक खुला। डिलीवरी वाहन चलाने वाले खाते के बारे में बात करें — नियमित व्यावसायिक ग्राहकों के लिए कम कीमत।' },
-    'fuel.stat.1':         { en: 'Daily Operating Hours', hi: 'दैनिक कार्य समय' },
+    'fuel.stat.1':         { en: '6:00 AM – 10:00 PM Daily', hi: 'प्रतिदिन सुबह 6:00 – रात 10:00' },
     'fuel.stat.2':         { en: 'Fuel Types',        hi: 'ईंधन के प्रकार' },
     'fuel.stat.3':         { en: 'HP Franchise',      hi: 'HP फ्रेंचाइजी' },
     'fuel.stat.4':         { en: 'HP Quality Guarantee', hi: 'HP गुणवत्ता गारंटी' },
