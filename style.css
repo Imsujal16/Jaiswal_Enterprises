@@ -2360,16 +2360,13 @@ body.page-fuel .lang-toggle-active { color: var(--hp-blue-lt); }
 
 @media (max-width: 768px) {
   .lang-toggle {
-    top: 1.2rem;
-    bottom: auto;
-    right: 4.75rem;
-    padding: 0.35rem 0.75rem;
-    z-index: 9999;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    bottom: 1.25rem;
+    right: 1.25rem;
+    padding: 0.5rem 1rem;
   }
   .lang-toggle-active,
   .lang-toggle-inactive {
-    font-size: 0.65rem;
+    font-size: 0.68rem;
   }
 }
 
