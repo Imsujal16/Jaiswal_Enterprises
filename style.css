@@ -1208,6 +1208,15 @@ body.page-fuel .hero-scroll-line {
   display: block;
   margin-top: 2px;
 }
+.testimonial-author-role a {
+  color: var(--hp-blue-lt);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.testimonial-author-role a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
 
 /* ─── PAGE HERO (sub-pages) ──────────────────────────────── */
 .page-hero {
