@@ -93,7 +93,7 @@
 
     'test.3.tenure':         { en: 'Brick Kiln & Fleet Owner · Refueling Since Opening Day', hi: 'ईंट भट्ठा व बेड़ा मालिक · स्थापना के पहले दिन से ग्राहक' },
     'test.3.quote':          { en: '"We buy fuel for our brick field delivery tractors and personal vehicles from Pawan Filling Station right from the start. Having a dedicated business account setup makes monthly billing and operations smooth, transparent, and completely hassle-free."', hi: '"हम शुरुआत से ही अपने ईंट भट्ठे के डिलीवरी ट्रैक्टरों और व्यक्तिगत वाहनों के लिए पवन फिलिंग स्टेशन से ईंधन खरीदते हैं। एक समर्पित व्यावसायिक खाता सेटअप होने से मासिक बिलिंग और संचालन सुचारू, पारदर्शी और पूरी तरह परेशानी मुक्त हो जाता है।"' },
-    'test.3.role':           { en: 'Founder · AKJ Brick Field',      hi: 'संस्थापक · AKJ ईंट भट्ठा' },
+    'test.3.role':           { en: 'Proprietor · AKJ Brick Field',   hi: 'प्रोप्राइटर · AKJ ईंट भट्ठा' },
 
     'test.4.tenure':         { en: 'Regular Customer · Pawan Filling Station · Refueling Since Day One', hi: 'नियमित ग्राहक · पवन फिलिंग स्टेशन · पहले दिन से ग्राहक' },
     'test.4.quote':          { en: '"Open daily from 6am to 10pm, easy to pay, HP-quality fuel every time. Pawan Filling Station has never disappointed us when we needed it. That matters when your fleet is on the road every day."', hi: '"प्रतिदिन सुबह 6 से रात 10 बजे तक खुला, आसान भुगतान, हर बार HP-गुणवत्ता का ईंधन। जब भी जरूरत पड़ी, पवन फिलिंग स्टेशन ने कभी निराश नहीं किया।"' },
