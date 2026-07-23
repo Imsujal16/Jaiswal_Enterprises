@@ -2491,15 +2491,28 @@ body.page-fuel .lang-toggle-active { color: var(--hp-blue-lt); }
   .gallery-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
   .gallery-sub { text-align: left; max-width: none; }
 
-  /* Petro amenities */
-  .petro-amenities { grid-template-columns: 1fr; gap: 0.75rem; }
-  .petro-fuel-cards { flex-direction: column; }
+  /* Petro amenities & fuel cards mobile layout */
+  .petro-amenities { grid-template-columns: 1fr 1fr; gap: 0.75rem 0.5rem; font-size: 0.85rem; }
+  .petro-fuel-cards { flex-direction: column; gap: 1rem; }
+  .fuel-card { padding: 1.25rem; border-left: 3px solid var(--hp-blue-lt); }
+  .fuel-card:nth-child(2) { border-left-color: var(--hp-red); }
+  .hp-brand-block { padding: 1.25rem; gap: 1rem; align-items: flex-start; }
+  .hp-brand-text strong { font-size: 0.95rem; }
+  .hp-brand-text p { font-size: 0.8rem; line-height: 1.5; }
+
+  /* Mobile Form Inputs — 16px to prevent iOS auto-zoom */
+  .form-group input, .form-group select, .form-group textarea {
+    font-size: 16px !important;
+    min-height: 48px;
+    padding: 0.75rem 1rem;
+  }
+  .form-group textarea { min-height: 110px; }
 
   /* Form — single column */
   .form-row { grid-template-columns: 1fr; gap: 1rem; }
   .check-items { grid-template-columns: 1fr; gap: 0.75rem; }
   .form-submit-row { flex-direction: column; align-items: flex-start; gap: 1rem; }
-  .form-submit-btn { width: 100%; text-align: center; }
+  .form-submit-btn { width: 100%; text-align: center; min-height: 52px; font-size: 1rem; }
 
   /* Footer */
   .footer-top { grid-template-columns: 1fr; gap: 2.5rem; }
