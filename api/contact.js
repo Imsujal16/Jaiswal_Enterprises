@@ -29,94 +29,185 @@ export default async function handler(req, res) {
   //   : 'pawansethji9595@gmail.com';
 
   // For testing, route all emails to the authenticated testing email account
-  const isFuel = subject.includes('Pawan Filling Station'); // Kept for template selection
+  const isFuel = subject.includes('Pawan Filling Station');
   const recipientEmail = user;
 
   // ─── BUILD PLAIN TEXT ────────────────────────────────────────
-  let text = `You received a new enquiry:\n\n`;
+  let text = `NEW ENQUIRY NOTIFICATION — PAWAN ENTERPRISE\n`;
+  text += `===========================================\n\n`;
   for (const [key, value] of Object.entries(data)) {
     if (['access_key', 'subject', 'from_name'].includes(key)) continue;
-    const label = key.charAt(0).toUpperCase() + key.slice(1);
+    const label = key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
     text += `${label}: ${value}\n`;
   }
 
-  // ─── SHARED ROW BUILDER ──────────────────────────────────────
-  function buildRows(data) {
-    let rows = '';
+  // ─── HELPER: BUILD GROUPED DOCKET ROWS ───────────────────────
+  function buildGroupedRows(data, theme) {
+    const isBricks = theme === 'bricks';
+    
+    // Theme Tokens
+    const borderCol  = isBricks ? '#222222' : '#182436';
+    const labelCol   = isBricks ? '#999999' : '#8B9BB4';
+    const rowBg      = '#121212';
+    const hlRowBg    = isBricks ? '#1A120B' : '#0B1728';
+    const accentCol  = isBricks ? '#CC5500' : '#0066FF';
+    const sectionBg  = isBricks ? '#181818' : '#0F1622';
+    const sectionTxt = isBricks ? '#D05C08' : '#388BFD';
+
+    const contactKeys = ['name', 'company', 'phone', 'email', 'contact_name', 'phone_number', 'mobile'];
+    
+    const contactEntries = [];
+    const specEntries = [];
+
     for (const [key, value] of Object.entries(data)) {
       if (['access_key', 'subject', 'from_name'].includes(key)) continue;
+      const entry = { key, value };
+      if (contactKeys.includes(key.toLowerCase())) {
+        contactEntries.push(entry);
+      } else {
+        specEntries.push(entry);
+      }
+    }
+
+    function renderRow(key, value, isHighlight = false) {
       const label = key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
       const displayValue = value
         ? String(value).replace(/\n/g, '<br>')
         : '<span style="color:#555555;font-style:italic;">Not provided</span>';
-      rows += `
+      
+      const currentBg = isHighlight ? hlRowBg : rowBg;
+      const leftBorder = isHighlight ? `border-left:3px solid ${accentCol};` : '';
+
+      return `
         <tr>
-          <td bgcolor="#121212" style="padding:14px 20px;border-bottom:1px solid #222222;width:38%;vertical-align:top;background-color:#121212;">
-            <span style="font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#888888;">${label}</span>
+          <td bgcolor="${currentBg}" style="padding:14px 20px;border-bottom:1px solid ${borderCol};width:36%;vertical-align:top;background-color:${currentBg};${leftBorder}">
+            <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:${labelCol};">${label}</span>
           </td>
-          <td bgcolor="#121212" style="padding:14px 20px;border-bottom:1px solid #222222;vertical-align:top;background-color:#121212;">
-            <span style="font-family:Helvetica Neue,Arial,sans-serif;font-size:14px;font-weight:500;color:#FFFFFF;">${displayValue}</span>
+          <td bgcolor="${currentBg}" style="padding:14px 20px;border-bottom:1px solid ${borderCol};vertical-align:top;background-color:${currentBg};word-break:break-word;">
+            <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;color:#FFFFFF;line-height:1.4;">${displayValue}</span>
           </td>
         </tr>`;
     }
-    return rows;
+
+    let html = '';
+
+    // SECTION 1: CLIENT IDENTIFICATION
+    if (contactEntries.length > 0) {
+      html += `
+        <tr>
+          <td colspan="2" bgcolor="${sectionBg}" style="padding:10px 20px;border-bottom:1px solid ${borderCol};background-color:${sectionBg};">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="font-size:0;line-height:0;width:12px;">
+                  <div style="width:4px;height:12px;background-color:${accentCol};display:inline-block;"></div>
+                </td>
+                <td>
+                  <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:0.2em;text-transform:uppercase;color:${sectionTxt};">01 // CLIENT IDENTIFICATION</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>`;
+      contactEntries.forEach(({ key, value }) => {
+        html += renderRow(key, value, false);
+      });
+    }
+
+    // SECTION 2: SPECIFICATIONS & REQUIREMENTS
+    if (specEntries.length > 0) {
+      html += `
+        <tr>
+          <td colspan="2" bgcolor="${sectionBg}" style="padding:10px 20px;border-bottom:1px solid ${borderCol};border-top:1px solid ${borderCol};background-color:${sectionBg};">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="font-size:0;line-height:0;width:12px;">
+                  <div style="width:4px;height:12px;background-color:${accentCol};display:inline-block;"></div>
+                </td>
+                <td>
+                  <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:0.2em;text-transform:uppercase;color:${sectionTxt};">02 // REQUIREMENT SPECIFICATIONS</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>`;
+      specEntries.forEach(({ key, value }) => {
+        const isHl = ['grade', 'fuel_type', 'volume', 'daily_volume'].includes(key.toLowerCase());
+        html += renderRow(key, value, isHl);
+      });
+    }
+
+    return html;
   }
 
   // ─── TEMPLATE 1: GRAMIN BRICK FIELD ─────────────────────────
   function bricksTemplate() {
     return `<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>New Enquiry — Gramin Brick Field</title></head>
-<body bgcolor="#0A0A0A" style="margin:0;padding:0;background-color:#0A0A0A;font-family:Helvetica Neue,Arial,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0A0A0A" style="background-color:#0A0A0A;padding:40px 20px;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>New Enquiry — Gramin Brick Field</title>
+</head>
+<body bgcolor="#080808" style="margin:0;padding:0;background-color:#080808;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#080808" style="background-color:#080808;padding:32px 12px;">
     <tr>
       <td align="center">
-        <table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#121212" style="max-width:600px;width:100%;background-color:#121212;border:1px solid #222222;">
+        <!-- CARD CONTAINER -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#121212" style="max-width:600px;width:100%;background-color:#121212;border:1px solid #282828;border-radius:4px;overflow:hidden;">
 
-          <!-- TOP ACCENT BAR -->
+          <!-- TOP ACCENT STRIPE -->
           <tr>
-            <td bgcolor="#CC5500" style="height:4px;background-color:#CC5500;font-size:0;line-height:0;">&nbsp;</td>
+            <td bgcolor="#CC5500" style="height:5px;background-color:#CC5500;font-size:0;line-height:0;">&nbsp;</td>
           </tr>
 
-          <!-- HEADER -->
+          <!-- HEADER BLOCK -->
           <tr>
-            <td bgcolor="#121212" style="padding:32px 28px 24px 28px;border-bottom:1px solid #222222;background-color:#121212;">
+            <td bgcolor="#161616" style="padding:28px 24px 22px 24px;border-bottom:1px solid #282828;background-color:#161616;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
-                  <td>
-                    <p style="margin:0 0 6px 0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#CC5500;">PAWAN ENTERPRISE &middot; TRANSMISSION</p>
-                    <h1 style="margin:0;font-family:Helvetica Neue,Arial,sans-serif;font-size:22px;font-weight:700;letter-spacing:0.04em;color:#FFFFFF;line-height:1.2;">NEW ENQUIRY &mdash; GRAMIN BRICK FIELD</h1>
+                  <td valign="top">
+                    <p style="margin:0 0 6px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:#CC5500;">PAWAN ENTERPRISE &middot; OFFICIAL TRANSMISSION</p>
+                    <h1 style="margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:22px;font-weight:800;letter-spacing:-0.01em;color:#FFFFFF;line-height:1.25;">NEW ENQUIRY DOCKET</h1>
+                    <p style="margin:4px 0 0 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;font-weight:500;color:#999999;">Gramin Brick Field &middot; High-Fired Brick Orders</p>
                   </td>
-                  <td align="right" valign="top" style="padding-top:4px;">
-                    <table cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#1A0E07" style="background-color:#1A0E07;border:1px solid #CC5500;padding:6px 12px;">
-                      <span style="font-family:Helvetica Neue,Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.15em;color:#CC5500;">BRICK FIELD</span>
-                    </td></tr></table>
+                  <td align="right" valign="top" style="padding-top:2px;">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td bgcolor="#221208" style="background-color:#221208;border:1px solid #CC5500;padding:6px 12px;border-radius:2px;">
+                          <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:0.18em;color:#FF6A00;text-transform:uppercase;">BRICK FIELD</span>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <!-- DOCKET ROWS -->
+          <!-- DOCKET CONTENT ROWS -->
           <tr>
             <td bgcolor="#121212" style="background-color:#121212;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                ${buildRows(data)}
+                ${buildGroupedRows(data, 'bricks')}
               </table>
             </td>
           </tr>
 
-          <!-- FOOTER -->
+          <!-- FOOTER BLOCK -->
           <tr>
-            <td bgcolor="#0E0E0E" style="padding:20px 28px;border-top:1px solid #222222;background-color:#0E0E0E;">
+            <td bgcolor="#0A0A0A" style="padding:22px 24px;border-top:1px solid #282828;background-color:#0A0A0A;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
                   <td>
-                    <p style="margin:0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:#555555;letter-spacing:0.05em;">AUTOMATED TRANSMISSION FROM PAWAN ENTERPRISE SECURE SERVER</p>
-                    <p style="margin:6px 0 0 0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:#444444;">Gramin Brick Field &middot; Hakuha Kokhipur, Aliganj, Sultanpur, UP</p>
+                    <p style="margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:10px;font-weight:700;color:#666666;letter-spacing:0.12em;text-transform:uppercase;">AUTOMATED TRANSMISSION &middot; PAWAN ENTERPRISE SECURE SERVER</p>
+                    <p style="margin:5px 0 0 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;color:#555555;">Gramin Brick Field &middot; Hakuha Kokhipur, Aliganj, Sultanpur, UP</p>
                   </td>
                   <td align="right" valign="middle">
-                    <table cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#CC5500" style="width:8px;height:8px;background-color:#CC5500;font-size:0;">&nbsp;</td></tr></table>
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td bgcolor="#CC5500" style="width:10px;height:10px;background-color:#CC5500;font-size:0;border-radius:1px;">&nbsp;</td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
@@ -135,67 +226,77 @@ export default async function handler(req, res) {
   function fuelTemplate() {
     return `<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>New Enquiry — Pawan Filling Station</title></head>
-<body bgcolor="#0A0A0A" style="margin:0;padding:0;background-color:#0A0A0A;font-family:Helvetica Neue,Arial,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0A0A0A" style="background-color:#0A0A0A;padding:40px 20px;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>New Enquiry — Pawan Filling Station</title>
+</head>
+<body bgcolor="#06090E" style="margin:0;padding:0;background-color:#06090E;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#06090E" style="background-color:#06090E;padding:32px 12px;">
     <tr>
       <td align="center">
-        <table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#121212" style="max-width:600px;width:100%;background-color:#121212;border:1px solid #1A2A4A;">
+        <!-- CARD CONTAINER -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#101722" style="max-width:600px;width:100%;background-color:#101722;border:1px solid #1E2D4A;border-radius:4px;overflow:hidden;">
 
-          <!-- TOP ACCENT BAR: HP Blue + Red split -->
+          <!-- TOP ACCENT STRIPE: HP BLUE + HP RED -->
           <tr>
-            <td bgcolor="#121212" style="font-size:0;line-height:0;background-color:#121212;">
+            <td bgcolor="#101722" style="font-size:0;line-height:0;background-color:#101722;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
-                  <td bgcolor="#0033A0" style="height:4px;background-color:#0033A0;width:90%;font-size:0;line-height:0;">&nbsp;</td>
-                  <td bgcolor="#E3000F" style="height:4px;background-color:#E3000F;width:10%;font-size:0;line-height:0;">&nbsp;</td>
+                  <td bgcolor="#0033A0" style="height:5px;background-color:#0033A0;width:88%;font-size:0;line-height:0;">&nbsp;</td>
+                  <td bgcolor="#E3000F" style="height:5px;background-color:#E3000F;width:12%;font-size:0;line-height:0;">&nbsp;</td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <!-- HEADER -->
+          <!-- HEADER BLOCK -->
           <tr>
-            <td bgcolor="#121212" style="padding:32px 28px 24px 28px;border-bottom:1px solid #1A2A4A;background-color:#121212;">
+            <td bgcolor="#0D1525" style="padding:28px 24px 22px 24px;border-bottom:1px solid #1E2D4A;background-color:#0D1525;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
-                  <td>
-                    <p style="margin:0 0 6px 0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#0066CC;">PAWAN ENTERPRISE &middot; TRANSMISSION</p>
-                    <h1 style="margin:0;font-family:Helvetica Neue,Arial,sans-serif;font-size:22px;font-weight:700;letter-spacing:0.04em;color:#FFFFFF;line-height:1.2;">NEW ENQUIRY &mdash; PAWAN FILLING STATION</h1>
+                  <td valign="top">
+                    <p style="margin:0 0 6px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:#388BFD;">PAWAN ENTERPRISE &middot; OFFICIAL TRANSMISSION</p>
+                    <h1 style="margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:22px;font-weight:800;letter-spacing:-0.01em;color:#FFFFFF;line-height:1.25;">NEW ENQUIRY DOCKET</h1>
+                    <p style="margin:4px 0 0 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;font-weight:500;color:#8B9BB4;">Pawan Filling Station &middot; Official HP Pump & Commercial Accounts</p>
                   </td>
-                  <td align="right" valign="top" style="padding-top:4px;">
-                    <table cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#00153A" style="background-color:#00153A;border:1px solid #0033A0;padding:6px 12px;">
-                      <span style="font-family:Helvetica Neue,Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.15em;color:#4D99FF;">HP FUEL</span>
-                    </td></tr></table>
+                  <td align="right" valign="top" style="padding-top:2px;">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td bgcolor="#0A1C3E" style="background-color:#0A1C3E;border:1px solid #0040C8;padding:6px 12px;border-radius:2px;">
+                          <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:0.18em;color:#58A6FF;text-transform:uppercase;">HP FUEL</span>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <!-- DOCKET ROWS -->
+          <!-- DOCKET CONTENT ROWS -->
           <tr>
-            <td bgcolor="#121212" style="background-color:#121212;">
+            <td bgcolor="#101722" style="background-color:#101722;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                ${buildRows(data)}
+                ${buildGroupedRows(data, 'fuel')}
               </table>
             </td>
           </tr>
 
-          <!-- FOOTER -->
+          <!-- FOOTER BLOCK -->
           <tr>
-            <td bgcolor="#0A0E16" style="padding:20px 28px;border-top:1px solid #1A2A4A;background-color:#0A0E16;">
+            <td bgcolor="#080D16" style="padding:22px 24px;border-top:1px solid #1E2D4A;background-color:#080D16;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
                   <td>
-                    <p style="margin:0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:#555555;letter-spacing:0.05em;">AUTOMATED TRANSMISSION FROM PAWAN ENTERPRISE SECURE SERVER</p>
-                    <p style="margin:6px 0 0 0;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:#444444;">Pawan Filling Station &middot; Kurwar Road, Aliganj, Sultanpur, UP &middot; 24 Hrs</p>
+                    <p style="margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:10px;font-weight:700;color:#5D6D82;letter-spacing:0.12em;text-transform:uppercase;">AUTOMATED TRANSMISSION &middot; PAWAN ENTERPRISE SECURE SERVER</p>
+                    <p style="margin:5px 0 0 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;color:#4B596E;">Pawan Filling Station &middot; Kurwar Road, Aliganj, Sultanpur, UP &middot; 24 Hrs</p>
                   </td>
                   <td align="right" valign="middle">
-                    <table cellpadding="0" cellspacing="2" border="0">
+                    <table cellpadding="0" cellspacing="3" border="0">
                       <tr>
-                        <td bgcolor="#0033A0" style="width:8px;height:8px;background-color:#0033A0;font-size:0;">&nbsp;</td>
-                        <td bgcolor="#E3000F" style="width:8px;height:8px;background-color:#E3000F;font-size:0;">&nbsp;</td>
+                        <td bgcolor="#0033A0" style="width:8px;height:8px;background-color:#0033A0;font-size:0;border-radius:1px;">&nbsp;</td>
+                        <td bgcolor="#E3000F" style="width:8px;height:8px;background-color:#E3000F;font-size:0;border-radius:1px;">&nbsp;</td>
                       </tr>
                     </table>
                   </td>
@@ -218,7 +319,7 @@ export default async function handler(req, res) {
   // ─── SEND ────────────────────────────────────────────────────
   try {
     await transporter.sendMail({
-      from: `"Jaiswal Enterprises Website" <${user}>`,
+      from: `"Pawan Enterprise Website" <${user}>`,
       to: recipientEmail,
       replyTo: data.email || undefined,
       subject: subject,
