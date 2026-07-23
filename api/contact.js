@@ -102,7 +102,7 @@ export default async function handler(req, res) {
                   <div style="width:4px;height:12px;background-color:${accentCol};display:inline-block;"></div>
                 </td>
                 <td>
-                  <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:0.2em;text-transform:uppercase;color:${sectionTxt};">01 // CLIENT IDENTIFICATION</span>
+                  <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:0.2em;text-transform:uppercase;color:${sectionTxt};">01 &middot; CONTACT DETAILS</span>
                 </td>
               </tr>
             </table>
@@ -124,7 +124,7 @@ export default async function handler(req, res) {
                   <div style="width:4px;height:12px;background-color:${accentCol};display:inline-block;"></div>
                 </td>
                 <td>
-                  <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:0.2em;text-transform:uppercase;color:${sectionTxt};">02 // REQUIREMENT SPECIFICATIONS</span>
+                  <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:0.2em;text-transform:uppercase;color:${sectionTxt};">02 &middot; ORDER REQUIREMENTS</span>
                 </td>
               </tr>
             </table>
