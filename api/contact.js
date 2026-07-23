@@ -167,7 +167,7 @@ export default async function handler(req, res) {
                 <tr>
                   <td valign="top">
                     <p style="margin:0 0 6px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:#CC5500;">PAWAN ENTERPRISE &middot; OFFICIAL TRANSMISSION</p>
-                    <h1 style="margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:22px;font-weight:800;letter-spacing:-0.01em;color:#FFFFFF;line-height:1.25;">NEW ENQUIRY DOCKET</h1>
+                    <h1 style="margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:22px;font-weight:800;letter-spacing:-0.01em;color:#FFFFFF;line-height:1.25;">NEW CUSTOMER ENQUIRY</h1>
                     <p style="margin:4px 0 0 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;font-weight:500;color:#999999;">Gramin Brick Field &middot; High-Fired Brick Orders</p>
                   </td>
                   <td align="right" valign="top" style="padding-top:2px;">
@@ -257,7 +257,7 @@ export default async function handler(req, res) {
                 <tr>
                   <td valign="top">
                     <p style="margin:0 0 6px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:#388BFD;">PAWAN ENTERPRISE &middot; OFFICIAL TRANSMISSION</p>
-                    <h1 style="margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:22px;font-weight:800;letter-spacing:-0.01em;color:#FFFFFF;line-height:1.25;">NEW ENQUIRY DOCKET</h1>
+                    <h1 style="margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:22px;font-weight:800;letter-spacing:-0.01em;color:#FFFFFF;line-height:1.25;">NEW CUSTOMER ENQUIRY</h1>
                     <p style="margin:4px 0 0 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;font-weight:500;color:#8B9BB4;">Pawan Filling Station &middot; Official HP Pump & Commercial Accounts</p>
                   </td>
                   <td align="right" valign="top" style="padding-top:2px;">
