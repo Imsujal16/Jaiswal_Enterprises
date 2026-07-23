@@ -84,7 +84,7 @@
     'test.intro':            { en: 'Our clients aren\'t just customers — they\'ve been using us for years. Builders who\'ve sourced every single brick from us. Transport businesses who fill up nowhere else. That\'s what real trust looks like.', hi: 'हमारे ग्राहक सिर्फ खरीदार नहीं — वे वर्षों से हमारा उपयोग कर रहे हैं। ठेकेदार जो हर एक ईंट हमसे लेते हैं। परिवहन व्यवसाय जो कहीं और तेल नहीं भरवाते। यही असली भरोसा है।' },
 
     'test.1.tenure':         { en: 'Builder · Using Us Since 2009', hi: 'ठेकेदार · 2009 से हमारे ग्राहक' },
-    'test.1.quote':          { en: '"Fifteen years. Three hundred projects. Every brick from Gramin Brick Field. When your supplier never lets you down, you don\'t look for another one."', hi: '"पंद्रह साल। तीन सौ प्रोजेक्ट। हर ईंट ग्रामीण ईंट भट्ठे से। जब सप्लायर कभी निराश न करे, तो दूसरा क्यों ढूंढें।"' },
+    'test.1.quote':          { en: '"Fifteen years. Over fifty major projects. Every brick sourced from Gramin Brick Field. When your supplier delivers consistent quality and never lets you down, you don\'t look anywhere else."', hi: '"पंद्रह साल। पचास से अधिक प्रमुख प्रोजेक्ट। हर ईंट ग्रामीण ईंट भट्ठे से। जब आपका सप्लायर हमेशा मजबूत ईंटें देता है और कभी निराश नहीं करता, तो आप कहीं और नहीं देखते।"' },
     'test.1.role':           { en: 'Contractor · Sultanpur',          hi: 'ठेकेदार · सुल्तानपुर' },
 
     'test.2.tenure':         { en: 'School Fleet Owner · Refueling Since Opening Day', hi: 'स्कूल बेड़ा मालिक · स्थापना के पहले दिन से ग्राहक' },
@@ -95,9 +95,9 @@
     'test.3.quote':          { en: '"We buy fuel for our brick field delivery tractors and personal vehicles from Pawan Filling Station right from the start. Having a dedicated business account setup makes monthly billing and operations smooth, transparent, and completely hassle-free."', hi: '"हम शुरुआत से ही अपने ईंट भट्ठे के डिलीवरी ट्रैक्टरों और व्यक्तिगत वाहनों के लिए पवन फिलिंग स्टेशन से ईंधन खरीदते हैं। एक समर्पित व्यावसायिक खाता सेटअप होने से मासिक बिलिंग और संचालन सुचारू, पारदर्शी और पूरी तरह परेशानी मुक्त हो जाता है।"' },
     'test.3.role':           { en: 'Proprietor · AKJ Brick Field',   hi: 'प्रोप्राइटर · AKJ ईंट भट्ठा' },
 
-    'test.4.tenure':         { en: 'Regular Customer · Pawan Filling Station · Refueling Since Day One', hi: 'नियमित ग्राहक · पवन फिलिंग स्टेशन · पहले दिन से ग्राहक' },
-    'test.4.quote':          { en: '"Open daily from 6am to 10pm, easy to pay, HP-quality fuel every time. Pawan Filling Station has never disappointed us when we needed it. That matters when your fleet is on the road every day."', hi: '"प्रतिदिन सुबह 6 से रात 10 बजे तक खुला, आसान भुगतान, हर बार HP-गुणवत्ता का ईंधन। जब भी जरूरत पड़ी, पवन फिलिंग स्टेशन ने कभी निराश नहीं किया।"' },
-    'test.4.role':           { en: 'Owner · Tiwari Transport Co.',   hi: 'मालिक · तिवारी ट्रांसपोर्ट कं.' },
+    'test.4.tenure':         { en: 'Brick Field Customer · Sourcing Bricks Since 2017', hi: 'ईंट भट्ठा ग्राहक · 2017 से ईंट खरीद रहे हैं' },
+    'test.4.quote':          { en: '"We source all our Awwal and Doma bricks from Gramin Brick Field for housing and commercial sites. The bricks are perfectly kiln-fired, extremely durable, and delivered right on time. JANTA brand bricks are the benchmark for quality in Sultanpur."', hi: '"हम आवास और व्यावसायिक साइटों के लिए ग्रामीण ईंट भट्ठे से अपनी सभी अव्वल और दोमा ईंटें खरीदते हैं। ईंटें बेहतरीन पकी हुई, बेहद मजबूत और बिल्कुल समय पर डिलीवर होती हैं। सुल्तानपुर में जनता ब्रांड ईंटें गुणवत्ता का मानक हैं।"' },
+    'test.4.role':           { en: 'Builder & Developer · Sultanpur', hi: 'निर्माता व डेवलपर · सुल्तानपुर' },
 
     /* ── INDEX: FOOTER ──────────────────────────────────────── */
     'footer.index.brand-tag':  { en: 'Sultanpur, UP · Est. Since Generations', hi: 'सुल्तानपुर, यूपी · पुराना घराना' },
