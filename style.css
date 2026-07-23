@@ -1644,11 +1644,11 @@ body.page-fuel .page-hero-stat:not(:first-child) .page-hero-stat-num span[data-t
   background-size: cover;
   background-position: center;
   transition: transform 0.7s var(--ease-expo), filter 0.5s;
-  filter: brightness(0.38) saturate(0.4);
+  filter: brightness(0.85) contrast(1.05) saturate(1.1);
 }
 .gallery-item:hover .gallery-item-bg {
   transform: scale(1.06);
-  filter: brightness(0.55) saturate(0.6);
+  filter: brightness(1.0) contrast(1.1) saturate(1.25);
 }
 .gallery-item-overlay {
   position: absolute; inset: 0;
