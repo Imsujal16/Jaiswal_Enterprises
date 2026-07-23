@@ -91,12 +91,12 @@
     'test.2.quote':          { en: '"We run our entire fleet of school buses and vans through Pawan Filling Station. When transporting children every single morning, fuel purity and vehicle reliability are non-negotiable. From day one, their pure HP fuel, prompt service, and transparent billing have made them our trusted refueling partner."', hi: '"हम अपनी स्कूल बसों और वैनों के पूरे बेड़े के लिए पवन फिलिंग स्टेशन पर निर्भर हैं। हर सुबह बच्चों को ले जाते समय ईंधन की शुद्धता और वाहन की विश्वसनीयता से समझौता नहीं किया जा सकता। पहले दिन से ही उनका शुद्ध HP ईंधन और पारदर्शी बिलिंग हमें पूर्ण भरोसा देता है।"' },
     'test.2.role':           { en: 'Founder · Nirmaan Public School ↗', hi: 'संस्थापक · निर्माण पब्लिक स्कूल ↗' },
 
-    'test.3.tenure':         { en: 'Builder · Large Orders · Since 2014', hi: 'ठेकेदार · बड़े ऑर्डर · 2014 से' },
-    'test.3.quote':          { en: '"I build multi-storey housing. I always ask for First Class brick. I\'ve tried two other suppliers over ten years — both times I came straight back to Pawan\'s yard. No one else in this area delivers the same consistency and quality."', hi: '"मैं बहुमंजिला आवास बनाता हूँ। मैं हमेशा प्रथम श्रेणी की ईंट माँगता हूँ। दस साल में दो अन्य सप्लायर आजमाए — दोनों बार सीधे पवन के यार्ड पर वापस आया। इस क्षेत्र में कोई दूसरा ऐसी एकरूपता और गुणवत्ता नहीं देता।"' },
-    'test.3.role':           { en: 'Builder · Siwan',                hi: 'ठेकेदार · सिवान' },
+    'test.3.tenure':         { en: 'Brick Kiln & Fleet Owner · Refueling Since Opening Day', hi: 'ईंट भट्ठा व बेड़ा मालिक · स्थापना के पहले दिन से ग्राहक' },
+    'test.3.quote':          { en: '"We buy fuel for our brick field delivery tractors and personal vehicles from Pawan Filling Station right from the start. Having a dedicated business account setup makes monthly billing and operations smooth, transparent, and completely hassle-free."', hi: '"हम शुरुआत से ही अपने ईंट भट्ठे के डिलीवरी ट्रैक्टरों और व्यक्तिगत वाहनों के लिए पवन फिलिंग स्टेशन से ईंधन खरीदते हैं। एक समर्पित व्यावसायिक खाता सेटअप होने से मासिक बिलिंग और संचालन सुचारू, पारदर्शी और पूरी तरह परेशानी मुक्त हो जाता है।"' },
+    'test.3.role':           { en: 'Founder · AKJ Brick Field',      hi: 'संस्थापक · AKJ ईंट भट्ठा' },
 
-    'test.4.tenure':         { en: 'Regular Customer · Pawan Station · Since 2017', hi: 'नियमित ग्राहक · पवन स्टेशन · 2017 से' },
-    'test.4.quote':          { en: '"Always open, easy to pay, HP-quality fuel every time. Pawan Station has never been shut when I needed it. That matters when you\'re on the road at 3am."', hi: '"हमेशा खुला, भुगतान आसान, हर बार HP-गुणवत्ता का ईंधन। पवन स्टेशन कभी बंद नहीं मिला जब मुझे जरूरत थी। यह तब मायने रखता है जब आप रात 3 बजे सड़क पर हों।"' },
+    'test.4.tenure':         { en: 'Regular Customer · Pawan Filling Station · Refueling Since Day One', hi: 'नियमित ग्राहक · पवन फिलिंग स्टेशन · पहले दिन से ग्राहक' },
+    'test.4.quote':          { en: '"Open daily from 6am to 10pm, easy to pay, HP-quality fuel every time. Pawan Filling Station has never disappointed us when we needed it. That matters when your fleet is on the road every day."', hi: '"प्रतिदिन सुबह 6 से रात 10 बजे तक खुला, आसान भुगतान, हर बार HP-गुणवत्ता का ईंधन। जब भी जरूरत पड़ी, पवन फिलिंग स्टेशन ने कभी निराश नहीं किया।"' },
     'test.4.role':           { en: 'Owner · Tiwari Transport Co.',   hi: 'मालिक · तिवारी ट्रांसपोर्ट कं.' },
 
     /* ── INDEX: FOOTER ──────────────────────────────────────── */
