@@ -284,7 +284,7 @@ export default async function handler(req, res) {
                 <tr>
                   <td>
                     <p style="margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:10px;font-weight:700;color:#5D6D82;letter-spacing:0.12em;text-transform:uppercase;">AUTOMATED TRANSMISSION &middot; PAWAN ENTERPRISE SECURE SERVER</p>
-                    <p style="margin:5px 0 0 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;color:#4B596E;">Pawan Filling Station &middot; Kurwar Road, Aliganj, Sultanpur, UP &middot; 24 Hrs</p>
+                    <p style="margin:5px 0 0 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;color:#4B596E;">Pawan Filling Station &middot; Kurwar Road, Aliganj, Sultanpur, UP &middot; 6:00 AM &ndash; 10:00 PM</p>
                   </td>
                   <td align="right" valign="middle">
                     <table cellpadding="0" cellspacing="3" border="0">

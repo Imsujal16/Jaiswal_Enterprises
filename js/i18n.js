@@ -40,13 +40,13 @@
 
     'card.fuel.tag':     { en: 'Business 02',       hi: 'व्यवसाय 02' },
     'card.fuel.title':   { en: 'Pawan Filling Station', hi: 'पवन फिलिंग स्टेशन' },
-    'card.fuel.desc':    { en: 'Official HP fuel pump. Open 24 hours. Petrol and diesel. Lower prices for businesses with delivery vehicles.', hi: 'आधिकारिक HP पेट्रोल पंप। 24 घंटे खुला। पेट्रोल और डीजल। डिलीवरी वाहन चलाने वाले व्यवसायों के लिए कम कीमत।' },
+    'card.fuel.desc':    { en: 'Official HP fuel pump. Open 6:00 AM – 10:00 PM. Petrol and diesel. Lower prices for businesses with delivery vehicles.', hi: 'आधिकारिक HP पेट्रोल पंप। सुबह 6:00 से रात 10:00 तक खुला। पेट्रोल और डीजल। डिलीवरी वाहन चलाने वाले व्यवसायों के लिए कम कीमत।' },
     'card.fuel.cta':     { en: 'Visit Filling Station', hi: 'पेट्रोल पंप देखें' },
 
     /* ── INDEX: TICKER ──────────────────────────────────────── */
     'ticker.index.1': { en: 'Brick Supply',               hi: 'ईंट आपूर्ति' },
     'ticker.index.2': { en: 'Official HP Fuel',           hi: 'आधिकारिक HP ईंधन' },
-    'ticker.index.3': { en: 'Open 24 Hours',              hi: '24 घंटे खुला' },
+    'ticker.index.3': { en: 'Open 6:00 AM – 10:00 PM',    hi: 'सुबह 6:00 से रात 10:00 तक खुला' },
     'ticker.index.4': { en: 'Sultanpur, UP',             hi: 'सुल्तानपुर, यूपी' },
     'ticker.index.5': { en: 'We Also Work With Businesses', hi: 'व्यवसायों के साथ भी काम करते हैं' },
 
@@ -73,7 +73,7 @@
     'brief.bricks.body':     { en: 'Strong, reliable bricks fired in our own kiln. Three grades to choose from. 8,00,000+ bricks per firing round. Checked for quality before they leave the yard. Delivered to your site.', hi: 'हमारे अपने भट्ठे में पकी हुई मजबूत और भरोसेमंद ईंटें। तीन श्रेणियों में से चुनें। हर राउंड में 8,00,000+ ईंटें। गुणवत्ता जांच के बाद ही यार्ड से निकलती हैं। आपकी साइट पर डिलीवरी।' },
     'brief.bricks.link':     { en: 'Go to Brick Field',   hi: 'ईंट भट्ठे पर जाएं' },
     'brief.fuel.tag':        { en: 'Official HP Fuel Pump', hi: 'आधिकारिक HP पेट्रोल पंप' },
-    'brief.fuel.body':       { en: 'Licensed HP fuel station. Petrol and diesel. Open 24 hours, every day. Set up an account if you run delivery vehicles — we offer lower prices for regular business customers.', hi: 'लाइसेंस प्राप्त HP ईंधन स्टेशन। पेट्रोल और डीजल। हर दिन 24 घंटे खुला। डिलीवरी वाहन चलाने वाले खाता खुलवाएं — नियमित व्यावसायिक ग्राहकों के लिए कम कीमत।' },
+    'brief.fuel.body':       { en: 'Licensed HP fuel station. Petrol and diesel. Open 6:00 AM to 10:00 PM daily. Set up an account if you run delivery vehicles — we offer lower prices for regular business customers.', hi: 'लाइसेंस प्राप्त HP ईंधन स्टेशन। पेट्रोल और डीजल। प्रतिदिन सुबह 6:00 से रात 10:00 तक खुला। डिलीवरी वाहन चलाने वाले खाता खुलवाएं — नियमित व्यावसायिक ग्राहकों के लिए कम कीमत।' },
     'brief.fuel.link':       { en: 'Go to Filling Station', hi: 'पेट्रोल पंप पर जाएं' },
 
     /* ── INDEX: TESTIMONIALS ────────────────────────────────── */
@@ -244,7 +244,7 @@
     'form.check.fuel-rates':   { en: 'Lower prices for business owners', hi: 'व्यवसाय मालिकों के लिए कम कीमत' },
     'form.check.rewards':      { en: 'Rewards for regular customers', hi: 'नियमित ग्राहकों के लिए इनाम' },
     'form.check.billing':      { en: 'Digital billing setup',  hi: 'डिजिटल बिलिंग व्यवस्था' },
-    'form.check.24hr':         { en: 'Confirming 24-hour access', hi: '24 घंटे उपलब्धता की पुष्टि' },
+    'form.check.24hr':         { en: 'Confirming operating hours (6:00 AM – 10:00 PM)', hi: 'कार्य समय की पुष्टि (सुबह 6:00 – रात 10:00)' },
     'form.select.brick.awwal': { en: 'Awwal Bricks',       hi: 'अव्वल ईंट' },
     'form.select.brick.doma':  { en: 'Doma Bricks',        hi: 'दोमा ईंट' },
     'form.select.brick.pela':  { en: 'Pela Bricks',        hi: 'पीला ईंट' },
@@ -289,10 +289,10 @@
     'fuel.hero.eyebrow':   { en: 'Pawan Filling Station · Official HP Pump · Sultanpur', hi: 'पवन फिलिंग स्टेशन · आधिकारिक HP पंप · सुल्तानपुर' },
     'fuel.hero.h1.1':      { en: 'HP',          hi: 'HP' },
     'fuel.hero.h1.2':      { en: 'Fuel.',        hi: 'ईंधन।' },
-    'fuel.hero.h1.3':      { en: 'Always',       hi: 'हमेशा' },
-    'fuel.hero.h1.4':      { en: 'Open.',         hi: 'खुला।' },
-    'fuel.hero.desc':      { en: 'Official HP fuel station. Petrol and diesel. Open around the clock. If you run delivery vehicles, talk to us about an account — we offer lower prices for regular business customers.', hi: 'आधिकारिक HP ईंधन स्टेशन। पेट्रोल और डीजल। चौबीसों घंटे खुला। डिलीवरी वाहन चलाने वाले खाते के बारे में बात करें — नियमित व्यावसायिक ग्राहकों के लिए कम कीमत।' },
-    'fuel.stat.1':         { en: 'Always Open',      hi: 'हमेशा खुला' },
+    'fuel.hero.h1.3':      { en: 'Daily',        hi: 'दैनिक' },
+    'fuel.hero.h1.4':      { en: 'Service.',     hi: 'सेवा।' },
+    'fuel.hero.desc':      { en: 'Official HP fuel station. Petrol and diesel. Open daily from 6:00 AM to 10:00 PM. If you run delivery vehicles, talk to us about an account — we offer lower prices for regular business customers.', hi: 'आधिकारिक HP ईंधन स्टेशन। पेट्रोल और डीजल। प्रतिदिन सुबह 6:00 से रात 10:00 तक खुला। डिलीवरी वाहन चलाने वाले खाते के बारे में बात करें — नियमित व्यावसायिक ग्राहकों के लिए कम कीमत।' },
+    'fuel.stat.1':         { en: 'Daily Operating Hours', hi: 'दैनिक कार्य समय' },
     'fuel.stat.2':         { en: 'Fuel Types',        hi: 'ईंधन के प्रकार' },
     'fuel.stat.3':         { en: 'HP Franchise',      hi: 'HP फ्रेंचाइजी' },
     'fuel.stat.4':         { en: 'HP Quality Guarantee', hi: 'HP गुणवत्ता गारंटी' },
@@ -300,7 +300,7 @@
     /* ── FUEL: TICKER ───────────────────────────────────────── */
     'ticker.fuel.1': { en: 'Diesel Always Available',   hi: 'डीजल हमेशा उपलब्ध' },
     'ticker.fuel.2': { en: 'Petrol Always Available',   hi: 'पेट्रोल हमेशा उपलब्ध' },
-    'ticker.fuel.3': { en: 'Open 24 Hours',             hi: '24 घंटे खुला' },
+    'ticker.fuel.3': { en: 'Open 6:00 AM – 10:00 PM',    hi: 'सुबह 6:00 से रात 10:00 तक खुला' },
     'ticker.fuel.4': { en: 'Lower Prices for Businesses', hi: 'व्यवसायों के लिए कम कीमत' },
     'ticker.fuel.5': { en: 'Rewards for Regular Customers', hi: 'नियमित ग्राहकों के लिए इनाम' },
 
@@ -310,8 +310,8 @@
     'fuel.h2.2':           { en: 'Quality.',       hi: 'गुणवत्ता।' },
     'fuel.h2.3':           { en: 'Every',          hi: 'हर' },
     'fuel.h2.4':           { en: 'Fill.',          hi: 'भराई।' },
-    'fuel.body':           { en: 'Pawan Filling Station is a licensed HP pump serving private cars, commercial trucks, and business vehicles every hour of the day. Same fuel quality as any HP station in India — backed by regular HP testing. Run by a local name you can trust.', hi: 'पवन फिलिंग स्टेशन एक लाइसेंस प्राप्त HP पंप है जो दिन के हर घंटे निजी कारों, व्यावसायिक ट्रकों और व्यावसायिक वाहनों की सेवा करता है। भारत के किसी भी HP स्टेशन जैसी ईंधन गुणवत्ता — नियमित HP जांच द्वारा समर्थित। एक स्थानीय नाम द्वारा संचालित जिस पर आप भरोसा कर सकते हैं।' },
-    'fuel.amenity.1':      { en: 'Open 24 hours, 7 days',        hi: '24 घंटे, 7 दिन खुला' },
+    'fuel.body':           { en: 'Pawan Filling Station is a licensed HP pump serving private cars, commercial trucks, and business vehicles. Same fuel quality as any HP station in India — backed by regular HP testing. Run by a local name you can trust.', hi: 'पवन फिलिंग स्टेशन एक लाइसेंस प्राप्त HP पंप है जो निजी कारों, व्यावसायिक ट्रकों और व्यावसायिक वाहनों की सेवा करता है। भारत के किसी भी HP स्टेशन जैसी ईंधन गुणवत्ता — नियमित HP जांच द्वारा समर्थित। एक स्थानीय नाम द्वारा संचालित जिस पर आप भरोसा कर सकते हैं।' },
+    'fuel.amenity.1':      { en: 'Open 6:00 AM – 10:00 PM',     hi: 'सुबह 6:00 से रात 10:00 तक खुला' },
     'fuel.amenity.2':      { en: 'Pay via HP Pay / DT Plus',     hi: 'HP Pay / DT Plus से भुगतान' },
     'fuel.amenity.3':      { en: 'Air and water point',          hi: 'हवा और पानी उपलब्ध' },
     'fuel.amenity.4':      { en: 'Pay by card or UPI',           hi: 'कार्ड या UPI से भुगतान' },
@@ -330,11 +330,11 @@
     'fuel.gallery.tag':       { en: 'Station Photos',              hi: 'स्टेशन की तस्वीरें' },
     'fuel.gallery.h2.1':      { en: 'The Station.',                hi: 'स्टेशन।' },
     'fuel.gallery.h2.2':      { en: 'Day & Night.',                hi: 'दिन और रात।' },
-    'fuel.gallery.sub':       { en: 'We don\'t close. Here\'s what Pawan Station looks like around the clock.', hi: 'हम बंद नहीं होते। पवन स्टेशन 24 घंटे ऐसा दिखता है।' },
+    'fuel.gallery.sub':       { en: 'Daily 6:00 AM to 10:00 PM. Here\'s what Pawan Station looks like.', hi: 'प्रतिदिन सुबह 6:00 से रात 10:00 तक। पवन स्टेशन ऐसा दिखता है।' },
     'fuel.gallery.1.label':   { en: 'During the Day',             hi: 'दिन के समय' },
     'fuel.gallery.1.sub':     { en: 'Pawan Filling Station · Sultanpur', hi: 'पवन फिलिंग स्टेशन · सुल्तानपुर' },
     'fuel.gallery.2.label':   { en: 'Through the Night',          hi: 'रात के दौरान' },
-    'fuel.gallery.2.sub':     { en: '24 Hours · No Downtime',     hi: '24 घंटे · बिना रुके' },
+    'fuel.gallery.2.sub':     { en: '6:00 AM – 10:00 PM · Daily Service', hi: 'सुबह 6:00 – रात 10:00 · दैनिक सेवा' },
     'fuel.gallery.3.label':   { en: 'Trucks & Businesses',        hi: 'ट्रक और व्यवसाय' },
     'fuel.gallery.3.sub':     { en: 'Wide lanes · Easy access',   hi: 'चौड़ी लेन · आसान पहुँच' },
     'fuel.gallery.4.label':   { en: 'HP Branded',                 hi: 'HP ब्रांडेड' },
@@ -342,7 +342,7 @@
 
     /* ── FUEL: FOOTER ───────────────────────────────────────── */
     'fuel.footer.brand-tag':  { en: 'A Pawan Enterprise Business · Official HP Fuel Pump', hi: 'पवन एंटरप्राइज का व्यवसाय · आधिकारिक HP पेट्रोल पंप' },
-    'fuel.footer.brand-desc': { en: 'HP petrol and diesel. Open 24 hours. Accounts for businesses with delivery vehicles.', hi: 'HP पेट्रोल और डीजल। 24 घंटे खुला। डिलीवरी वाहन वाले व्यवसायों के लिए खाते।' },
+    'fuel.footer.brand-desc': { en: 'HP petrol and diesel. Open 6:00 AM – 10:00 PM daily. Accounts for businesses with delivery vehicles.', hi: 'HP पेट्रोल और डीजल। सुबह 6:00 से रात 10:00 तक खुला।' },
     'fuel.footer.link.setup': { en: 'Set Up an Account',         hi: 'खाता बनाएं' },
   };
 
