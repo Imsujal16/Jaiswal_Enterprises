@@ -312,7 +312,7 @@
     'fuel.h2.4':           { en: 'Fill.',          hi: 'भराई।' },
     'fuel.body':           { en: 'Pawan Filling Station is a licensed HP pump serving private cars, commercial trucks, and business vehicles every hour of the day. Same fuel quality as any HP station in India — backed by regular HP testing. Run by a local name you can trust.', hi: 'पवन फिलिंग स्टेशन एक लाइसेंस प्राप्त HP पंप है जो दिन के हर घंटे निजी कारों, व्यावसायिक ट्रकों और व्यावसायिक वाहनों की सेवा करता है। भारत के किसी भी HP स्टेशन जैसी ईंधन गुणवत्ता — नियमित HP जांच द्वारा समर्थित। एक स्थानीय नाम द्वारा संचालित जिस पर आप भरोसा कर सकते हैं।' },
     'fuel.amenity.1':      { en: 'Open 24 hours, 7 days',        hi: '24 घंटे, 7 दिन खुला' },
-    'fuel.amenity.2':      { en: 'Trucks welcome',               hi: 'ट्रक भी आ सकते हैं' },
+    'fuel.amenity.2':      { en: 'Pay via HP Pay / DT Plus',     hi: 'HP Pay / DT Plus से भुगतान' },
     'fuel.amenity.3':      { en: 'Air and water point',          hi: 'हवा और पानी उपलब्ध' },
     'fuel.amenity.4':      { en: 'Pay by card or UPI',           hi: 'कार्ड या UPI से भुगतान' },
     'fuel.amenity.5':      { en: 'Rewards for regular customers', hi: 'नियमित ग्राहकों के लिए इनाम' },
