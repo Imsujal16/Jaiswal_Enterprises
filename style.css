@@ -2675,7 +2675,7 @@ body.page-gallery {
 }
 
 .gallery-hero {
-  padding: 180px 5% 100px;
+  padding: 120px 5% 40px;
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
@@ -2692,16 +2692,16 @@ body.page-gallery {
 
 .gallery-hero-desc {
   font-size: clamp(1.1rem, 2vw, 1.3rem);
-  color: var(--ash);
+  color: var(--bone);
   line-height: 1.6;
 }
 
 .gallery-main {
-  padding: 0 5% 120px;
+  padding: 0 5% 60px;
 }
 
 .gallery-zone {
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 
 .zone-title {
