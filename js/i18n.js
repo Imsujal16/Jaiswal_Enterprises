@@ -373,6 +373,8 @@
     'gallery.fuel.3.sub':      { en: 'Heavy vehicles welcome', hi: 'भारी वाहनों का स्वागत' },
     'gallery.fuel.4.title':    { en: 'Precision Dispensing', hi: 'सटीक वितरण' },
     'gallery.fuel.4.sub':      { en: 'Calibrated accuracy', hi: 'कैलिब्रेटेड सटीकता' },
+    'gallery.footer.brand-tag':  { en: 'Gallery & Operations · Sultanpur, UP', hi: 'गैलरी और कार्य · सुल्तानपुर, यूपी' },
+    'gallery.footer.brand-desc': { en: 'Visual documentation of our brick manufacturing operations and HP petroleum filling station.', hi: 'हमारे ईंट निर्माण कार्यों और एचपी पेट्रोलियम फिलिंग स्टेशन का दृश्य विवरण।' },
     'footer.rights':           { en: '© 2026 Pawan Enterprise. All rights reserved.', hi: '© 2026 पवन एंटरप्राइज। सर्वाधिकार सुरक्षित।' },
   };
 
