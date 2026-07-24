@@ -2822,3 +2822,114 @@ body.page-gallery {
     grid-row: span 1 !important;
   }
 }
+
+
+/* ========================================= */
+/* GALLERY BRANDED THEMING (BRICKS & FUEL)   */
+/* ========================================= */
+
+/* BRICKS ZONE STYLING */
+.zone-bricks {
+  position: relative;
+  padding: 40px 0;
+}
+
+.section-tag-bricks {
+  color: var(--terra) !important;
+  margin-bottom: 0.75rem;
+}
+.section-tag-bricks::before {
+  background: var(--terra) !important;
+}
+
+.bricks-zone-title {
+  color: var(--white);
+  border-bottom: 1px solid rgba(194, 82, 43, 0.25) !important;
+}
+
+.bricks-zone-title .accent-terra {
+  color: var(--terra-lite);
+  text-shadow: 0 0 20px rgba(194, 82, 43, 0.4);
+}
+
+.bricks-masonry .masonry-item {
+  border: 1px solid rgba(194, 82, 43, 0.2);
+  background: rgba(20, 15, 12, 0.9);
+}
+
+.bricks-masonry .masonry-item:hover {
+  border-color: var(--terra);
+  box-shadow: 0 10px 30px rgba(194, 82, 43, 0.25), 0 0 15px rgba(194, 82, 43, 0.15);
+}
+
+.item-badge-terra {
+  background: rgba(194, 82, 43, 0.9);
+  color: #fff;
+  border: 1px solid var(--terra-lite);
+  box-shadow: 0 4px 12px rgba(194, 82, 43, 0.3);
+}
+
+/* FUEL ZONE STYLING */
+.zone-fuel {
+  position: relative;
+  padding: 40px 0;
+  margin-top: 60px;
+}
+
+.section-tag-fuel {
+  color: var(--hp-blue-lt) !important;
+  margin-bottom: 0.75rem;
+}
+.section-tag-fuel::before {
+  background: var(--hp-blue-lt) !important;
+}
+
+.fuel-zone-title {
+  color: var(--white);
+  border-bottom: 1px solid rgba(37, 137, 216, 0.25) !important;
+}
+
+.fuel-zone-title .blue-accent {
+  color: var(--hp-blue-lt);
+  text-shadow: 0 0 20px rgba(37, 137, 216, 0.4);
+}
+
+.fuel-zone-title .red-accent {
+  color: var(--hp-red);
+  text-shadow: 0 0 20px rgba(212, 0, 42, 0.4);
+}
+
+.fuel-masonry .masonry-item {
+  border: 1px solid rgba(37, 137, 216, 0.2);
+  background: rgba(10, 16, 26, 0.9);
+}
+
+.fuel-masonry .masonry-item:hover {
+  border-color: var(--hp-blue-lt);
+  box-shadow: 0 10px 30px rgba(37, 137, 216, 0.3), 0 0 15px rgba(212, 0, 42, 0.2);
+}
+
+.item-badge-hp {
+  background: rgba(0, 88, 163, 0.9);
+  color: #fff;
+  border: 1px solid var(--hp-blue-lt);
+  box-shadow: 0 4px 12px rgba(0, 88, 163, 0.4);
+}
+
+/* OVERLAY ITEM BADGES */
+.item-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 3;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  pointer-events: none;
+}
