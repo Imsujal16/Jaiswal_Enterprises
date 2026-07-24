@@ -399,7 +399,7 @@
       } else if (el.tagName === 'OPTION') {
         el.textContent = text;
       } else {
-        el.textContent = text;
+        el.innerHTML = text;
       }
     });
     /* Update toggle button label */

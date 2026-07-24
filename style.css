@@ -2725,7 +2725,8 @@ body.page-gallery {
   overflow: hidden;
   border-radius: 12px;
   border: 1px solid var(--glass-bdr);
-  background: var(--ink-lt);
+  background: #1A1A1A;
+  min-height: 300px;
   cursor: pointer;
 }
 
