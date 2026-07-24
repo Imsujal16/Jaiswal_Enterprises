@@ -2670,7 +2670,7 @@ body.page-fuel .lang-toggle-active { color: var(--hp-blue-lt); }
 /* ========================================= */
 body.page-gallery {
   background-color: var(--ink);
-  color: var(--chalk);
+  color: var(--white);
   overflow-x: hidden;
 }
 
@@ -2790,14 +2790,16 @@ body.page-gallery {
   font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--chalk);
+  color: var(--white);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .caption-sub {
-  font-size: 0.9rem;
-  color: var(--ash);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--bone);
+  letter-spacing: 0.05em;
 }
 
 /* Responsive adjustments */
