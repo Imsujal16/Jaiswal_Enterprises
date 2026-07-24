@@ -2664,3 +2664,158 @@ body.page-fuel .lang-toggle-active { color: var(--hp-blue-lt); }
 .brick-badge.good { background: rgba(255, 255, 255, 0.08); color: var(--bone); border: 1px solid rgba(255, 255, 255, 0.15); }
 .brick-badge.poor { background: rgba(255, 0, 0, 0.15); color: #ff6b6b; border: 1px solid rgba(255, 0, 0, 0.3); }
 .brick-badge.extreme { background: rgba(216, 75, 41, 0.4); color: #fff; border: 1px solid var(--terra); }
+
+/* ========================================= */
+/* GALLERY PAGE                              */
+/* ========================================= */
+body.page-gallery {
+  background-color: var(--ink);
+  color: var(--chalk);
+  overflow-x: hidden;
+}
+
+.gallery-hero {
+  padding: 180px 5% 100px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gallery-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1.1;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+}
+
+.gallery-hero-desc {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  color: var(--ash);
+  line-height: 1.6;
+}
+
+.gallery-main {
+  padding: 0 5% 120px;
+}
+
+.gallery-zone {
+  margin-bottom: 120px;
+}
+
+.zone-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--glass-bdr);
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.gallery-masonry {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 280px;
+  gap: 24px;
+}
+
+.masonry-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--glass-bdr);
+  background: var(--ink-lt);
+  cursor: pointer;
+}
+
+.masonry-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+  filter: grayscale(0.2) contrast(1.1);
+}
+
+.masonry-item:hover img {
+  transform: scale(1.05);
+  filter: grayscale(0) contrast(1.2);
+}
+
+/* Asymmetrical Layout Classes */
+.masonry-item.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.masonry-item.wide {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.masonry-item.portrait {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.masonry-item.square {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.masonry-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.masonry-item:hover .masonry-caption {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.caption-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--chalk);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.caption-sub {
+  font-size: 0.9rem;
+  color: var(--ash);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .gallery-masonry {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-masonry {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 220px;
+    gap: 16px;
+  }
+  
+  .masonry-item.large, .masonry-item.wide, .masonry-item.portrait, .masonry-item.square {
+    grid-column: span 2 !important;
+    grid-row: span 1 !important;
+  }
+}
