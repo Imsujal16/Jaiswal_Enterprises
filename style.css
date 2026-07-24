@@ -2713,33 +2713,35 @@ body.page-gallery {
   text-transform: uppercase;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+.gpage-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 24px !important;
 }
 
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  border: 1px solid var(--glass-bdr);
-  background: #1A1A1A;
-  height: 280px;
-  cursor: pointer;
+.gpage-card {
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: 12px !important;
+  border: 1px solid var(--glass-bdr) !important;
+  background: #1A1A1A !important;
+  height: 280px !important;
+  cursor: pointer !important;
+  grid-column: auto !important;
+  grid-row: auto !important;
 }
 
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
-  filter: grayscale(0.2) contrast(1.1);
+.gpage-card img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease !important;
+  filter: grayscale(0.2) contrast(1.1) !important;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.05);
-  filter: grayscale(0) contrast(1.2);
+.gpage-card:hover img {
+  transform: scale(1.05) !important;
+  filter: grayscale(0) contrast(1.2) !important;
 }
 
 .masonry-caption {
@@ -2759,9 +2761,9 @@ body.page-gallery {
   -webkit-backdrop-filter: blur(4px);
 }
 
-.gallery-item:hover .masonry-caption {
-  transform: translateY(0);
-  opacity: 1;
+.gpage-card:hover .masonry-caption {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
 }
 
 .caption-title {
@@ -2782,31 +2784,31 @@ body.page-gallery {
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
-  .gallery-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  .gpage-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 18px !important;
   }
-  .gallery-item {
-    height: 240px;
+  .gpage-card {
+    height: 240px !important;
   }
 }
 
 @media (max-width: 768px) {
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+  .gpage-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
   }
-  .gallery-item {
-    height: 220px;
+  .gpage-card {
+    height: 220px !important;
   }
 }
 
 @media (max-width: 480px) {
-  .gallery-grid {
-    grid-template-columns: 1fr;
+  .gpage-grid {
+    grid-template-columns: 1fr !important;
   }
-  .gallery-item {
-    height: 240px;
+  .gpage-card {
+    height: 240px !important;
   }
 }
 
@@ -2839,14 +2841,14 @@ body.page-gallery {
   text-shadow: 0 0 20px rgba(194, 82, 43, 0.4);
 }
 
-.bricks-grid .gallery-item {
-  border: 1px solid rgba(194, 82, 43, 0.2);
-  background: rgba(20, 15, 12, 0.9);
+.gpage-bricks-grid .gpage-card {
+  border: 1px solid rgba(194, 82, 43, 0.2) !important;
+  background: rgba(20, 15, 12, 0.9) !important;
 }
 
-.bricks-grid .gallery-item:hover {
-  border-color: var(--terra);
-  box-shadow: 0 10px 30px rgba(194, 82, 43, 0.25), 0 0 15px rgba(194, 82, 43, 0.15);
+.gpage-bricks-grid .gpage-card:hover {
+  border-color: var(--terra) !important;
+  box-shadow: 0 10px 30px rgba(194, 82, 43, 0.25), 0 0 15px rgba(194, 82, 43, 0.15) !important;
 }
 
 .item-badge-terra {
@@ -2886,14 +2888,14 @@ body.page-gallery {
   text-shadow: 0 0 20px rgba(212, 0, 42, 0.4);
 }
 
-.fuel-grid .gallery-item {
-  border: 1px solid rgba(37, 137, 216, 0.2);
-  background: rgba(10, 16, 26, 0.9);
+.gpage-fuel-grid .gpage-card {
+  border: 1px solid rgba(37, 137, 216, 0.2) !important;
+  background: rgba(10, 16, 26, 0.9) !important;
 }
 
-.fuel-grid .gallery-item:hover {
-  border-color: var(--hp-blue-lt);
-  box-shadow: 0 10px 30px rgba(37, 137, 216, 0.3), 0 0 15px rgba(212, 0, 42, 0.2);
+.gpage-fuel-grid .gpage-card:hover {
+  border-color: var(--hp-blue-lt) !important;
+  box-shadow: 0 10px 30px rgba(37, 137, 216, 0.3), 0 0 15px rgba(212, 0, 42, 0.2) !important;
 }
 
 .item-badge-hp {
